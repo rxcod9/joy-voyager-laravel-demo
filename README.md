@@ -1,62 +1,85 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+[![Latest Version](https://img.shields.io/github/v/release/rxcod9/joy-voyager-datatable-laravel-demo?style=flat-square)](https://github.com/rxcod9/joy-voyager-datatable-laravel-demo/releases)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rxcod9/joy-voyager-datatable-laravel-demo/run-tests?label=tests)
+[![Total Downloads](https://img.shields.io/packagist/dt/joy/voyager-datatable-laravel-demo.svg?style=flat-square)](https://packagist.org/packages/joy/voyager-datatable-laravel-demo)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# **Voyager datatable** - laravel demo
+By 🐼 [Ramakant Gangwar](https://github.com/rxcod9)
 
-## About Laravel
+<hr>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Laravel Admin & BREAD System (Browse using DataTable)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Installation Steps
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 1. Clone repo
 
-## Learning Laravel
+You can clone the `Voyager datatable laravel demo` with the following command:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+```bash
+git clone git@github.com:rxcod9/joy-voyager-datatable-laravel-demo.git
+cd joy-voyager-datatable-laravel-demo
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 2. Add the DB Credentials & APP_URL
 
-## Laravel Sponsors
+Next make sure to create a new database and add your database credentials to your .env file:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+```
+DB_HOST=localhost
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+```
 
-### Premium Partners
+You will also want to update your website URL inside of the `APP_URL` variable inside the .env file:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
+```
+APP_URL=http://localhost:8000
+```
 
-## Contributing
+### 3. Run The Installer
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Lastly, we can install voyager. You can do this either with or without dummy data.
+The dummy data will include 1 admin account (if no users already exists), 1 demo page, 4 demo posts, 2 categories and 7 settings.
 
-## Code of Conduct
+To install Voyager without dummy simply run
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+php artisan voyager:install
+```
 
-## Security Vulnerabilities
+If you prefer installing it with dummy run
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+php artisan voyager:install --with-dummy
+```
 
-## License
+And we're all good to go!
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Start up a local development server with `php artisan serve` And, visit [http://localhost:8000/admin](http://localhost:8000/admin).
+
+To check the datatable feature visit [http://localhost:8000/admin/users/datatable](http://localhost:8000/admin/users/datatable) or any bread [http://localhost:8000/admin/{slug}/datatable](http://localhost:8000/admin/{slug}/datatable).
+
+## Creating an Admin User
+
+If you did go ahead with the dummy data, a user should have been created for you with the following login credentials:
+
+>**email:** `admin@admin.com`   
+>**password:** `password`
+
+NOTE: Please note that a dummy user is **only** created if there are no current users in your database.
+
+If you did not go with the dummy user, you may wish to assign admin privileges to an existing user.
+This can easily be done by running this command:
+
+```bash
+php artisan voyager:admin your@email.com
+```
+
+If you did not install the dummy data and you wish to create a new admin user you can pass the `--create` flag, like so:
+
+```bash
+php artisan voyager:admin your@email.com --create
+```
+
+And you will be prompted for the user's name and password.
