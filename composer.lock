@@ -1812,16 +1812,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-datatable.git",
-                "reference": "acac9ebe8fd2b1acbdd5208bec69e040f4cbb02f"
+                "reference": "98377fd3a1d112c82940ec7278ceea208526be62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/acac9ebe8fd2b1acbdd5208bec69e040f4cbb02f",
-                "reference": "acac9ebe8fd2b1acbdd5208bec69e040f4cbb02f",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/98377fd3a1d112c82940ec7278ceea208526be62",
+                "reference": "98377fd3a1d112c82940ec7278ceea208526be62",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "^7.0|^8.0",
+                "illuminate/support": "^7|^8",
+                "larapack/hooks": "^1.0.5",
                 "php": "^7.4|^8.0",
                 "tcg/voyager": "^1.4",
                 "yajra/laravel-datatables-oracle": "~9.0"
@@ -1865,7 +1866,7 @@
                     "role": "Tech Lead"
                 }
             ],
-            "description": "Joy VoyagerDatatable",
+            "description": "joy voyager datatable",
             "homepage": "https://github.com/rxcod9/joy-voyager-datatable",
             "keywords": [
                 "cms",
@@ -1878,7 +1879,7 @@
                 "issues": "https://github.com/rxcod9/joy-voyager-datatable/issues",
                 "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/main"
             },
-            "time": "2021-06-14T23:40:07+00:00"
+            "time": "2021-06-16T19:55:38+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2113,16 +2114,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.46.0",
+            "version": "v8.47.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "a18266c612e0e6aba5e0174b3c873d2d217dccfb"
+                "reference": "93db226946453f4285558b7c3166ddb6e7ea5400"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/a18266c612e0e6aba5e0174b3c873d2d217dccfb",
-                "reference": "a18266c612e0e6aba5e0174b3c873d2d217dccfb",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/93db226946453f4285558b7c3166ddb6e7ea5400",
+                "reference": "93db226946453f4285558b7c3166ddb6e7ea5400",
                 "shasum": ""
             },
             "require": {
@@ -2277,7 +2278,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-06-08T13:36:46+00:00"
+            "time": "2021-06-15T14:00:32+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -9298,16 +9299,16 @@
         },
         {
             "name": "sebastian/type",
-            "version": "2.3.2",
+            "version": "2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/type.git",
-                "reference": "0d1c587401514d17e8f9258a27e23527cb1b06c1"
+                "reference": "b8cd8a1c753c90bc1a0f5372170e3e489136f914"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/0d1c587401514d17e8f9258a27e23527cb1b06c1",
-                "reference": "0d1c587401514d17e8f9258a27e23527cb1b06c1",
+                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/b8cd8a1c753c90bc1a0f5372170e3e489136f914",
+                "reference": "b8cd8a1c753c90bc1a0f5372170e3e489136f914",
                 "shasum": ""
             },
             "require": {
@@ -9342,7 +9343,7 @@
             "homepage": "https://github.com/sebastianbergmann/type",
             "support": {
                 "issues": "https://github.com/sebastianbergmann/type/issues",
-                "source": "https://github.com/sebastianbergmann/type/tree/2.3.2"
+                "source": "https://github.com/sebastianbergmann/type/tree/2.3.4"
             },
             "funding": [
                 {
@@ -9350,7 +9351,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-06-04T13:02:07+00:00"
+            "time": "2021-06-15T12:49:02+00:00"
         },
         {
             "name": "sebastian/version",
