@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ed89d3badc89cd6fc90c16e6490701f",
+    "content-hash": "214a3fa77a60d661d63d1684c07cea9c",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -1812,12 +1812,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-datatable.git",
-                "reference": "98377fd3a1d112c82940ec7278ceea208526be62"
+                "reference": "9e6eca7f93b228aa17efff6dc268aff3a08f7838"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/98377fd3a1d112c82940ec7278ceea208526be62",
-                "reference": "98377fd3a1d112c82940ec7278ceea208526be62",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/9e6eca7f93b228aa17efff6dc268aff3a08f7838",
+                "reference": "9e6eca7f93b228aa17efff6dc268aff3a08f7838",
                 "shasum": ""
             },
             "require": {
@@ -1879,7 +1879,7 @@
                 "issues": "https://github.com/rxcod9/joy-voyager-datatable/issues",
                 "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/main"
             },
-            "time": "2021-06-16T19:55:38+00:00"
+            "time": "2021-06-16T21:09:11+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -6125,7 +6125,7 @@
                 "larapack/voyager-hooks": "~1.2.1",
                 "laravel/ui": ">=1.0",
                 "league/flysystem": "~1.1|~2.0",
-                "php": "^7.3|^7.3|^8.0"
+                "php": "^7.3|^7.4|^8.0"
             },
             "require-dev": {
                 "laravel/browser-kit-testing": ">=5.0.0",
