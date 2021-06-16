@@ -1823,7 +1823,7 @@
             "require": {
                 "illuminate/support": "^7|^8",
                 "larapack/hooks": "^1.0.5",
-                "php": "^7.4|^8.0",
+                "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4",
                 "yajra/laravel-datatables-oracle": "~9.0"
             },
@@ -6125,7 +6125,7 @@
                 "larapack/voyager-hooks": "~1.2.1",
                 "laravel/ui": ">=1.0",
                 "league/flysystem": "~1.1|~2.0",
-                "php": "^7.3|^7.4|^8.0"
+                "php": "^7.3|^7.3|^8.0"
             },
             "require-dev": {
                 "laravel/browser-kit-testing": ">=5.0.0",
