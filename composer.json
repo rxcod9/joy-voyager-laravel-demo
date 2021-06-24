@@ -11,8 +11,34 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0.0",
+        "ext-curl": "*",
+        "ext-dom": "*",
+        "ext-exif": "*",
+        "ext-fileinfo": "*",
+        "ext-filter": "*",
+        "ext-gd": "*",
+        "ext-iconv": "*",
+        "ext-intl": "*",
+        "ext-json": "*",
+        "ext-libxml": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "ext-pcntl": "*",
+        "ext-pcov": "*",
+        "ext-pcre": "*",
+        "ext-pdo": "*",
+        "ext-pdo_sqlite": "*",
+        "ext-phar": "*",
+        "ext-posix": "*",
+        "ext-soap": "*",
+        "ext-tokenizer": "*",
+        "ext-xml": "*",
+        "ext-xmlwriter": "*",
+        "ext-zip": "*",
+        "ext-zlib": "*",
+        "php": "^7.3|^8.0",
         "dompdf/dompdf": "^2.0",
+        "fakerphp/faker": "^1.9.1",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^3.0",
         "guzzlehttp/guzzle": "^7.2",
@@ -41,7 +67,6 @@
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
-        "fakerphp/faker": "^1.9.1",
         "friendsofphp/php-cs-fixer": "^3.7",
         "henzeb/composer-link": "^0.0.3@alpha",
         "laravel/pint": "^1.0",
@@ -66,7 +91,12 @@
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi"
+            "@php artisan package:discover --ansi",
+            "@php artisan storage:link --quiet --relative",
+            "@php artisan passport:keys --quiet --no-interaction --force",
+            "@php artisan migrate --force --quiet --no-interaction",
+            "@php artisan db:seed --class=VoyagerDatabaseSeeder --force --quiet --no-interaction",
+            "@php artisan joy-voyager-api:l5-swagger:generate"
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
