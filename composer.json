@@ -31,7 +31,6 @@
         "ext-posix": "*",
         "ext-soap": "*",
         "ext-tokenizer": "*",
-        "ext-xdebug": "*",
         "ext-xml": "*",
         "ext-xmlwriter": "*",
         "ext-zip": "*",
