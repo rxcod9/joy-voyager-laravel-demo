@@ -13,6 +13,7 @@
     "require": {
         "php": "^7.3|^8.0",
         "dompdf/dompdf": "^1.2",
+        "fakerphp/faker": "^1.19",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^3.0",
         "guzzlehttp/guzzle": "^7.4",
@@ -42,7 +43,6 @@
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
         "facade/ignition": "^2.17",
-        "fakerphp/faker": "^1.19",
         "friendsofphp/php-cs-fixer": "^3.7",
         "henzeb/composer-link": "^0.0.3@alpha",
         "laravel/sail": "^1.13",
