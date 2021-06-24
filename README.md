@@ -9,6 +9,10 @@ By 🐼 [Ramakant Gangwar](https://github.com/rxcod9)
 
 Laravel Admin & BREAD System (Browse using DataTable)
 
+## Working Example
+
+You can try laravel demo here [https://joy-voyager-datatable.herokuapp.com/admin/users/datatable](https://joy-voyager-datatable.herokuapp.com/admin/users/datatable).
+
 ## Installation Steps
 
 ### 1. Clone repo/Install Using Composer
