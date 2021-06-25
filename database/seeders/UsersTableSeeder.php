@@ -29,9 +29,9 @@ class UsersTableSeeder extends Seeder
             ]);
         }
 
-        $count = env('USERS_COUNT', 100);
+        $count = (int) env('USERS_COUNT', 100);
         $role  = Role::firstOrNew(['name' => 'user']);
-        if (User::whereRoleId($role->id)->count() == 0) {
+        if (User::whereRoleId($role->id)->count() <= 1) {
             User::factory()
                 ->count($count - 1)
                 ->state(function (array $attributes) use ($count) {

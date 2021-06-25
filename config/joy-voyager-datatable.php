@@ -17,7 +17,7 @@ return [
     */
 
     'controllers' => [
-        'namespace' => 'Joy\\VoyagerDatatable\\Http\\Controllers',
+        'namespace' => 'App\\Http\\Controllers',
     ],
 
     /*
