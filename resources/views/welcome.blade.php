@@ -3,11 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{{ config('app.description', 'Laravel') }}">
+        <meta name="author" content="Ramakant Gangwar">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googledatatables.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -17,48 +19,6 @@
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 50px;
-            }
-
-            .links>a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
             }
         </style>
     </head>
@@ -84,51 +44,156 @@
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <div class="title m-b-md">
-                        {{ config('app.name', 'Laravel') }}
-                    </div>
-                    {{-- <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg> --}}
+                    <table cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td style="line-height:0;vertical-align:top;padding-left:10px;padding-right:10px;" width="72" valign="top" align="left">
+                                    <a href="https://about.me/rxcod9?promo=email_sig&amp;utm_source=product&amp;utm_medium=email_sig&amp;utm_campaign=edit_panel&amp;utm_content=thumb" style="text-decoration:none;">
+                                        <img src="https://assets.about.me/background/users/r/x/c/rxcod9_1624648695_132.png" alt="" style="margin:0;padding:0;display:block;border:1px solid #eeeeee;" width="72" height="72">
+                                    </a>
+                                </td>
+                                <td style="line-height:1.1;vertical-align:top;padding-right:10px;" valign="top" align="left">
+                                    <h1 style="font-size:18px;font-weight:bold;color:#333333;font-family:'Proxima Nova',Helvetica,Arial,sans-serif !important;">{{ config('app.name', 'Laravel') }}</h1>
+                                    <div style="font-size:10px;font-weight:bold;color:#333333;font-family:'Proxima Nova',Helvetica,Arial,sans-serif !important;">Ramakant Gangwar</div>
+                                    <a href="https://about.me/rxcod9?promo=email_sig&amp;utm_source=product&amp;utm_medium=email_sig&amp;utm_campaign=edit_panel&amp;utm_content=thumb" style="text-decoration:none;font-size:10px;color:#2b82ad;font-family:'Proxima Nova',Helvetica,Arial,sans-serif !important;">about.me/rxcod9
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
-                        @if (Route::has('l5-swagger.default.datatable'))
                         <div class="p-6">
                             <div class="flex items-center">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="{{ route('l5-swagger.default.datatable') }}" class="underline text-gray-900 dark:text-white">Swagger API Documentation</a></div>
+                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://github.com/rxcod9/joy-voyager-datatable" class="underline text-gray-900 dark:text-white">Documentation</a></div>
                             </div>
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
+                                    Joy VoyagerDataTable module adds Async/Ajax Yajra DataTable to Voyager.<br/><br/>
+                                    #laravel #joy #voyager #yajra-datatable #voyager-datatable #joy-voyager-datatable
                                 </div>
                             </div>
                         </div>
-                        @endif
+
+                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
+                            <div class="flex items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://github.com/rxcod9/joy-voyager-datatable/issues" class="underline text-gray-900 dark:text-white">Facing issues?</a></div>
+                            </div>
+
+                            <div class="ml-12">
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                    Find yourself stuck using the package? Found a bug? Do you have general questions or suggestions for improving the joy voyager-datatable? Feel free to <a href="https://github.com/rxcod9/joy-voyager-datatable/issues">create an issue on GitHub</a>, we'll try to address it as soon as possible.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
+                            <div class="flex items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://github.com/rxcod9?tab=repositories" class="underline text-gray-900 dark:text-white">My Recent work</a></div>
+                            </div>
+
+                            <div class="ml-12">
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                    <b>[Joy VoyagerDataTable]</b> Joy VoyagerDataTable module adds Async/Ajax Yajra DataTable to Voyager.<br/>
+                                    <b>[Joy VoyagerApi]</b> Joy VoyagerApi module adds REST Api end points to Voyager with Passport and Swagger support. .<br/>
+                                    <b>[Joy VoyagerApiAuth]</b> Joy VoyagerApiAuth module adds REST Api Auth end points with Passport support to Voyager.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
+                            <div class="flex items-center">
+                                <svg class="w-8 h-8 text-gray-500" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                                    <g transform="translate(0,512) scale(0.100000,-0.100000)" fill="currentColor">
+                                        <path d="M400 4833 c-188 -21 -355 -177 -390 -362 -14 -74 -14 -2878 0 -2952
+                                            22 -118 112 -245 213 -301 117 -66 62 -62 940 -66 l797 -3 0 -284 0 -285 -134
+                                            0 c-122 0 -136 -2 -167 -23 -92 -61 -90 -181 4 -251 28 -21 31 -21 897 -21
+                                            866 0 869 0 897 21 94 70 96 190 4 251 -31 21 -45 23 -167 23 l-134 0 0 285 0
+                                            284 798 3 c877 4 822 0 939 66 101 56 191 183 213 301 14 74 14 2878 0 2952
+                                            -29 156 -140 281 -306 345 -47 18 -120 19 -2209 20 -1188 1 -2176 -1 -2195 -3z
+                                            m4346 -319 c15 -11 37 -33 48 -48 21 -27 21 -34 24 -1182 l2 -1154 -2260 0
+                                            -2260 0 0 1140 c0 944 2 1146 14 1173 17 40 55 75 92 87 16 5 985 8 2171 7
+                                            l2142 -2 27 -21z m72 -2823 c-3 -152 -9 -168 -72 -215 l-27 -21 -2159 0 -2159
+                                            0 -27 21 c-63 47 -69 63 -72 215 l-4 139 2262 0 2262 0 -4 -139z m-1968 -826
+                                            l0 -285 -290 0 -290 0 0 285 0 285 290 0 290 0 0 -285z"/>
+                                        <path d="M2780 3888 c-27 -18 -97 -136 -347 -580 -173 -307 -317 -573 -320
+                                            -592 -8 -48 2 -80 38 -121 56 -64 155 -67 212 -6 20 21 562 974 631 1108 35
+                                            68 10 152 -56 193 -46 28 -115 26 -158 -2z"/>
+                                        <path d="M1678 3766 c-44 -23 -590 -396 -622 -425 -56 -51 -69 -116 -37 -180
+                                            17 -31 72 -73 328 -248 169 -116 319 -216 332 -223 33 -17 112 -8 149 19 64
+                                            45 78 149 28 208 -13 15 -116 91 -229 168 -113 77 -203 143 -201 146 2 4 92
+                                            67 200 140 218 149 238 166 255 216 38 115 -97 234 -203 179z"/>
+                                        <path d="M3325 3766 c-70 -31 -108 -112 -86 -179 17 -50 37 -67 255 -216 108
+                                            -73 198 -136 200 -140 2 -3 -88 -69 -201 -146 -113 -77 -216 -153 -229 -168
+                                            -50 -59 -36 -163 28 -208 37 -27 116 -36 149 -19 13 7 163 107 332 223 256
+                                            175 311 217 328 248 30 60 22 118 -24 167 -12 13 -161 119 -331 234 -331 226
+                                            -352 236 -421 204z"/>
+                                        </g>
+                                        </svg>
+                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">What I am planning to do next</div>
+                            </div>
+
+                            <div class="ml-12">
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                    <ul>
+                                        <li>[Joy VoyagerDataTable] Add Global Search + Column Filter support, Support multiple type of datatable</li>
+                                        <li>[Joy VoyagerDataTable] Add caching to speedup</li>
+                                        <li>[Joy VoyagerApi] Add caching to speedup</li>
+                                        <li>[Joy VoyagerImportExport] Add import/export to Voyager supporitng formats (Excel, CSV, TSV, JSON, XML, SQL)</li>
+                                        <li>[Joy VoyagerWidgets] Add Dimmers (Charts, Aggregated Numbers, Mini Tables)</li>
+                                        {{-- <li>[Joy VoyagerUserSettings] Add user specifix settings similar as voyager global settings.</li>
+                                        <li>[Joy VoyagerInlineEditing] Add inline editing feature.</li>
+                                        <li>[Joy VoyagerGenerator] DB schema/table to Voyager DataType+DataRows+Menus+Permissions+TableSeeder auto converting to DataRows.</li>
+                                        <li>[Joy VoyagerHelpDesk] Support Systems with data types (Tickets, Teams, Agents, Conversations, Notes, Categories).</li>
+                                        <li>[Joy VoyagerCRM] SaleCRM with data types (Inspired from SuiteCRM).</li>
+                                        <li>[Joy VoyagerSurvey] A simple survey app.</li> --}}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
                     <div class="text-center text-sm text-gray-500 sm:text-left">
                         <div class="flex items-center">
-                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" preserveAspectRatio="xMidYMid meet" class="ml-4 -mt-px w-5 h-5 text-gray-400">
+                                <g transform="translate(0,120) scale(0.100000,-0.100000)">
+                                    <path d="M452 1170 c-109 -29 -187 -74 -272 -160 -87 -86 -131 -163 -160 -276 -36 -141 -18 -294 52 -427 48 -92 164 -205 259 -251 103 -51 113 -48 117 35 l3 66 -59 0 c-75 0 -116 23 -147 84 -13 26 -38 58 -55 73 -36 29 -31 51 9 41 32 -8 51 -23 47 -38 -1 -7 -1 -8 2 -4 5 9 32 -11 32 -25 0 -5 -4 -6 -10 -3 -5 3 -10 1 -10 -5 0 -7 6 -10 14 -7 8 3 22 -3 31 -13 39 -43 137 -37 153 8 6 15 13 34 17 43 5 13 -2 18 -35 23 -60 9 -135 50 -165 90 -60 79 -73 213 -29 306 19 39 26 69 25 103 -2 26 0 61 4 77 9 40 43 40 119 1 55 -28 59 -28 132 -18 53 8 95 8 148 0 73 -10 77 -10 132 18 76 39 110 39 119 -1 4 -16 6 -51 4 -77 -1 -34 6 -64 25 -103 44 -93 31 -227 -29 -306 -31 -41 -108 -82 -169 -90 l-45 -7 17 -25 c13 -20 18 -57 22 -151 6 -151 6 -151 119 -95 95 46 211 159 259 251 42 80 72 198 72 283 0 85 -30 203 -72 283 -42 81 -164 203 -245 245 -132 69 -291 88 -431 52z"/>
+                                </g>
                             </svg>
 
-                            <a href="https://github.com/rxcod9/joy-voyager-datatable-laravel-demo" class="ml-1 underline">
+                            <a target="_blank" href="https://github.com/rxcod9/joy-voyager-datatable-laravel-demo" class="ml-1 underline">
                                 Github
                             </a>
 
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
+                            {{-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
                                 <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                             </svg>
 
-                            <a href="https://github.com/sponsors/rxcod9" class="ml-1 underline">
+                            <a target="_blank" href="https://github.com/sponsors/rxcod9" class="ml-1 underline">
+                                Sponsor
+                            </a> --}}
+
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1080pt" height="1080pt" viewBox="0 0 1080 1080" preserveAspectRatio="xMidYMid meet" class="ml-4 -mt-px w-5 h-5 text-gray-400">
+                                <g transform="translate(0,1080) scale(0.100000,-0.100000)" fill="#f8474c" stroke="none">
+                                    <path d="M530 5400 l0 -4680 855 0 855 0 0 4680 0 4680 -855 0 -855 0 0 -4680z"/>
+                                    <path d="M6430 10059 c-700 -76 -1327 -337 -1880 -783 -110 -88 -348 -325
+                                        -455 -451 -618 -732 -910 -1703 -800 -2660 109 -943 595 -1799 1347 -2373 501
+                                        -382 1061 -612 1704 -699 185 -25 688 -25 864 0 577 82 1039 255 1500 562 345
+                                        229 609 479 859 812 395 526 632 1145 691 1803 45 508 -37 1079 -225 1560
+                                        -268 687 -732 1264 -1337 1663 -445 293 -893 465 -1433 548 -115 17 -194 22
+                                        -445 24 -168 2 -343 -1 -390 -6z"/>
+                                </g>
+                            </svg>
+
+                            <a target="_blank" href="https://patreon.com/ramakant" class="ml-1 underline">
                                 Sponsor
                             </a>
                         </div>
