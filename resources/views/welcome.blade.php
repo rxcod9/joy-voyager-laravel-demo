@@ -73,7 +73,7 @@
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Joy VoyagerDataTable module adds Async/Ajax Yajra DataTable to Voyager.<br/><br/>
+                                    {{ config('app.description', 'Laravel') }}<br/><br/>
                                     #laravel #joy #voyager #yajra-datatable #voyager-datatable #joy-voyager-datatable
                                 </div>
                             </div>
