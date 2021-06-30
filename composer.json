@@ -19,7 +19,7 @@
         "joy/voyager-datatable": "dev-main",
         "laravel/framework": "~6.0|~7.0|~8.0",
         "laravel/tinker": "2.6.1",
-        "tcg/voyager": "1.4.2"
+        "tcg/voyager": "^1.4"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "3.6.2",
