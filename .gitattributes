@@ -4,3 +4,4 @@
 *.js linguist-vendored
 CHANGELOG.md export-ignore
 composer.lock -merge
+package-lock.json -merge
