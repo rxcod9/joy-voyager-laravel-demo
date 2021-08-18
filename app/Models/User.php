@@ -44,7 +44,7 @@ class User extends \TCG\Voyager\Models\User
     public function scopeGlobalSearch(Builder $query, $value): void
     {
         $query
-            ->whereId($value)
+            ->whereId((int) $value)
             ->orWhere('name', 'LIKE', '%' . $value . '%')
             ->orWhere('email', 'LIKE', '%' . $value . '%');
     }
