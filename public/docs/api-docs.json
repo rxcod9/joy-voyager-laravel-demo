@@ -1,0 +1,4853 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Joy Voyager Laravel Demo",
+        "description": "Joy VoyagerApi module adds REST Api end points to Voyager with Passport and Swagger support https:\/\/github.com\/rxcod9\/joy-voyager-api.",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http:\/\/voyager.localhost",
+            "description": "Primary API Server"
+        },
+        {
+            "url": "https:\/\/joy-voyager.herokuapp.com",
+            "description": "Another API Server"
+        }
+    ],
+    "paths": {
+        "\/api\/login": {
+            "post": {
+                "tags": [
+                    "auth"
+                ],
+                "summary": "Login",
+                "operationId": "login",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "required": [
+                                    "email",
+                                    "password"
+                                ],
+                                "properties": {
+                                    "email": {
+                                        "type": "string",
+                                        "format": "email",
+                                        "example": "admin@admin.com"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "password"
+                                    },
+                                    "remember_me": {
+                                        "type": "boolean",
+                                        "example": "false"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": []
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "not found"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "\/api\/profile": {
+            "get": {
+                "tags": [
+                    "auth"
+                ],
+                "summary": "Profile",
+                "operationId": "user",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "properties": {
+                                        "user": {
+                                            "$ref": "#\/components\/schemas\/User"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/refreshToken": {
+            "post": {
+                "tags": [
+                    "auth"
+                ],
+                "summary": "Refresh Token",
+                "operationId": "refreshToken",
+                "requestBody": {
+                    "description": "Refresh Token",
+                    "required": true,
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "required": [
+                                    "refresh_token"
+                                ],
+                                "properties": {
+                                    "refresh_token": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": []
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "not found"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "\/api\/register": {
+            "post": {
+                "tags": [
+                    "auth"
+                ],
+                "summary": "Register",
+                "operationId": "register",
+                "requestBody": {
+                    "description": "User Register",
+                    "required": true,
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "required": [
+                                    "name",
+                                    "email",
+                                    "password",
+                                    "password_confirmation"
+                                ],
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "example": "User 001"
+                                    },
+                                    "email": {
+                                        "type": "string",
+                                        "format": "email",
+                                        "example": "user001@user.com"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "password"
+                                    },
+                                    "password_confirmation": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "password"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": []
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "not found"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "\/api\/users": {
+            "get": {
+                "tags": [
+                    "users"
+                ],
+                "summary": "users index",
+                "operationId": "users_index",
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "length",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort by column",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "dir",
+                        "in": "query",
+                        "description": "Sort by direction",
+                        "required": false,
+                        "schema": {
+                            "enum": [
+                                "asc",
+                                "desc"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[name]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[email]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[created_at]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "example": "2020-01-01 00:00,,2021-06-01 00:00"
+                        }
+                    },
+                    {
+                        "name": "filters[avatar]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[role_id][]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    {
+                        "name": "filters[user_belongstomany_role_relationship][]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#\/components\/schemas\/VoyagerUsersBrowseResource"
+                                            }
+                                        },
+                                        "links": {
+                                            "$ref": "#\/components\/schemas\/Links"
+                                        },
+                                        "meta": {
+                                            "$ref": "#\/components\/schemas\/Meta"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "users"
+                ],
+                "summary": "users store",
+                "operationId": "users_store",
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerUsersStoreRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerUsersReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/users\/create": {
+            "get": {
+                "tags": [
+                    "users"
+                ],
+                "summary": "users create",
+                "operationId": "users_create",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": []
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/users\/{id}": {
+            "get": {
+                "tags": [
+                    "users"
+                ],
+                "summary": "users show",
+                "operationId": "users_show",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerUsersReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "users"
+                ],
+                "summary": "users update",
+                "operationId": "users_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerUsersUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerUsersReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "users"
+                ],
+                "summary": "users delete",
+                "operationId": "users_delete",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/users\/{id}\/single\/{field}": {
+            "post": {
+                "tags": [
+                    "users"
+                ],
+                "summary": "users single update",
+                "operationId": "users_single_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "field",
+                        "in": "path",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "nullable": true,
+                            "enum": [
+                                "name",
+                                "email",
+                                "password",
+                                "avatar",
+                                "role_id",
+                                "user_belongsto_role_relationship",
+                                "user_belongstomany_role_relationship"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "fields[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "name",
+                                    "email",
+                                    "password",
+                                    "avatar",
+                                    "role_id",
+                                    "user_belongsto_role_relationship",
+                                    "user_belongstomany_role_relationship"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerUsersSingleUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerUsersReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/users\/{id}\/edit": {
+            "get": {
+                "tags": [
+                    "users"
+                ],
+                "summary": "users edit",
+                "operationId": "users_edit",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerUsersReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/users\/relation": {
+            "get": {
+                "tags": [
+                    "users"
+                ],
+                "summary": "users relation",
+                "operationId": "users_relation",
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "method",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "required",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": []
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/users\/{id}\/restore": {
+            "get": {
+                "tags": [
+                    "users"
+                ],
+                "summary": "users restore",
+                "operationId": "users_restore",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/menus": {
+            "get": {
+                "tags": [
+                    "menus"
+                ],
+                "summary": "menus index",
+                "operationId": "menus_index",
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "length",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort by column",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "dir",
+                        "in": "query",
+                        "description": "Sort by direction",
+                        "required": false,
+                        "schema": {
+                            "enum": [
+                                "asc",
+                                "desc"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[name]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#\/components\/schemas\/VoyagerMenusBrowseResource"
+                                            }
+                                        },
+                                        "links": {
+                                            "$ref": "#\/components\/schemas\/Links"
+                                        },
+                                        "meta": {
+                                            "$ref": "#\/components\/schemas\/Meta"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "menus"
+                ],
+                "summary": "menus store",
+                "operationId": "menus_store",
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerMenusStoreRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerMenusReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/menus\/create": {
+            "get": {
+                "tags": [
+                    "menus"
+                ],
+                "summary": "menus create",
+                "operationId": "menus_create",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": []
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/menus\/{id}": {
+            "get": {
+                "tags": [
+                    "menus"
+                ],
+                "summary": "menus show",
+                "operationId": "menus_show",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerMenusReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "put": {
+                "tags": [
+                    "menus"
+                ],
+                "summary": "menus update",
+                "operationId": "menus_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerMenusUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerMenusReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "menus"
+                ],
+                "summary": "menus delete",
+                "operationId": "menus_delete",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/menus\/{id}\/single\/{field}": {
+            "put": {
+                "tags": [
+                    "menus"
+                ],
+                "summary": "menus single update",
+                "operationId": "menus_single_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "field",
+                        "in": "path",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "nullable": true,
+                            "enum": [
+                                "name"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "fields[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "name"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerMenusSingleUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerMenusReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/menus\/{id}\/edit": {
+            "get": {
+                "tags": [
+                    "menus"
+                ],
+                "summary": "menus edit",
+                "operationId": "menus_edit",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerMenusReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/menus\/relation": {
+            "get": {
+                "tags": [
+                    "menus"
+                ],
+                "summary": "menus relation",
+                "operationId": "menus_relation",
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "method",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "required",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": []
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/menus\/{id}\/restore": {
+            "get": {
+                "tags": [
+                    "menus"
+                ],
+                "summary": "menus restore",
+                "operationId": "menus_restore",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/roles": {
+            "get": {
+                "tags": [
+                    "roles"
+                ],
+                "summary": "roles index",
+                "operationId": "roles_index",
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "length",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort by column",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "dir",
+                        "in": "query",
+                        "description": "Sort by direction",
+                        "required": false,
+                        "schema": {
+                            "enum": [
+                                "asc",
+                                "desc"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[name]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[display_name]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#\/components\/schemas\/VoyagerRolesBrowseResource"
+                                            }
+                                        },
+                                        "links": {
+                                            "$ref": "#\/components\/schemas\/Links"
+                                        },
+                                        "meta": {
+                                            "$ref": "#\/components\/schemas\/Meta"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "roles"
+                ],
+                "summary": "roles store",
+                "operationId": "roles_store",
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerRolesStoreRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerRolesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/roles\/create": {
+            "get": {
+                "tags": [
+                    "roles"
+                ],
+                "summary": "roles create",
+                "operationId": "roles_create",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": []
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/roles\/{id}": {
+            "get": {
+                "tags": [
+                    "roles"
+                ],
+                "summary": "roles show",
+                "operationId": "roles_show",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerRolesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "put": {
+                "tags": [
+                    "roles"
+                ],
+                "summary": "roles update",
+                "operationId": "roles_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerRolesUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerRolesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "roles"
+                ],
+                "summary": "roles delete",
+                "operationId": "roles_delete",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/roles\/{id}\/single\/{field}": {
+            "put": {
+                "tags": [
+                    "roles"
+                ],
+                "summary": "roles single update",
+                "operationId": "roles_single_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "field",
+                        "in": "path",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "nullable": true,
+                            "enum": [
+                                "name",
+                                "display_name"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "fields[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "name",
+                                    "display_name"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerRolesSingleUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerRolesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/roles\/{id}\/edit": {
+            "get": {
+                "tags": [
+                    "roles"
+                ],
+                "summary": "roles edit",
+                "operationId": "roles_edit",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerRolesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/roles\/relation": {
+            "get": {
+                "tags": [
+                    "roles"
+                ],
+                "summary": "roles relation",
+                "operationId": "roles_relation",
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "method",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "required",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": []
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/roles\/{id}\/restore": {
+            "get": {
+                "tags": [
+                    "roles"
+                ],
+                "summary": "roles restore",
+                "operationId": "roles_restore",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/categories": {
+            "get": {
+                "tags": [
+                    "categories"
+                ],
+                "summary": "categories index",
+                "operationId": "categories_index",
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "length",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort by column",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "dir",
+                        "in": "query",
+                        "description": "Sort by direction",
+                        "required": false,
+                        "schema": {
+                            "enum": [
+                                "asc",
+                                "desc"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[order]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[name]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[slug]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#\/components\/schemas\/VoyagerCategoriesBrowseResource"
+                                            }
+                                        },
+                                        "links": {
+                                            "$ref": "#\/components\/schemas\/Links"
+                                        },
+                                        "meta": {
+                                            "$ref": "#\/components\/schemas\/Meta"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "categories"
+                ],
+                "summary": "categories store",
+                "operationId": "categories_store",
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerCategoriesStoreRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerCategoriesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/categories\/create": {
+            "get": {
+                "tags": [
+                    "categories"
+                ],
+                "summary": "categories create",
+                "operationId": "categories_create",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": []
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/categories\/{id}": {
+            "get": {
+                "tags": [
+                    "categories"
+                ],
+                "summary": "categories show",
+                "operationId": "categories_show",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerCategoriesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "put": {
+                "tags": [
+                    "categories"
+                ],
+                "summary": "categories update",
+                "operationId": "categories_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerCategoriesUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerCategoriesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "categories"
+                ],
+                "summary": "categories delete",
+                "operationId": "categories_delete",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/categories\/{id}\/single\/{field}": {
+            "put": {
+                "tags": [
+                    "categories"
+                ],
+                "summary": "categories single update",
+                "operationId": "categories_single_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "field",
+                        "in": "path",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "nullable": true,
+                            "enum": [
+                                "parent_id",
+                                "order",
+                                "name",
+                                "slug"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "fields[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "parent_id",
+                                    "order",
+                                    "name",
+                                    "slug"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerCategoriesSingleUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerCategoriesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/categories\/{id}\/edit": {
+            "get": {
+                "tags": [
+                    "categories"
+                ],
+                "summary": "categories edit",
+                "operationId": "categories_edit",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerCategoriesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/categories\/relation": {
+            "get": {
+                "tags": [
+                    "categories"
+                ],
+                "summary": "categories relation",
+                "operationId": "categories_relation",
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "method",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "required",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": []
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/categories\/{id}\/restore": {
+            "get": {
+                "tags": [
+                    "categories"
+                ],
+                "summary": "categories restore",
+                "operationId": "categories_restore",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/posts": {
+            "get": {
+                "tags": [
+                    "posts"
+                ],
+                "summary": "posts index",
+                "operationId": "posts_index",
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "length",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort by column",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "dir",
+                        "in": "query",
+                        "description": "Sort by direction",
+                        "required": false,
+                        "schema": {
+                            "enum": [
+                                "asc",
+                                "desc"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[title]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[image]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[status][]",
+                        "in": "query",
+                        "description": "{\n    \"PUBLISHED\": \"published\",\n    \"DRAFT\": \"draft\",\n    \"PENDING\": \"pending\"\n}",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "enum": [
+                                    "PUBLISHED",
+                                    "DRAFT",
+                                    "PENDING"
+                                ],
+                                "type": "string"
+                            }
+                        }
+                    },
+                    {
+                        "name": "filters[created_at]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "example": "2020-01-01 00:00,,2021-06-01 00:00"
+                        }
+                    },
+                    {
+                        "name": "filters[seo_title]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[featured]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#\/components\/schemas\/VoyagerPostsBrowseResource"
+                                            }
+                                        },
+                                        "links": {
+                                            "$ref": "#\/components\/schemas\/Links"
+                                        },
+                                        "meta": {
+                                            "$ref": "#\/components\/schemas\/Meta"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "posts"
+                ],
+                "summary": "posts store",
+                "operationId": "posts_store",
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerPostsStoreRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerPostsReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/posts\/create": {
+            "get": {
+                "tags": [
+                    "posts"
+                ],
+                "summary": "posts create",
+                "operationId": "posts_create",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": []
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/posts\/{id}": {
+            "get": {
+                "tags": [
+                    "posts"
+                ],
+                "summary": "posts show",
+                "operationId": "posts_show",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerPostsReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "posts"
+                ],
+                "summary": "posts update",
+                "operationId": "posts_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerPostsUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerPostsReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "posts"
+                ],
+                "summary": "posts delete",
+                "operationId": "posts_delete",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/posts\/{id}\/single\/{field}": {
+            "post": {
+                "tags": [
+                    "posts"
+                ],
+                "summary": "posts single update",
+                "operationId": "posts_single_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "field",
+                        "in": "path",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "nullable": true,
+                            "enum": [
+                                "author_id",
+                                "category_id",
+                                "title",
+                                "excerpt",
+                                "body",
+                                "image",
+                                "slug",
+                                "meta_description",
+                                "meta_keywords",
+                                "status",
+                                "seo_title",
+                                "featured"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "fields[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "author_id",
+                                    "category_id",
+                                    "title",
+                                    "excerpt",
+                                    "body",
+                                    "image",
+                                    "slug",
+                                    "meta_description",
+                                    "meta_keywords",
+                                    "status",
+                                    "seo_title",
+                                    "featured"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerPostsSingleUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerPostsReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/posts\/{id}\/edit": {
+            "get": {
+                "tags": [
+                    "posts"
+                ],
+                "summary": "posts edit",
+                "operationId": "posts_edit",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerPostsReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/posts\/relation": {
+            "get": {
+                "tags": [
+                    "posts"
+                ],
+                "summary": "posts relation",
+                "operationId": "posts_relation",
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "method",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "required",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": []
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/posts\/{id}\/restore": {
+            "get": {
+                "tags": [
+                    "posts"
+                ],
+                "summary": "posts restore",
+                "operationId": "posts_restore",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/pages": {
+            "get": {
+                "tags": [
+                    "pages"
+                ],
+                "summary": "pages index",
+                "operationId": "pages_index",
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "length",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort by column",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "dir",
+                        "in": "query",
+                        "description": "Sort by direction",
+                        "required": false,
+                        "schema": {
+                            "enum": [
+                                "asc",
+                                "desc"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[title]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[status][]",
+                        "in": "query",
+                        "description": "{\n    \"INACTIVE\": \"INACTIVE\",\n    \"ACTIVE\": \"ACTIVE\"\n}",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "enum": [
+                                    "INACTIVE",
+                                    "ACTIVE"
+                                ],
+                                "type": "string"
+                            }
+                        }
+                    },
+                    {
+                        "name": "filters[created_at]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "example": "2020-01-01 00:00,,2021-06-01 00:00"
+                        }
+                    },
+                    {
+                        "name": "filters[image]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#\/components\/schemas\/VoyagerPagesBrowseResource"
+                                            }
+                                        },
+                                        "links": {
+                                            "$ref": "#\/components\/schemas\/Links"
+                                        },
+                                        "meta": {
+                                            "$ref": "#\/components\/schemas\/Meta"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "pages"
+                ],
+                "summary": "pages store",
+                "operationId": "pages_store",
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerPagesStoreRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerPagesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/pages\/create": {
+            "get": {
+                "tags": [
+                    "pages"
+                ],
+                "summary": "pages create",
+                "operationId": "pages_create",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": []
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/pages\/{id}": {
+            "get": {
+                "tags": [
+                    "pages"
+                ],
+                "summary": "pages show",
+                "operationId": "pages_show",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerPagesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "pages"
+                ],
+                "summary": "pages update",
+                "operationId": "pages_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerPagesUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerPagesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "pages"
+                ],
+                "summary": "pages delete",
+                "operationId": "pages_delete",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/pages\/{id}\/single\/{field}": {
+            "post": {
+                "tags": [
+                    "pages"
+                ],
+                "summary": "pages single update",
+                "operationId": "pages_single_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "field",
+                        "in": "path",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "nullable": true,
+                            "enum": [
+                                "title",
+                                "excerpt",
+                                "body",
+                                "slug",
+                                "meta_description",
+                                "meta_keywords",
+                                "status",
+                                "image"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "fields[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "title",
+                                    "excerpt",
+                                    "body",
+                                    "slug",
+                                    "meta_description",
+                                    "meta_keywords",
+                                    "status",
+                                    "image"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerPagesSingleUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerPagesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/pages\/{id}\/edit": {
+            "get": {
+                "tags": [
+                    "pages"
+                ],
+                "summary": "pages edit",
+                "operationId": "pages_edit",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerPagesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/pages\/relation": {
+            "get": {
+                "tags": [
+                    "pages"
+                ],
+                "summary": "pages relation",
+                "operationId": "pages_relation",
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "method",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "required",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": []
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/pages\/{id}\/restore": {
+            "get": {
+                "tags": [
+                    "pages"
+                ],
+                "summary": "pages restore",
+                "operationId": "pages_restore",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Auth": [],
+            "User": [],
+            "Links": {
+                "properties": {
+                    "first": {
+                        "description": "First page api link",
+                        "type": "string",
+                        "example": "http:\/\/localhost:8000\/api\/users?page=1"
+                    },
+                    "last": {
+                        "description": "Last page api link",
+                        "type": "string",
+                        "example": "http:\/\/localhost:8000\/api\/users?page=10"
+                    },
+                    "prev": {
+                        "description": "revious page api link",
+                        "type": "string",
+                        "example": null
+                    },
+                    "next": {
+                        "description": "Next page api link",
+                        "type": "string",
+                        "example": "http:\/\/localhost:8000\/api\/users?page=2"
+                    }
+                },
+                "type": "object"
+            },
+            "Meta": {
+                "properties": {
+                    "current_page": {
+                        "description": "Current page",
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "from": {
+                        "description": "From Offset",
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "last_page": {
+                        "description": "Last page",
+                        "type": "integer",
+                        "example": 10
+                    },
+                    "path": {
+                        "description": "Current api path",
+                        "type": "string",
+                        "example": "http:\/\/localhost:8000\/api\/users?page=2"
+                    },
+                    "per_page": {
+                        "description": "Per page length",
+                        "type": "integer",
+                        "example": 10
+                    },
+                    "to": {
+                        "description": "To Offset",
+                        "type": "integer",
+                        "example": 10
+                    },
+                    "total": {
+                        "description": "Total items",
+                        "type": "integer",
+                        "example": 100
+                    },
+                    "showCheckboxColumn": {
+                        "description": "True if user has bulk delete\/action persmission",
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "recordsTotal": {
+                        "description": "Total items",
+                        "type": "integer",
+                        "example": 100
+                    },
+                    "recordsFiltered": {
+                        "description": "Total filtered items",
+                        "type": "integer",
+                        "example": 100
+                    }
+                },
+                "type": "object"
+            },
+            "VoyagerUsersBrowseResource": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name"
+                    },
+                    "email": {
+                        "type": "string",
+                        "description": "Email"
+                    },
+                    "created_at": {
+                        "pattern": "\/([0-9]{4})-(?:[0-9]{2})-([0-9]{2}) ([0-9]{2}):([0-9]{2})\/",
+                        "type": "date-time",
+                        "description": "Created At",
+                        "example": "2021-05-17 00:00"
+                    },
+                    "avatar": {
+                        "type": "string",
+                        "description": "jpg,jpeg,png",
+                        "format": "binary"
+                    },
+                    "role_id": {
+                        "type": "string",
+                        "description": "Role"
+                    },
+                    "user_belongsto_role_relationship": {
+                        "type": "integer",
+                        "description": "Role"
+                    },
+                    "user_belongstomany_role_relationship": {
+                        "type": "integer",
+                        "description": "Roles"
+                    }
+                }
+            },
+            "VoyagerUsersReadResource": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name"
+                    },
+                    "email": {
+                        "type": "string",
+                        "description": "Email"
+                    },
+                    "created_at": {
+                        "pattern": "\/([0-9]{4})-(?:[0-9]{2})-([0-9]{2}) ([0-9]{2}):([0-9]{2})\/",
+                        "type": "date-time",
+                        "description": "Created At",
+                        "example": "2021-05-17 00:00"
+                    },
+                    "avatar": {
+                        "type": "string",
+                        "description": "jpg,jpeg,png",
+                        "format": "binary"
+                    },
+                    "role_id": {
+                        "type": "string",
+                        "description": "Role"
+                    },
+                    "user_belongsto_role_relationship": {
+                        "type": "integer",
+                        "description": "Role"
+                    },
+                    "user_belongstomany_role_relationship": {
+                        "type": "integer",
+                        "description": "Roles"
+                    }
+                }
+            },
+            "VoyagerMenusBrowseResource": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name"
+                    }
+                }
+            },
+            "VoyagerMenusReadResource": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name"
+                    }
+                }
+            },
+            "VoyagerRolesBrowseResource": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name"
+                    },
+                    "display_name": {
+                        "type": "string",
+                        "description": "Display Name"
+                    }
+                }
+            },
+            "VoyagerRolesReadResource": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name"
+                    },
+                    "display_name": {
+                        "type": "string",
+                        "description": "Display Name"
+                    }
+                }
+            },
+            "VoyagerCategoriesBrowseResource": {
+                "type": "object",
+                "properties": {
+                    "order": {
+                        "type": "string",
+                        "description": "Order"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Name"
+                    },
+                    "slug": {
+                        "type": "string",
+                        "description": "Slug"
+                    }
+                }
+            },
+            "VoyagerCategoriesReadResource": {
+                "type": "object",
+                "properties": {
+                    "parent_id": {
+                        "enum": [
+                            ""
+                        ],
+                        "type": "string",
+                        "description": "{\n    \"\": \"-- None --\"\n}"
+                    },
+                    "order": {
+                        "type": "string",
+                        "description": "Order"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Name"
+                    },
+                    "slug": {
+                        "type": "string",
+                        "description": "Slug"
+                    },
+                    "created_at": {
+                        "pattern": "\/([0-9]{4})-(?:[0-9]{2})-([0-9]{2}) ([0-9]{2}):([0-9]{2})\/",
+                        "type": "date-time",
+                        "description": "Created At",
+                        "example": "2021-05-17 00:00"
+                    }
+                }
+            },
+            "VoyagerPostsBrowseResource": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "description": "Title"
+                    },
+                    "image": {
+                        "type": "string",
+                        "description": "jpg,jpeg,png",
+                        "format": "binary"
+                    },
+                    "status": {
+                        "enum": [
+                            "PUBLISHED",
+                            "DRAFT",
+                            "PENDING"
+                        ],
+                        "type": "string",
+                        "description": "{\n    \"PUBLISHED\": \"published\",\n    \"DRAFT\": \"draft\",\n    \"PENDING\": \"pending\"\n}"
+                    },
+                    "created_at": {
+                        "pattern": "\/([0-9]{4})-(?:[0-9]{2})-([0-9]{2}) ([0-9]{2}):([0-9]{2})\/",
+                        "type": "date-time",
+                        "description": "Created At",
+                        "example": "2021-05-17 00:00"
+                    },
+                    "seo_title": {
+                        "type": "string",
+                        "description": "SEO Title"
+                    },
+                    "featured": {
+                        "type": "string",
+                        "description": "Featured"
+                    }
+                }
+            },
+            "VoyagerPostsReadResource": {
+                "type": "object",
+                "properties": {
+                    "author_id": {
+                        "type": "string",
+                        "description": "Author"
+                    },
+                    "category_id": {
+                        "type": "string",
+                        "description": "Category"
+                    },
+                    "title": {
+                        "type": "string",
+                        "description": "Title"
+                    },
+                    "excerpt": {
+                        "type": "string",
+                        "description": "Excerpt"
+                    },
+                    "body": {
+                        "type": "string",
+                        "description": "Body"
+                    },
+                    "image": {
+                        "type": "string",
+                        "description": "jpg,jpeg,png",
+                        "format": "binary"
+                    },
+                    "slug": {
+                        "type": "string",
+                        "description": "Slug"
+                    },
+                    "meta_description": {
+                        "type": "string",
+                        "description": "Meta Description"
+                    },
+                    "meta_keywords": {
+                        "type": "string",
+                        "description": "Meta Keywords"
+                    },
+                    "status": {
+                        "enum": [
+                            "PUBLISHED",
+                            "DRAFT",
+                            "PENDING"
+                        ],
+                        "type": "string",
+                        "description": "{\n    \"PUBLISHED\": \"published\",\n    \"DRAFT\": \"draft\",\n    \"PENDING\": \"pending\"\n}"
+                    },
+                    "created_at": {
+                        "pattern": "\/([0-9]{4})-(?:[0-9]{2})-([0-9]{2}) ([0-9]{2}):([0-9]{2})\/",
+                        "type": "date-time",
+                        "description": "Created At",
+                        "example": "2021-05-17 00:00"
+                    },
+                    "seo_title": {
+                        "type": "string",
+                        "description": "SEO Title"
+                    },
+                    "featured": {
+                        "type": "string",
+                        "description": "Featured"
+                    }
+                }
+            },
+            "VoyagerPagesBrowseResource": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "description": "Title"
+                    },
+                    "status": {
+                        "enum": [
+                            "INACTIVE",
+                            "ACTIVE"
+                        ],
+                        "type": "string",
+                        "description": "{\n    \"INACTIVE\": \"INACTIVE\",\n    \"ACTIVE\": \"ACTIVE\"\n}"
+                    },
+                    "created_at": {
+                        "pattern": "\/([0-9]{4})-(?:[0-9]{2})-([0-9]{2}) ([0-9]{2}):([0-9]{2})\/",
+                        "type": "date-time",
+                        "description": "Created At",
+                        "example": "2021-05-17 00:00"
+                    },
+                    "image": {
+                        "type": "string",
+                        "description": "jpg,jpeg,png",
+                        "format": "binary"
+                    }
+                }
+            },
+            "VoyagerPagesReadResource": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "description": "Title"
+                    },
+                    "excerpt": {
+                        "type": "string",
+                        "description": "Excerpt"
+                    },
+                    "body": {
+                        "type": "string",
+                        "description": "Body"
+                    },
+                    "slug": {
+                        "type": "string",
+                        "description": "Slug"
+                    },
+                    "meta_description": {
+                        "type": "string",
+                        "description": "Meta Description"
+                    },
+                    "meta_keywords": {
+                        "type": "string",
+                        "description": "Meta Keywords"
+                    },
+                    "status": {
+                        "enum": [
+                            "INACTIVE",
+                            "ACTIVE"
+                        ],
+                        "type": "string",
+                        "description": "{\n    \"INACTIVE\": \"INACTIVE\",\n    \"ACTIVE\": \"ACTIVE\"\n}"
+                    },
+                    "created_at": {
+                        "pattern": "\/([0-9]{4})-(?:[0-9]{2})-([0-9]{2}) ([0-9]{2}):([0-9]{2})\/",
+                        "type": "date-time",
+                        "description": "Created At",
+                        "example": "2021-05-17 00:00"
+                    },
+                    "image": {
+                        "type": "string",
+                        "description": "jpg,jpeg,png",
+                        "format": "binary"
+                    }
+                }
+            }
+        },
+        "securitySchemes": {
+            "token": {
+                "type": "apiKey",
+                "description": "Bearer token",
+                "name": "Authorization",
+                "in": "header"
+            }
+        },
+        "requestBodies": {
+            "VoyagerUsersStoreRequest": {
+                "content": {
+                    "multipart\/form-data": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                },
+                                "email": {
+                                    "type": "string",
+                                    "description": "Email"
+                                },
+                                "password": {
+                                    "type": "password",
+                                    "description": "Password"
+                                },
+                                "avatar": {
+                                    "type": "string",
+                                    "description": "jpg,jpeg,png",
+                                    "format": "binary"
+                                },
+                                "role_id": {
+                                    "type": "string",
+                                    "description": "Role"
+                                },
+                                "user_belongsto_role_relationship": {
+                                    "type": "integer",
+                                    "description": "Role"
+                                },
+                                "user_belongstomany_role_relationship": {
+                                    "type": "integer",
+                                    "description": "Roles"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerUsersUpdateRequest": {
+                "content": {
+                    "multipart\/form-data": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                },
+                                "email": {
+                                    "type": "string",
+                                    "description": "Email"
+                                },
+                                "password": {
+                                    "type": "password",
+                                    "description": "Password"
+                                },
+                                "avatar": {
+                                    "type": "string",
+                                    "description": "jpg,jpeg,png",
+                                    "format": "binary"
+                                },
+                                "role_id": {
+                                    "type": "string",
+                                    "description": "Role"
+                                },
+                                "user_belongsto_role_relationship": {
+                                    "type": "integer",
+                                    "description": "Role"
+                                },
+                                "user_belongstomany_role_relationship": {
+                                    "type": "integer",
+                                    "description": "Roles"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerUsersSingleUpdateRequest": {
+                "content": {
+                    "multipart\/form-data": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                },
+                                "email": {
+                                    "type": "string",
+                                    "description": "Email"
+                                },
+                                "password": {
+                                    "type": "password",
+                                    "description": "Password"
+                                },
+                                "avatar": {
+                                    "type": "string",
+                                    "description": "jpg,jpeg,png",
+                                    "format": "binary"
+                                },
+                                "role_id": {
+                                    "type": "string",
+                                    "description": "Role"
+                                },
+                                "user_belongsto_role_relationship": {
+                                    "type": "integer",
+                                    "description": "Role"
+                                },
+                                "user_belongstomany_role_relationship": {
+                                    "type": "integer",
+                                    "description": "Roles"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerMenusStoreRequest": {
+                "content": {
+                    "application\/x-www-form-urlencoded": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerMenusUpdateRequest": {
+                "content": {
+                    "application\/x-www-form-urlencoded": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerMenusSingleUpdateRequest": {
+                "content": {
+                    "application\/x-www-form-urlencoded": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerRolesStoreRequest": {
+                "content": {
+                    "application\/x-www-form-urlencoded": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                },
+                                "display_name": {
+                                    "type": "string",
+                                    "description": "Display Name"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerRolesUpdateRequest": {
+                "content": {
+                    "application\/x-www-form-urlencoded": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                },
+                                "display_name": {
+                                    "type": "string",
+                                    "description": "Display Name"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerRolesSingleUpdateRequest": {
+                "content": {
+                    "application\/x-www-form-urlencoded": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                },
+                                "display_name": {
+                                    "type": "string",
+                                    "description": "Display Name"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerCategoriesStoreRequest": {
+                "content": {
+                    "application\/x-www-form-urlencoded": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "parent_id": {
+                                    "enum": [
+                                        ""
+                                    ],
+                                    "type": "string",
+                                    "description": "{\n    \"\": \"-- None --\"\n}"
+                                },
+                                "order": {
+                                    "type": "string",
+                                    "description": "Order"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                },
+                                "slug": {
+                                    "type": "string",
+                                    "description": "Slug"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerCategoriesUpdateRequest": {
+                "content": {
+                    "application\/x-www-form-urlencoded": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "parent_id": {
+                                    "enum": [
+                                        ""
+                                    ],
+                                    "type": "string",
+                                    "description": "{\n    \"\": \"-- None --\"\n}"
+                                },
+                                "order": {
+                                    "type": "string",
+                                    "description": "Order"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                },
+                                "slug": {
+                                    "type": "string",
+                                    "description": "Slug"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerCategoriesSingleUpdateRequest": {
+                "content": {
+                    "application\/x-www-form-urlencoded": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "parent_id": {
+                                    "enum": [
+                                        ""
+                                    ],
+                                    "type": "string",
+                                    "description": "{\n    \"\": \"-- None --\"\n}"
+                                },
+                                "order": {
+                                    "type": "string",
+                                    "description": "Order"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                },
+                                "slug": {
+                                    "type": "string",
+                                    "description": "Slug"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerPostsStoreRequest": {
+                "content": {
+                    "multipart\/form-data": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "category_id": {
+                                    "type": "string",
+                                    "description": "Category"
+                                },
+                                "title": {
+                                    "type": "string",
+                                    "description": "Title"
+                                },
+                                "excerpt": {
+                                    "type": "string",
+                                    "description": "Excerpt"
+                                },
+                                "body": {
+                                    "type": "string",
+                                    "description": "Body"
+                                },
+                                "image": {
+                                    "type": "string",
+                                    "description": "jpg,jpeg,png",
+                                    "format": "binary"
+                                },
+                                "slug": {
+                                    "type": "string",
+                                    "description": "Slug"
+                                },
+                                "meta_description": {
+                                    "type": "string",
+                                    "description": "Meta Description"
+                                },
+                                "meta_keywords": {
+                                    "type": "string",
+                                    "description": "Meta Keywords"
+                                },
+                                "status": {
+                                    "enum": [
+                                        "PUBLISHED",
+                                        "DRAFT",
+                                        "PENDING"
+                                    ],
+                                    "type": "string",
+                                    "description": "{\n    \"PUBLISHED\": \"published\",\n    \"DRAFT\": \"draft\",\n    \"PENDING\": \"pending\"\n}"
+                                },
+                                "seo_title": {
+                                    "type": "string",
+                                    "description": "SEO Title"
+                                },
+                                "featured": {
+                                    "type": "string",
+                                    "description": "Featured"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerPostsUpdateRequest": {
+                "content": {
+                    "multipart\/form-data": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "author_id": {
+                                    "type": "string",
+                                    "description": "Author"
+                                },
+                                "category_id": {
+                                    "type": "string",
+                                    "description": "Category"
+                                },
+                                "title": {
+                                    "type": "string",
+                                    "description": "Title"
+                                },
+                                "excerpt": {
+                                    "type": "string",
+                                    "description": "Excerpt"
+                                },
+                                "body": {
+                                    "type": "string",
+                                    "description": "Body"
+                                },
+                                "image": {
+                                    "type": "string",
+                                    "description": "jpg,jpeg,png",
+                                    "format": "binary"
+                                },
+                                "slug": {
+                                    "type": "string",
+                                    "description": "Slug"
+                                },
+                                "meta_description": {
+                                    "type": "string",
+                                    "description": "Meta Description"
+                                },
+                                "meta_keywords": {
+                                    "type": "string",
+                                    "description": "Meta Keywords"
+                                },
+                                "status": {
+                                    "enum": [
+                                        "PUBLISHED",
+                                        "DRAFT",
+                                        "PENDING"
+                                    ],
+                                    "type": "string",
+                                    "description": "{\n    \"PUBLISHED\": \"published\",\n    \"DRAFT\": \"draft\",\n    \"PENDING\": \"pending\"\n}"
+                                },
+                                "seo_title": {
+                                    "type": "string",
+                                    "description": "SEO Title"
+                                },
+                                "featured": {
+                                    "type": "string",
+                                    "description": "Featured"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerPostsSingleUpdateRequest": {
+                "content": {
+                    "multipart\/form-data": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "author_id": {
+                                    "type": "string",
+                                    "description": "Author"
+                                },
+                                "category_id": {
+                                    "type": "string",
+                                    "description": "Category"
+                                },
+                                "title": {
+                                    "type": "string",
+                                    "description": "Title"
+                                },
+                                "excerpt": {
+                                    "type": "string",
+                                    "description": "Excerpt"
+                                },
+                                "body": {
+                                    "type": "string",
+                                    "description": "Body"
+                                },
+                                "image": {
+                                    "type": "string",
+                                    "description": "jpg,jpeg,png",
+                                    "format": "binary"
+                                },
+                                "slug": {
+                                    "type": "string",
+                                    "description": "Slug"
+                                },
+                                "meta_description": {
+                                    "type": "string",
+                                    "description": "Meta Description"
+                                },
+                                "meta_keywords": {
+                                    "type": "string",
+                                    "description": "Meta Keywords"
+                                },
+                                "status": {
+                                    "enum": [
+                                        "PUBLISHED",
+                                        "DRAFT",
+                                        "PENDING"
+                                    ],
+                                    "type": "string",
+                                    "description": "{\n    \"PUBLISHED\": \"published\",\n    \"DRAFT\": \"draft\",\n    \"PENDING\": \"pending\"\n}"
+                                },
+                                "seo_title": {
+                                    "type": "string",
+                                    "description": "SEO Title"
+                                },
+                                "featured": {
+                                    "type": "string",
+                                    "description": "Featured"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerPagesStoreRequest": {
+                "content": {
+                    "multipart\/form-data": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "title": {
+                                    "type": "string",
+                                    "description": "Title"
+                                },
+                                "excerpt": {
+                                    "type": "string",
+                                    "description": "Excerpt"
+                                },
+                                "body": {
+                                    "type": "string",
+                                    "description": "Body"
+                                },
+                                "slug": {
+                                    "type": "string",
+                                    "description": "Slug"
+                                },
+                                "meta_description": {
+                                    "type": "string",
+                                    "description": "Meta Description"
+                                },
+                                "meta_keywords": {
+                                    "type": "string",
+                                    "description": "Meta Keywords"
+                                },
+                                "status": {
+                                    "enum": [
+                                        "INACTIVE",
+                                        "ACTIVE"
+                                    ],
+                                    "type": "string",
+                                    "description": "{\n    \"INACTIVE\": \"INACTIVE\",\n    \"ACTIVE\": \"ACTIVE\"\n}"
+                                },
+                                "image": {
+                                    "type": "string",
+                                    "description": "jpg,jpeg,png",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerPagesUpdateRequest": {
+                "content": {
+                    "multipart\/form-data": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "title": {
+                                    "type": "string",
+                                    "description": "Title"
+                                },
+                                "excerpt": {
+                                    "type": "string",
+                                    "description": "Excerpt"
+                                },
+                                "body": {
+                                    "type": "string",
+                                    "description": "Body"
+                                },
+                                "slug": {
+                                    "type": "string",
+                                    "description": "Slug"
+                                },
+                                "meta_description": {
+                                    "type": "string",
+                                    "description": "Meta Description"
+                                },
+                                "meta_keywords": {
+                                    "type": "string",
+                                    "description": "Meta Keywords"
+                                },
+                                "status": {
+                                    "enum": [
+                                        "INACTIVE",
+                                        "ACTIVE"
+                                    ],
+                                    "type": "string",
+                                    "description": "{\n    \"INACTIVE\": \"INACTIVE\",\n    \"ACTIVE\": \"ACTIVE\"\n}"
+                                },
+                                "image": {
+                                    "type": "string",
+                                    "description": "jpg,jpeg,png",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerPagesSingleUpdateRequest": {
+                "content": {
+                    "multipart\/form-data": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "title": {
+                                    "type": "string",
+                                    "description": "Title"
+                                },
+                                "excerpt": {
+                                    "type": "string",
+                                    "description": "Excerpt"
+                                },
+                                "body": {
+                                    "type": "string",
+                                    "description": "Body"
+                                },
+                                "slug": {
+                                    "type": "string",
+                                    "description": "Slug"
+                                },
+                                "meta_description": {
+                                    "type": "string",
+                                    "description": "Meta Description"
+                                },
+                                "meta_keywords": {
+                                    "type": "string",
+                                    "description": "Meta Keywords"
+                                },
+                                "status": {
+                                    "enum": [
+                                        "INACTIVE",
+                                        "ACTIVE"
+                                    ],
+                                    "type": "string",
+                                    "description": "{\n    \"INACTIVE\": \"INACTIVE\",\n    \"ACTIVE\": \"ACTIVE\"\n}"
+                                },
+                                "image": {
+                                    "type": "string",
+                                    "description": "jpg,jpeg,png",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}
