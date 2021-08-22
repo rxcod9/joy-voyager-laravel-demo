@@ -2066,12 +2066,12 @@
             "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-datatable.git",
+                "url": "https://github.com/rxcod9/joy-voyager.git",
                 "reference": "6170d016b5329c86fce966beaf4f2bebe182ac6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/6170d016b5329c86fce966beaf4f2bebe182ac6f",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-laravel-demo/zipball/6170d016b5329c86fce966beaf4f2bebe182ac6f",
                 "reference": "6170d016b5329c86fce966beaf4f2bebe182ac6f",
                 "shasum": ""
             },
@@ -2123,7 +2123,7 @@
                 }
             ],
             "description": "joy voyager datatable",
-            "homepage": "https://github.com/rxcod9/joy-voyager-datatable",
+            "homepage": "https://github.com/rxcod9/joy-voyager-laravel-demo",
             "keywords": [
                 "cms",
                 "joy",
@@ -2132,8 +2132,8 @@
                 "voyager-datatable"
             ],
             "support": {
-                "issues": "https://github.com/rxcod9/joy-voyager-datatable/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/main"
+                "issues": "https://github.com/rxcod9/joy-voyager-laravel-demo/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-laravel-demo/tree/main"
             },
             "funding": [
                 {

@@ -1,31 +1,31 @@
-[![Latest Version](https://img.shields.io/github/v/release/rxcod9/joy-voyager-datatable-laravel-demo?style=flat-square)](https://github.com/rxcod9/joy-voyager-datatable-laravel-demo/releases)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rxcod9/joy-voyager-datatable-laravel-demo/tests?label=tests)
-[![Total Downloads](https://img.shields.io/packagist/dt/joy/voyager-datatable-laravel-demo.svg?style=flat-square)](https://packagist.org/packages/joy/voyager-datatable-laravel-demo)
+[![Latest Version](https://img.shields.io/github/v/release/rxcod9/joy-voyager-laravel-demo?style=flat-square)](https://github.com/rxcod9/joy-voyager-laravel-demo/releases)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rxcod9/joy-voyager-laravel-demo/tests?label=tests)
+[![Total Downloads](https://img.shields.io/packagist/dt/joy/voyager-laravel-demo.svg?style=flat-square)](https://packagist.org/packages/joy/voyager-laravel-demo)
 
-# **Voyager datatable** - laravel demo
+# **Joy Voyager** - laravel demo
 By 🐼 [Ramakant Gangwar](https://github.com/rxcod9)
 
 <hr>
 
-Laravel Admin & BREAD System (Browse using DataTable)
+Laravel Admin & BREAD System
 
 ## Working Example
 
-You can try laravel demo here [https://joy-voyager-datatable.herokuapp.com/admin/users/datatable](https://joy-voyager-datatable.herokuapp.com/admin/users/datatable).
+You can try laravel demo here [https://joy-voyager.herokuapp.com](https://joy-voyager.herokuapp.com).
 
 ## Installation Steps
 
 ### 1. Clone repo/Install Using Composer
 
-You can clone/install the `Voyager datatable laravel demo` with the following commands:
+You can clone/install the `Voyager Laravel Demo` with the following commands:
 
 ```bash
-git clone git@github.com:rxcod9/joy-voyager-datatable-laravel-demo.git
-cd joy-voyager-datatable-laravel-demo
+git clone git@github.com:rxcod9/joy-voyager-laravel-demo.git
+cd joy-voyager-laravel-demo
 
 # OR Install using composer
-composer create-project joy/voyager-datatable-laravel-demo
-cd voyager-datatable-laravel-demo
+composer create-project joy/voyager-laravel-demo
+cd voyager-laravel-demo
 ```
 
 ### 2. Add the DB Credentials & APP_URL
@@ -65,8 +65,6 @@ php artisan voyager:install --with-dummy
 And we're all good to go!
 
 Start up a local development server with `php artisan serve` And, visit [http://localhost:8000/admin](http://localhost:8000/admin).
-
-To check the datatable feature visit [http://localhost:8000/admin/users/datatable](http://localhost:8000/admin/users/datatable) or any bread [http://localhost:8000/admin/{slug}/datatable](http://localhost:8000/admin/{slug}/datatable).
 
 ## Creating an Admin User
 
