@@ -1,13 +1,12 @@
 {
-    "name": "joy/voyager-datatable-laravel-demo",
+    "name": "joy/voyager-laravel-demo",
     "type": "project",
-    "description": "Voyager datatable laravel demo",
+    "description": "Voyager Laravel Demo",
     "keywords": [
         "framework",
         "laravel",
         "joy",
         "voyager",
-        "datatable",
         "demo"
     ],
     "license": "MIT",
