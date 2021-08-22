@@ -89,8 +89,13 @@
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi",
-            "@php artisan storage:link --quiet --relative"
+            "@php artisan package:discover --ansi"
+        ],
+        "post-install-cmd": [
+            "@php artisan storage:link --quiet --relative",
+            "@php artisan passport:keys --quiet --no-interaction",
+            "@php artisan joy-voyager-api:l5-swagger:generate",
+            "@php artisan optimize"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
