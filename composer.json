@@ -17,6 +17,7 @@
         "guzzlehttp/guzzle": "7.4.1",
         "joy/voyager-api": "dev-main",
         "joy/voyager-datatable": "dev-main",
+        "joy/voyager-export": "^1.0",
         "joy/voyager-relations-table": "dev-main",
         "laravel/framework": "~6.0|~7.0|~8.0",
         "laravel/tinker": "2.7.0",
