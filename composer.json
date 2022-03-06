@@ -24,7 +24,7 @@
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "3.6.2",
-        "facade/ignition": "2.10.2",
+        "facade/ignition": "2.17.5",
         "fakerphp/faker": "1.15.0",
         "friendsofphp/php-cs-fixer": "3.0.0",
         "laravel/sail": "1.8.6",
