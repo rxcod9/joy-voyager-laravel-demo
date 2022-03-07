@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dd458e40b0fc589fe27d605a56a30954",
+    "content-hash": "1e3db20d8232499be61c00a47d7b7703",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -2463,33 +2463,34 @@
         },
         {
             "name": "joy/core",
-            "version": "dev-main",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-core.git",
-                "reference": "3f137a35d630c80c33c6e470932b3e44d7cbdeac"
+                "reference": "4e7c52f7390bd93a23e55c2fbee1c415845e01c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-core/zipball/3f137a35d630c80c33c6e470932b3e44d7cbdeac",
-                "reference": "3f137a35d630c80c33c6e470932b3e44d7cbdeac",
+                "url": "https://api.github.com/repos/rxcod9/joy-core/zipball/4e7c52f7390bd93a23e55c2fbee1c415845e01c5",
+                "reference": "4e7c52f7390bd93a23e55c2fbee1c415845e01c5",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
-                "php": "^7.3|^8.0"
+                "larapack/hooks": "^1.0.5",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
             },
             "require-dev": {
-                "doctrine/dbal": "3.1.1",
+                "doctrine/dbal": "2.13.2",
                 "ext-pdo_sqlite": "*",
                 "ext-zip": "*",
                 "friendsofphp/php-cs-fixer": "3.0.0",
                 "guzzlehttp/guzzle": "^6.3|^7.0",
                 "mockery/mockery": "1.4.3",
                 "orchestra/testbench": "^5.0|^6.0",
-                "phpunit/phpunit": "9.5.7"
+                "phpunit/phpunit": "9.5.6"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -2518,17 +2519,20 @@
                     "role": "Tech Lead"
                 }
             ],
-            "description": "This Laravel/Voyager module adds Core support to Laravel.",
+            "description": "This Laravel/Voyager module adds Core support to Voyager.",
             "homepage": "https://github.com/rxcod9/joy-core",
             "keywords": [
+                "cms",
                 "core",
                 "joy",
                 "joy-core",
-                "laravel"
+                "laravel",
+                "voyager",
+                "voyager-core"
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-core/issues",
-                "source": "https://github.com/rxcod9/joy-core/tree/main"
+                "source": "https://github.com/rxcod9/joy-core/tree/v1.0.2"
             },
             "funding": [
                 {
@@ -2536,28 +2540,28 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-07-19T12:06:59+00:00"
+            "time": "2021-07-01T06:52:39+00:00"
         },
         {
             "name": "joy/voyager-api",
-            "version": "dev-main",
+            "version": "v1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-api.git",
-                "reference": "804e0c0e17eb3e67d481b2da0335c60f24bb094b"
+                "reference": "fbc44928dbe38cacb7ab359cd26ead5f5a127948"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api/zipball/804e0c0e17eb3e67d481b2da0335c60f24bb094b",
-                "reference": "804e0c0e17eb3e67d481b2da0335c60f24bb094b",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api/zipball/fbc44928dbe38cacb7ab359cd26ead5f5a127948",
+                "reference": "fbc44928dbe38cacb7ab359cd26ead5f5a127948",
                 "shasum": ""
             },
             "require": {
                 "cebe/php-openapi": "^1.5",
                 "darkaonline/l5-swagger": "^7.0|^8.0",
                 "illuminate/support": "^7|^8",
-                "joy/voyager-api-auth": "dev-main",
-                "joy/voyager-core": "dev-main",
+                "joy/voyager-api-auth": "^1.0",
+                "joy/voyager-core": "^1.0",
                 "larapack/hooks": "^1.0.5",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
@@ -2572,7 +2576,6 @@
                 "orchestra/testbench": "^5.0|^6.0",
                 "phpunit/phpunit": "9.5.17"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -2617,7 +2620,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-api/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-api/tree/main"
+                "source": "https://github.com/rxcod9/joy-voyager-api/tree/v1.0.9"
             },
             "funding": [
                 {
@@ -2625,25 +2628,25 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-06T07:14:36+00:00"
+            "time": "2022-03-07T06:51:33+00:00"
         },
         {
             "name": "joy/voyager-api-auth",
-            "version": "dev-main",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-api-auth.git",
-                "reference": "6dba5db88c5ea0dae2b273982e73d1c11509568f"
+                "reference": "6f9276b8bd49403b8ab2bb33fc20f2f0f1ccd22e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api-auth/zipball/6dba5db88c5ea0dae2b273982e73d1c11509568f",
-                "reference": "6dba5db88c5ea0dae2b273982e73d1c11509568f",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api-auth/zipball/6f9276b8bd49403b8ab2bb33fc20f2f0f1ccd22e",
+                "reference": "6f9276b8bd49403b8ab2bb33fc20f2f0f1ccd22e",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
-                "joy/voyager-core": "dev-main",
+                "joy/voyager-core": "^1.0",
                 "larapack/hooks": "^1.0.5",
                 "laravel/passport": "^9|^10",
                 "php": "^7.3|^8.0",
@@ -2659,7 +2662,6 @@
                 "orchestra/testbench": "^5.0|^6.0",
                 "phpunit/phpunit": "9.5.17"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -2704,7 +2706,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-api-auth/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-api-auth/tree/main"
+                "source": "https://github.com/rxcod9/joy-voyager-api-auth/tree/v1.0.3"
             },
             "funding": [
                 {
@@ -2712,25 +2714,25 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-06T07:21:04+00:00"
+            "time": "2022-03-07T06:56:25+00:00"
         },
         {
             "name": "joy/voyager-core",
-            "version": "dev-main",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-core.git",
-                "reference": "b8a24cdb87c226371f9c9a9f1612aff003bc30e6"
+                "reference": "deeaf00b4b5e1d93253cbb7ed9bffd92376d33a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-core/zipball/b8a24cdb87c226371f9c9a9f1612aff003bc30e6",
-                "reference": "b8a24cdb87c226371f9c9a9f1612aff003bc30e6",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-core/zipball/deeaf00b4b5e1d93253cbb7ed9bffd92376d33a4",
+                "reference": "deeaf00b4b5e1d93253cbb7ed9bffd92376d33a4",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
-                "joy/core": "dev-main",
+                "joy/core": "^1.0",
                 "larapack/hooks": "^1.0.5",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
@@ -2745,7 +2747,6 @@
                 "orchestra/testbench": "^5.0|^6.0",
                 "phpunit/phpunit": "9.5.7"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -2787,7 +2788,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-core/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-core/tree/main"
+                "source": "https://github.com/rxcod9/joy-voyager-core/tree/v1.0.3"
             },
             "funding": [
                 {
@@ -2795,25 +2796,25 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-07-19T12:07:37+00:00"
+            "time": "2022-03-07T06:57:35+00:00"
         },
         {
             "name": "joy/voyager-datatable",
-            "version": "dev-main",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-datatable.git",
-                "reference": "8032a7a54a5c0877149908b0ea05d42cb0657c6a"
+                "reference": "76db74c1cfd1014765cf4ba222c498f1c2c4b8b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/8032a7a54a5c0877149908b0ea05d42cb0657c6a",
-                "reference": "8032a7a54a5c0877149908b0ea05d42cb0657c6a",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/76db74c1cfd1014765cf4ba222c498f1c2c4b8b0",
+                "reference": "76db74c1cfd1014765cf4ba222c498f1c2c4b8b0",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
-                "joy/voyager-core": "dev-main",
+                "joy/voyager-core": "^1.0",
                 "larapack/hooks": "^1.0.5",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4",
@@ -2829,7 +2830,6 @@
                 "orchestra/testbench": "^5.0|^6.0",
                 "phpunit/phpunit": "9.5.17"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -2869,7 +2869,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-datatable/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/main"
+                "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/v1.0.4"
             },
             "funding": [
                 {
@@ -2877,25 +2877,25 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-06T06:59:25+00:00"
+            "time": "2022-03-07T06:52:47+00:00"
         },
         {
             "name": "joy/voyager-export",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-export.git",
-                "reference": "1282e9730a32a90fbf6119f5790d7a9177d0e41b"
+                "reference": "9bdb6cc63e1d29f1a9ff1d11d0cb06ccdd4802e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-export/zipball/1282e9730a32a90fbf6119f5790d7a9177d0e41b",
-                "reference": "1282e9730a32a90fbf6119f5790d7a9177d0e41b",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-export/zipball/9bdb6cc63e1d29f1a9ff1d11d0cb06ccdd4802e0",
+                "reference": "9bdb6cc63e1d29f1a9ff1d11d0cb06ccdd4802e0",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
-                "joy/voyager-core": "dev-main",
+                "joy/voyager-core": "^1.0",
                 "larapack/hooks": "^1.0.5",
                 "maatwebsite/excel": "^3.1",
                 "php": "^7.3|^8.0",
@@ -2952,7 +2952,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-export/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-export/tree/v1.0.2"
+                "source": "https://github.com/rxcod9/joy-voyager-export/tree/v1.0.3"
             },
             "funding": [
                 {
@@ -2960,26 +2960,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-07T05:50:12+00:00"
+            "time": "2022-03-07T06:52:03+00:00"
         },
         {
             "name": "joy/voyager-relations-table",
-            "version": "dev-main",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-relations-table.git",
-                "reference": "bdaed148f860ad8c9ca63deb259877ce931370a6"
+                "reference": "3c45bd97a12be9fef293d0763a97b99a5f2e7abb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-relations-table/zipball/bdaed148f860ad8c9ca63deb259877ce931370a6",
-                "reference": "bdaed148f860ad8c9ca63deb259877ce931370a6",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-relations-table/zipball/3c45bd97a12be9fef293d0763a97b99a5f2e7abb",
+                "reference": "3c45bd97a12be9fef293d0763a97b99a5f2e7abb",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
-                "joy/voyager-core": "dev-main",
-                "joy/voyager-datatable": "dev-main",
+                "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "larapack/hooks": "^1.0.5",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
@@ -2994,7 +2994,6 @@
                 "orchestra/testbench": "^5.0|^6.0",
                 "phpunit/phpunit": "^9.1"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3037,7 +3036,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-relations-table/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-relations-table/tree/main"
+                "source": "https://github.com/rxcod9/joy-voyager-relations-table/tree/v1.0.1"
             },
             "funding": [
                 {
@@ -3045,7 +3044,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-06T07:23:21+00:00"
+            "time": "2022-03-07T06:53:10+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -9490,16 +9489,16 @@
         },
         {
             "name": "zircote/swagger-php",
-            "version": "4.2.10",
+            "version": "4.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zircote/swagger-php.git",
-                "reference": "7263e95f5fff5524a697e2a75ceb6f9902453d01"
+                "reference": "1c7a04e381b07e14aae080a61e02f2fe9cdea424"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/7263e95f5fff5524a697e2a75ceb6f9902453d01",
-                "reference": "7263e95f5fff5524a697e2a75ceb6f9902453d01",
+                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/1c7a04e381b07e14aae080a61e02f2fe9cdea424",
+                "reference": "1c7a04e381b07e14aae080a61e02f2fe9cdea424",
                 "shasum": ""
             },
             "require": {
@@ -9559,9 +9558,9 @@
             ],
             "support": {
                 "issues": "https://github.com/zircote/swagger-php/issues",
-                "source": "https://github.com/zircote/swagger-php/tree/4.2.10"
+                "source": "https://github.com/zircote/swagger-php/tree/4.2.11"
             },
-            "time": "2022-03-04T01:21:38+00:00"
+            "time": "2022-03-06T19:16:21+00:00"
         }
     ],
     "packages-dev": [
@@ -12565,11 +12564,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "joy/voyager-api": 20,
-        "joy/voyager-datatable": 20,
-        "joy/voyager-relations-table": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
