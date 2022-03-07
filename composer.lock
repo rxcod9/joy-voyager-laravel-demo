@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea57a5de489579ecbf99a5ce46d64a5e",
+    "content-hash": "dd458e40b0fc589fe27d605a56a30954",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -2881,16 +2881,16 @@
         },
         {
             "name": "joy/voyager-export",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-export.git",
-                "reference": "3cb5b9ef35feaba93142edfb95b62941cdb5858c"
+                "reference": "1282e9730a32a90fbf6119f5790d7a9177d0e41b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-export/zipball/3cb5b9ef35feaba93142edfb95b62941cdb5858c",
-                "reference": "3cb5b9ef35feaba93142edfb95b62941cdb5858c",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-export/zipball/1282e9730a32a90fbf6119f5790d7a9177d0e41b",
+                "reference": "1282e9730a32a90fbf6119f5790d7a9177d0e41b",
                 "shasum": ""
             },
             "require": {
@@ -2952,7 +2952,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-export/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-export/tree/v1.0.1"
+                "source": "https://github.com/rxcod9/joy-voyager-export/tree/v1.0.2"
             },
             "funding": [
                 {
@@ -2960,7 +2960,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-06T14:25:54+00:00"
+            "time": "2022-03-07T05:50:12+00:00"
         },
         {
             "name": "joy/voyager-relations-table",
