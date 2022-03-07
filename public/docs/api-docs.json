@@ -7,11 +7,11 @@
     },
     "servers": [
         {
-            "url": "http:\/\/voyager.localhost",
+            "url": "http:\/\/localhost",
             "description": "Primary API Server"
         },
         {
-            "url": "https:\/\/joy-voyager.herokuapp.com",
+            "url": "https:\/\/joy-voyager-api.herokuapp.com",
             "description": "Another API Server"
         }
     ],
@@ -237,6 +237,15 @@
                 "operationId": "users_index",
                 "parameters": [
                     {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Global search",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
                         "name": "page",
                         "in": "query",
                         "required": false,
@@ -253,16 +262,31 @@
                         }
                     },
                     {
-                        "name": "sort",
+                        "name": "order_by",
                         "in": "query",
                         "description": "Sort by column",
                         "required": false,
                         "schema": {
+                            "enum": [
+                                "id",
+                                "role_id",
+                                "name",
+                                "email",
+                                "avatar",
+                                "email_verified_at",
+                                "password",
+                                "remember_token",
+                                "settings",
+                                "created_at",
+                                "updated_at",
+                                "user_belongsto_role_relationship",
+                                "user_belongstomany_role_relationship"
+                            ],
                             "type": "string"
                         }
                     },
                     {
-                        "name": "dir",
+                        "name": "sort_order",
                         "in": "query",
                         "description": "Sort by direction",
                         "required": false,
@@ -835,6 +859,15 @@
                 "operationId": "menus_index",
                 "parameters": [
                     {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Global search",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
                         "name": "page",
                         "in": "query",
                         "required": false,
@@ -851,16 +884,22 @@
                         }
                     },
                     {
-                        "name": "sort",
+                        "name": "order_by",
                         "in": "query",
                         "description": "Sort by column",
                         "required": false,
                         "schema": {
+                            "enum": [
+                                "id",
+                                "name",
+                                "created_at",
+                                "updated_at"
+                            ],
                             "type": "string"
                         }
                     },
                     {
-                        "name": "dir",
+                        "name": "sort_order",
                         "in": "query",
                         "description": "Sort by direction",
                         "required": false,
@@ -1374,6 +1413,15 @@
                 "operationId": "roles_index",
                 "parameters": [
                     {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Global search",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
                         "name": "page",
                         "in": "query",
                         "required": false,
@@ -1390,16 +1438,23 @@
                         }
                     },
                     {
-                        "name": "sort",
+                        "name": "order_by",
                         "in": "query",
                         "description": "Sort by column",
                         "required": false,
                         "schema": {
+                            "enum": [
+                                "id",
+                                "name",
+                                "display_name",
+                                "created_at",
+                                "updated_at"
+                            ],
                             "type": "string"
                         }
                     },
                     {
-                        "name": "dir",
+                        "name": "sort_order",
                         "in": "query",
                         "description": "Sort by direction",
                         "required": false,
@@ -1923,6 +1978,15 @@
                 "operationId": "categories_index",
                 "parameters": [
                     {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Global search",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
                         "name": "page",
                         "in": "query",
                         "required": false,
@@ -1939,16 +2003,25 @@
                         }
                     },
                     {
-                        "name": "sort",
+                        "name": "order_by",
                         "in": "query",
                         "description": "Sort by column",
                         "required": false,
                         "schema": {
+                            "enum": [
+                                "id",
+                                "parent_id",
+                                "order",
+                                "name",
+                                "slug",
+                                "created_at",
+                                "updated_at"
+                            ],
                             "type": "string"
                         }
                     },
                     {
-                        "name": "dir",
+                        "name": "sort_order",
                         "in": "query",
                         "description": "Sort by direction",
                         "required": false,
@@ -2484,6 +2557,15 @@
                 "operationId": "posts_index",
                 "parameters": [
                     {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Global search",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
                         "name": "page",
                         "in": "query",
                         "required": false,
@@ -2500,16 +2582,33 @@
                         }
                     },
                     {
-                        "name": "sort",
+                        "name": "order_by",
                         "in": "query",
                         "description": "Sort by column",
                         "required": false,
                         "schema": {
+                            "enum": [
+                                "id",
+                                "author_id",
+                                "category_id",
+                                "title",
+                                "seo_title",
+                                "excerpt",
+                                "body",
+                                "image",
+                                "slug",
+                                "meta_description",
+                                "meta_keywords",
+                                "status",
+                                "featured",
+                                "created_at",
+                                "updated_at"
+                            ],
                             "type": "string"
                         }
                     },
                     {
-                        "name": "dir",
+                        "name": "sort_order",
                         "in": "query",
                         "description": "Sort by direction",
                         "required": false,
@@ -3095,6 +3194,15 @@
                 "operationId": "pages_index",
                 "parameters": [
                     {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Global search",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
                         "name": "page",
                         "in": "query",
                         "required": false,
@@ -3111,16 +3219,30 @@
                         }
                     },
                     {
-                        "name": "sort",
+                        "name": "order_by",
                         "in": "query",
                         "description": "Sort by column",
                         "required": false,
                         "schema": {
+                            "enum": [
+                                "id",
+                                "author_id",
+                                "title",
+                                "excerpt",
+                                "body",
+                                "image",
+                                "slug",
+                                "meta_description",
+                                "meta_keywords",
+                                "status",
+                                "created_at",
+                                "updated_at"
+                            ],
                             "type": "string"
                         }
                     },
                     {
-                        "name": "dir",
+                        "name": "sort_order",
                         "in": "query",
                         "description": "Sort by direction",
                         "required": false,

@@ -15,10 +15,10 @@
         "fideloper/proxy": "4.4.1",
         "fruitcake/laravel-cors": "3.0.0",
         "guzzlehttp/guzzle": "7.4.1",
-        "joy/voyager-api": "dev-main",
-        "joy/voyager-datatable": "dev-main",
+        "joy/voyager-api": "^1.0",
+        "joy/voyager-datatable": "^1.0",
         "joy/voyager-export": "^1.0",
-        "joy/voyager-relations-table": "dev-main",
+        "joy/voyager-relations-table": "^1.0",
         "laravel/framework": "~6.0|~7.0|~8.0",
         "laravel/tinker": "2.7.0",
         "tcg/voyager": "^1.4"
