@@ -25,15 +25,15 @@
         "tcg/voyager": "^1.4"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "3.6.7",
-        "facade/ignition": "2.17.5",
-        "fakerphp/faker": "1.19.0",
-        "friendsofphp/php-cs-fixer": "3.7.0",
+        "barryvdh/laravel-debugbar": "^3.6",
+        "facade/ignition": "^2.17",
+        "fakerphp/faker": "^1.19",
+        "friendsofphp/php-cs-fixer": "^3.7",
         "henzeb/composer-link": "^0.0.3@alpha",
-        "laravel/sail": "1.13.5",
-        "mockery/mockery": "1.5.0",
-        "nunomaduro/collision": "5.11.0",
-        "phpunit/phpunit": "9.5.18"
+        "laravel/sail": "^1.13",
+        "mockery/mockery": "^1.5",
+        "nunomaduro/collision": "^5.11",
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
