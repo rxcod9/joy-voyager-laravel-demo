@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e3db20d8232499be61c00a47d7b7703",
+    "content-hash": "160e07801134920c784e4b7a300f644d",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -2800,16 +2800,16 @@
         },
         {
             "name": "joy/voyager-datatable",
-            "version": "v1.0.5",
+            "version": "v1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-datatable.git",
-                "reference": "96164eb6318cca39a2eefd78bd7efaa2592799cb"
+                "reference": "90ec38c1cb8d8cdbb77e2b207692e274583f79fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/96164eb6318cca39a2eefd78bd7efaa2592799cb",
-                "reference": "96164eb6318cca39a2eefd78bd7efaa2592799cb",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/90ec38c1cb8d8cdbb77e2b207692e274583f79fc",
+                "reference": "90ec38c1cb8d8cdbb77e2b207692e274583f79fc",
                 "shasum": ""
             },
             "require": {
@@ -2824,7 +2824,7 @@
                 "doctrine/dbal": "2.13.7",
                 "ext-pdo_sqlite": "*",
                 "ext-zip": "*",
-                "friendsofphp/php-cs-fixer": "3.6.0",
+                "friendsofphp/php-cs-fixer": "3.7.0",
                 "guzzlehttp/guzzle": "^6.3|^7.0",
                 "mockery/mockery": "1.5.0",
                 "orchestra/testbench": "^5.0|^6.0",
@@ -2869,7 +2869,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-datatable/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/v1.0.5"
+                "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/v1.0.6"
             },
             "funding": [
                 {
@@ -2877,20 +2877,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-07T07:48:40+00:00"
+            "time": "2022-03-08T09:05:48+00:00"
         },
         {
             "name": "joy/voyager-export",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-export.git",
-                "reference": "9bdb6cc63e1d29f1a9ff1d11d0cb06ccdd4802e0"
+                "reference": "b1e6fccd4afe5dff2e7df261d9722ba592774aac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-export/zipball/9bdb6cc63e1d29f1a9ff1d11d0cb06ccdd4802e0",
-                "reference": "9bdb6cc63e1d29f1a9ff1d11d0cb06ccdd4802e0",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-export/zipball/b1e6fccd4afe5dff2e7df261d9722ba592774aac",
+                "reference": "b1e6fccd4afe5dff2e7df261d9722ba592774aac",
                 "shasum": ""
             },
             "require": {
@@ -2915,7 +2915,8 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Joy\\VoyagerExport\\VoyagerExportServiceProvider"
+                        "Joy\\VoyagerExport\\VoyagerExportServiceProvider",
+                        "Joy\\VoyagerExport\\ExportServiceProvider"
                     ]
                 }
             },
@@ -2952,7 +2953,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-export/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-export/tree/v1.0.3"
+                "source": "https://github.com/rxcod9/joy-voyager-export/tree/v1.0.4"
             },
             "funding": [
                 {
@@ -2960,20 +2961,104 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-07T06:52:03+00:00"
+            "time": "2022-03-08T09:06:44+00:00"
         },
         {
-            "name": "joy/voyager-relations-table",
-            "version": "v1.0.2",
+            "name": "joy/voyager-import",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-relations-table.git",
-                "reference": "df65b4af698de594fde05e51d0df1368060e1a16"
+                "url": "https://github.com/rxcod9/joy-voyager-import.git",
+                "reference": "8e985a50a08767c885838dad97edc7989455ba66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-relations-table/zipball/df65b4af698de594fde05e51d0df1368060e1a16",
-                "reference": "df65b4af698de594fde05e51d0df1368060e1a16",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-import/zipball/8e985a50a08767c885838dad97edc7989455ba66",
+                "reference": "8e985a50a08767c885838dad97edc7989455ba66",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "larapack/hooks": "^1.0.5",
+                "maatwebsite/excel": "^3.1",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "doctrine/dbal": "^2.5.2",
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerImport\\VoyagerImportServiceProvider",
+                        "Joy\\VoyagerImport\\ImportServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerImport\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerImport support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-import",
+            "keywords": [
+                "cms",
+                "joy",
+                "joy-voyager-import",
+                "laravel",
+                "voyager",
+                "voyager-import",
+                "voyager-voyager-import"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-import/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-import/tree/v1.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-08T09:05:22+00:00"
+        },
+        {
+            "name": "joy/voyager-relations-table",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-relations-table.git",
+                "reference": "b6cdd949a8b6a1236c21bb85b0beacbdb9569a7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-relations-table/zipball/b6cdd949a8b6a1236c21bb85b0beacbdb9569a7d",
+                "reference": "b6cdd949a8b6a1236c21bb85b0beacbdb9569a7d",
                 "shasum": ""
             },
             "require": {
@@ -3036,7 +3121,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-relations-table/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-relations-table/tree/v1.0.2"
+                "source": "https://github.com/rxcod9/joy-voyager-relations-table/tree/v1.0.3"
             },
             "funding": [
                 {
@@ -3044,7 +3129,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-07T07:49:23+00:00"
+            "time": "2022-03-07T08:05:02+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -10194,6 +10279,47 @@
             "time": "2020-07-09T08:09:16+00:00"
         },
         {
+            "name": "henzeb/composer-link",
+            "version": "0.0.3-alpha",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/henzeb/composer-link.git",
+                "reference": "d8c9ddb57555c3b4f0dc49c9088366fefe47806b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/henzeb/composer-link/zipball/d8c9ddb57555c3b4f0dc49c9088366fefe47806b",
+                "reference": "d8c9ddb57555c3b4f0dc49c9088366fefe47806b",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0|^2.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.0|^2.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "henzeb\\ComposerLink\\LinkPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "henzeb\\ComposerLink\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/henzeb/composer-link/issues",
+                "source": "https://github.com/henzeb/composer-link/tree/0.0.3-alpha"
+            },
+            "abandoned": true,
+            "time": "2020-12-11T09:15:43+00:00"
+        },
+        {
             "name": "laravel/sail",
             "version": "v1.13.5",
             "source": {
@@ -10929,16 +11055,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "9.2.14",
+            "version": "9.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "9f4d60b6afe5546421462b76cd4e633ebc364ab4"
+                "reference": "2e9da11878c4202f97915c1cb4bb1ca318a63f5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/9f4d60b6afe5546421462b76cd4e633ebc364ab4",
-                "reference": "9f4d60b6afe5546421462b76cd4e633ebc364ab4",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/2e9da11878c4202f97915c1cb4bb1ca318a63f5f",
+                "reference": "2e9da11878c4202f97915c1cb4bb1ca318a63f5f",
                 "shasum": ""
             },
             "require": {
@@ -10994,7 +11120,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.14"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.15"
             },
             "funding": [
                 {
@@ -11002,7 +11128,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-02-28T12:38:02+00:00"
+            "time": "2022-03-07T09:28:20+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -12564,7 +12690,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "henzeb/composer-link": 15
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
