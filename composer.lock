@@ -2881,16 +2881,16 @@
         },
         {
             "name": "joy/voyager-export",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-export.git",
-                "reference": "b1e6fccd4afe5dff2e7df261d9722ba592774aac"
+                "reference": "8eced3a0bf6e20022f01e1190335564cf9de25ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-export/zipball/b1e6fccd4afe5dff2e7df261d9722ba592774aac",
-                "reference": "b1e6fccd4afe5dff2e7df261d9722ba592774aac",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-export/zipball/8eced3a0bf6e20022f01e1190335564cf9de25ec",
+                "reference": "8eced3a0bf6e20022f01e1190335564cf9de25ec",
                 "shasum": ""
             },
             "require": {
@@ -2953,7 +2953,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-export/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-export/tree/v1.0.4"
+                "source": "https://github.com/rxcod9/joy-voyager-export/tree/v1.0.5"
             },
             "funding": [
                 {
@@ -2961,20 +2961,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-08T09:06:44+00:00"
+            "time": "2022-03-08T10:00:26+00:00"
         },
         {
             "name": "joy/voyager-import",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-import.git",
-                "reference": "8e985a50a08767c885838dad97edc7989455ba66"
+                "reference": "1bb41029034662f3cfed4f0e38cfe9900f98ad89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-import/zipball/8e985a50a08767c885838dad97edc7989455ba66",
-                "reference": "8e985a50a08767c885838dad97edc7989455ba66",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-import/zipball/1bb41029034662f3cfed4f0e38cfe9900f98ad89",
+                "reference": "1bb41029034662f3cfed4f0e38cfe9900f98ad89",
                 "shasum": ""
             },
             "require": {
@@ -3037,7 +3037,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-import/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-import/tree/v1.0.3"
+                "source": "https://github.com/rxcod9/joy-voyager-import/tree/v1.0.4"
             },
             "funding": [
                 {
@@ -3045,7 +3045,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-08T09:05:22+00:00"
+            "time": "2022-03-08T10:00:56+00:00"
         },
         {
             "name": "joy/voyager-relations-table",
