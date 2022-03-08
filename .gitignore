@@ -28,3 +28,4 @@ public/docs/voyager-api-docs.json
 *.patch
 composer.dev.json
 composer.json.dist
+linked.json

@@ -11,7 +11,7 @@
             "description": "Primary API Server"
         },
         {
-            "url": "https:\/\/joy-voyager-api.herokuapp.com",
+            "url": "https:\/\/joy-voyager.herokuapp.com",
             "description": "Another API Server"
         }
     ],
