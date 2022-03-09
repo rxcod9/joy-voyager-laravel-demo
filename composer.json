@@ -22,7 +22,7 @@
         "joy/voyager-relations-table": "^1.0",
         "laravel/framework": "~6.0|~7.0|~8.0",
         "laravel/tinker": "^2.7",
-        "symfony/filesystem": "^5.4",
+        "symfony/filesystem": "^6.0",
         "tcg/voyager": "^1.4"
     },
     "require-dev": {
