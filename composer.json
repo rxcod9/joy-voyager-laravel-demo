@@ -33,7 +33,7 @@
         "henzeb/composer-link": "^0.0.3@alpha",
         "laravel/sail": "^1.13",
         "mockery/mockery": "^1.5",
-        "nunomaduro/collision": "^5.11",
+        "nunomaduro/collision": "^5.11|^6.0",
         "phpunit/phpunit": "^9.5"
     },
     "autoload": {
