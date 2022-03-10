@@ -53,16 +53,16 @@
                         "schema": {
                             "enum": [
                                 "id",
-                                "role_id",
                                 "name",
                                 "email",
-                                "avatar",
                                 "email_verified_at",
                                 "password",
                                 "remember_token",
-                                "settings",
                                 "created_at",
                                 "updated_at",
+                                "avatar",
+                                "role_id",
+                                "settings",
                                 "user_belongsto_role_relationship",
                                 "user_belongstomany_role_relationship"
                             ],

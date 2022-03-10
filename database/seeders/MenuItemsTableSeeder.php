@@ -175,5 +175,21 @@ class MenuItemsTableSeeder extends Seeder
                 'order'      => 14,
             ])->save();
         }
+
+        $menuItem = MenuItem::firstOrNew([
+            'menu_id' => $menu->id,
+            'title'   => __('joy-voyager-export::generic.bulk_export_all'),
+            'url'     => '',
+            'route'   => 'voyager.export-all',
+        ]);
+        if (!$menuItem->exists) {
+            $menuItem->fill([
+                'target'     => '_self',
+                'icon_class' => 'voyager-download',
+                'color'      => null,
+                'parent_id'  => $toolsMenuItem->id,
+                'order'      => 15,
+            ])->save();
+        }
     }
 }
