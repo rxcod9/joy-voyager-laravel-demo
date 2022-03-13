@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Joy\VoyagerUserSettings\Database\Seeders\UserSettingsTableSeeder;
+use Joy\VoyagerUserSettings\Database\Seeders\UserSettingsPermissionsTableSeeder;
 
 class VoyagerDatabaseSeeder extends Seeder
 {
@@ -22,6 +24,9 @@ class VoyagerDatabaseSeeder extends Seeder
             PermissionsTableSeeder::class,
             PermissionRoleTableSeeder::class,
             SettingsTableSeeder::class,
+            UserSettingsPermissionsTableSeeder::class,
+            PermissionRoleTableSeeder::class,
+            UserSettingsTableSeeder::class,
         ]);
     }
 }
