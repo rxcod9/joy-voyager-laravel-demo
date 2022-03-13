@@ -2571,16 +2571,16 @@
         },
         {
             "name": "joy/voyager-user-settings",
-            "version": "v1.1.7",
+            "version": "v1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-user-settings.git",
-                "reference": "a82a6c76df41432f3483672b30cb907d28d814b9"
+                "reference": "f73e05fc64271fd61e1465a4491131086eccc8fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-user-settings/zipball/a82a6c76df41432f3483672b30cb907d28d814b9",
-                "reference": "a82a6c76df41432f3483672b30cb907d28d814b9",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-user-settings/zipball/f73e05fc64271fd61e1465a4491131086eccc8fc",
+                "reference": "f73e05fc64271fd61e1465a4491131086eccc8fc",
                 "shasum": ""
             },
             "require": {
@@ -2639,7 +2639,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-user-settings/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-user-settings/tree/v1.1.7"
+                "source": "https://github.com/rxcod9/joy-voyager-user-settings/tree/v1.1.8"
             },
             "funding": [
                 {
@@ -2647,7 +2647,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-13T21:31:09+00:00"
+            "time": "2022-03-13T22:14:22+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
