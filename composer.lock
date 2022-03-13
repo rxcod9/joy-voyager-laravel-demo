@@ -2407,16 +2407,16 @@
         },
         {
             "name": "joy/voyager-import",
-            "version": "v1.1.3",
+            "version": "v1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-import.git",
-                "reference": "519e8c2852c2fd3803288e6cfccf513c4d1eac22"
+                "reference": "2e91061b3e7b4d128dc56e27af0b1628a601a398"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-import/zipball/519e8c2852c2fd3803288e6cfccf513c4d1eac22",
-                "reference": "519e8c2852c2fd3803288e6cfccf513c4d1eac22",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-import/zipball/2e91061b3e7b4d128dc56e27af0b1628a601a398",
+                "reference": "2e91061b3e7b4d128dc56e27af0b1628a601a398",
                 "shasum": ""
             },
             "require": {
@@ -2461,7 +2461,7 @@
                     "name": "Ramakant Gangwar",
                     "email": "gangwar.ramakant@gmail.com",
                     "homepage": "https://github.com/rxcod9",
-                    "role": "Tech Lead"
+                    "role": "Tech Lead & Architect"
                 }
             ],
             "description": "This Laravel/Voyager module adds VoyagerImport support to Voyager.",
@@ -2477,7 +2477,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-import/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-import/tree/v1.1.3"
+                "source": "https://github.com/rxcod9/joy-voyager-import/tree/v1.1.4"
             },
             "funding": [
                 {
@@ -2485,7 +2485,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-09T23:47:10+00:00"
+            "time": "2022-03-13T21:52:48+00:00"
         },
         {
             "name": "joy/voyager-relations-table",
