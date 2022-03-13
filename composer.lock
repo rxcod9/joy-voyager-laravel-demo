@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7220ca29604fd11ad52dfae152310f3",
+    "content-hash": "805952af05b51ae6973b6b8953912dca",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -2568,6 +2568,86 @@
                 }
             ],
             "time": "2022-03-08T20:03:18+00:00"
+        },
+        {
+            "name": "joy/voyager-user-settings",
+            "version": "v1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-user-settings.git",
+                "reference": "ecd5178a3a3752115460f7ecb8f64b04e8d51051"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-user-settings/zipball/ecd5178a3a3752115460f7ecb8f64b04e8d51051",
+                "reference": "ecd5178a3a3752115460f7ecb8f64b04e8d51051",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerUserSettings\\VoyagerUserSettingsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerUserSettings\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerUserSettings support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-user-settings",
+            "keywords": [
+                "cms",
+                "joy",
+                "joy-voyager-user-settings",
+                "laravel",
+                "user-settings",
+                "voyager",
+                "voyager-user-settings"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-user-settings/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-user-settings/tree/v1.1.5"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-13T20:47:30+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -5767,16 +5847,16 @@
         },
         {
             "name": "swagger-api/swagger-ui",
-            "version": "v4.6.1",
+            "version": "v4.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swagger-api/swagger-ui.git",
-                "reference": "1dd3ef62adfd79c9a71cd046ff2b7c7bbabf2751"
+                "reference": "d191c1ca18443a77273e9912ac2603ce1f7dc216"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/1dd3ef62adfd79c9a71cd046ff2b7c7bbabf2751",
-                "reference": "1dd3ef62adfd79c9a71cd046ff2b7c7bbabf2751",
+                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/d191c1ca18443a77273e9912ac2603ce1f7dc216",
+                "reference": "d191c1ca18443a77273e9912ac2603ce1f7dc216",
                 "shasum": ""
             },
             "type": "library",
@@ -5822,9 +5902,9 @@
             ],
             "support": {
                 "issues": "https://github.com/swagger-api/swagger-ui/issues",
-                "source": "https://github.com/swagger-api/swagger-ui/tree/v4.6.1"
+                "source": "https://github.com/swagger-api/swagger-ui/tree/v4.6.2"
             },
-            "time": "2022-03-02T21:44:06+00:00"
+            "time": "2022-03-10T11:36:38+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
