@@ -1,7 +1,7 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Joy Voyager DataTable Laravel Demo",
+        "title": "Joy Voyager Laravel Demo",
         "description": "Joy VoyagerApi module adds REST Api end points to Voyager with Passport and Swagger support https:\/\/github.com\/rxcod9\/joy-voyager-api.",
         "version": "1.0.0"
     },

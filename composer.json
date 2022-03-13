@@ -91,7 +91,9 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi",
             "@php artisan storage:link --quiet --relative",
-            "@php artisan passport:keys --quiet --no-interaction",
+            "@php artisan passport:keys --quiet --no-interaction --force",
+            "@php artisan migrate --force --quiet --no-interaction",
+            "@php artisan db:seed --class=VoyagerDatabaseSeeder --force --quiet --no-interaction",
             "@php artisan joy-voyager-api:l5-swagger:generate"
         ],
         "post-root-package-install": [
