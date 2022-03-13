@@ -20,6 +20,7 @@
         "joy/voyager-export": "^1.0",
         "joy/voyager-import": "^1.0",
         "joy/voyager-relations-table": "^1.0",
+        "joy/voyager-user-settings": "^1.1",
         "laravel/framework": "~6.0|~7.0|~8.0",
         "laravel/tinker": "^2.7",
         "symfony/filesystem": "^5.4|^6.0",
