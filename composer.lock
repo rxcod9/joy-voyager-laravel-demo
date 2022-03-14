@@ -2325,16 +2325,16 @@
         },
         {
             "name": "joy/voyager-export",
-            "version": "v1.1.3",
+            "version": "v1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-export.git",
-                "reference": "fdc458eb74459137dd3fdc2d298c82959dce1d3e"
+                "reference": "cd7fbc6d81c005ddb7545b31039e9550251aab1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-export/zipball/fdc458eb74459137dd3fdc2d298c82959dce1d3e",
-                "reference": "fdc458eb74459137dd3fdc2d298c82959dce1d3e",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-export/zipball/cd7fbc6d81c005ddb7545b31039e9550251aab1f",
+                "reference": "cd7fbc6d81c005ddb7545b31039e9550251aab1f",
                 "shasum": ""
             },
             "require": {
@@ -2379,7 +2379,7 @@
                     "name": "Ramakant Gangwar",
                     "email": "gangwar.ramakant@gmail.com",
                     "homepage": "https://github.com/rxcod9",
-                    "role": "Tech Lead"
+                    "role": "Tech Lead & Architect"
                 }
             ],
             "description": "This Laravel/Voyager module adds VoyagerExport support to Voyager.",
@@ -2395,7 +2395,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-export/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-export/tree/v1.1.3"
+                "source": "https://github.com/rxcod9/joy-voyager-export/tree/v1.1.4"
             },
             "funding": [
                 {
@@ -2403,20 +2403,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-09T23:44:10+00:00"
+            "time": "2022-03-14T06:38:13+00:00"
         },
         {
             "name": "joy/voyager-import",
-            "version": "v1.1.4",
+            "version": "v1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-import.git",
-                "reference": "2e91061b3e7b4d128dc56e27af0b1628a601a398"
+                "reference": "c86bd86e33ddea596b30e9a3359ebd9018348fa4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-import/zipball/2e91061b3e7b4d128dc56e27af0b1628a601a398",
-                "reference": "2e91061b3e7b4d128dc56e27af0b1628a601a398",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-import/zipball/c86bd86e33ddea596b30e9a3359ebd9018348fa4",
+                "reference": "c86bd86e33ddea596b30e9a3359ebd9018348fa4",
                 "shasum": ""
             },
             "require": {
@@ -2477,7 +2477,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-import/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-import/tree/v1.1.4"
+                "source": "https://github.com/rxcod9/joy-voyager-import/tree/v1.1.5"
             },
             "funding": [
                 {
@@ -2485,7 +2485,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-13T21:52:48+00:00"
+            "time": "2022-03-14T06:40:58+00:00"
         },
         {
             "name": "joy/voyager-relations-table",
