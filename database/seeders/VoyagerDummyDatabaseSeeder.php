@@ -22,6 +22,7 @@ class VoyagerDummyDatabaseSeeder extends Seeder
             TranslationsTableSeeder::class,
             PermissionRoleTableSeeder::class,
             SeedersVoyagerDummyDatabaseSeeder::class,
+            \Joy\VoyagerCrm\Database\Seeders\VoyagerDummyDatabaseSeeder::class,
         ]);
     }
 }

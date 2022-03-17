@@ -21,6 +21,7 @@ class VoyagerDatabaseSeeder extends Seeder
             DataRowsTableSeeder::class,
             MenusTableSeeder::class,
             MenuItemsTableSeeder::class,
+            \Joy\VoyagerCrm\Database\Seeders\MenuItemsTableSeeder::class,
             RolesTableSeeder::class,
             PermissionsTableSeeder::class,
             PermissionRoleTableSeeder::class,
@@ -29,6 +30,7 @@ class VoyagerDatabaseSeeder extends Seeder
             PermissionRoleTableSeeder::class,
             UserSettingsTableSeeder::class,
             SeedersVoyagerDatabaseSeeder::class,
+            \Joy\VoyagerCrm\Database\Seeders\VoyagerDatabaseSeeder::class,
         ]);
     }
 }

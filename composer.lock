@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "24cadccf481d9ab89705f47e9d10b002",
+    "content-hash": "cb468e8a55e6815b076dfe431cda6332",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -1988,16 +1988,16 @@
         },
         {
             "name": "joy/core",
-            "version": "v1.1.2",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-core.git",
-                "reference": "3bbb6308b9766dc47e0fd596b9c6c8e8d23952b3"
+                "reference": "56ecc402d605749e8cda181887c180ec8f9b075c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-core/zipball/3bbb6308b9766dc47e0fd596b9c6c8e8d23952b3",
-                "reference": "3bbb6308b9766dc47e0fd596b9c6c8e8d23952b3",
+                "url": "https://api.github.com/repos/rxcod9/joy-core/zipball/56ecc402d605749e8cda181887c180ec8f9b075c",
+                "reference": "56ecc402d605749e8cda181887c180ec8f9b075c",
                 "shasum": ""
             },
             "require": {
@@ -2038,7 +2038,7 @@
                     "name": "Ramakant Gangwar",
                     "email": "gangwar.ramakant@gmail.com",
                     "homepage": "https://github.com/rxcod9",
-                    "role": "Tech Lead"
+                    "role": "Tech Lead & Architect"
                 }
             ],
             "description": "This Laravel/Voyager module adds Core support to Laravel.",
@@ -2051,7 +2051,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-core/issues",
-                "source": "https://github.com/rxcod9/joy-core/tree/v1.1.2"
+                "source": "https://github.com/rxcod9/joy-core/tree/v1.2.2"
             },
             "funding": [
                 {
@@ -2059,20 +2059,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-08T20:11:15+00:00"
+            "time": "2022-03-17T21:12:01+00:00"
         },
         {
             "name": "joy/voyager-api",
-            "version": "v1.1.2",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-api.git",
-                "reference": "06eaf706315314198161a231ce3495d2952e64b9"
+                "reference": "15766d561a2262fe189c961257bf87750b9d1913"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api/zipball/06eaf706315314198161a231ce3495d2952e64b9",
-                "reference": "06eaf706315314198161a231ce3495d2952e64b9",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api/zipball/15766d561a2262fe189c961257bf87750b9d1913",
+                "reference": "15766d561a2262fe189c961257bf87750b9d1913",
                 "shasum": ""
             },
             "require": {
@@ -2119,7 +2119,7 @@
                     "name": "Ramakant Gangwar",
                     "email": "gangwar.ramakant@gmail.com",
                     "homepage": "https://github.com/rxcod9",
-                    "role": "Tech Lead"
+                    "role": "Tech Lead & Architect"
                 }
             ],
             "description": "This Laravel/Voyager module adds REST Api with swagger support to Voyager.",
@@ -2137,7 +2137,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-api/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-api/tree/v1.1.2"
+                "source": "https://github.com/rxcod9/joy-voyager-api/tree/v1.2.2"
             },
             "funding": [
                 {
@@ -2145,20 +2145,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-08T20:11:49+00:00"
+            "time": "2022-03-13T14:12:24+00:00"
         },
         {
             "name": "joy/voyager-api-auth",
-            "version": "v1.1.2",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-api-auth.git",
-                "reference": "5802b449985f3ae9d35bfb600e0f8ba868cf317c"
+                "reference": "0d2a73c75720a56825427b5db03c977bc0fa4e63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api-auth/zipball/5802b449985f3ae9d35bfb600e0f8ba868cf317c",
-                "reference": "5802b449985f3ae9d35bfb600e0f8ba868cf317c",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api-auth/zipball/0d2a73c75720a56825427b5db03c977bc0fa4e63",
+                "reference": "0d2a73c75720a56825427b5db03c977bc0fa4e63",
                 "shasum": ""
             },
             "require": {
@@ -2203,7 +2203,7 @@
                     "name": "Ramakant Gangwar",
                     "email": "gangwar.ramakant@gmail.com",
                     "homepage": "https://github.com/rxcod9",
-                    "role": "Tech Lead"
+                    "role": "Tech Lead & Architect"
                 }
             ],
             "description": "This Laravel/Voyager module adds REST Api Auth to Voyager.",
@@ -2221,7 +2221,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-api-auth/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-api-auth/tree/v1.1.2"
+                "source": "https://github.com/rxcod9/joy-voyager-api-auth/tree/v1.2.2"
             },
             "funding": [
                 {
@@ -2229,20 +2229,1906 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-08T20:12:20+00:00"
+            "time": "2022-03-17T21:12:01+00:00"
         },
         {
-            "name": "joy/voyager-bread-sample",
-            "version": "v1.0.1",
+            "name": "joy/voyager-bread-account",
+            "version": "v1.2.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-bread-sample.git",
-                "reference": "6c727ab95a60eedb0fdfdfbc6b1e9e4f2c625d59"
+                "url": "https://github.com/rxcod9/joy-voyager-bread-account.git",
+                "reference": "6a30b553025b090517dd9bf066df50e83aa45687"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-sample/zipball/6c727ab95a60eedb0fdfdfbc6b1e9e4f2c625d59",
-                "reference": "6c727ab95a60eedb0fdfdfbc6b1e9e4f2c625d59",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-account/zipball/6a30b553025b090517dd9bf066df50e83aa45687",
+                "reference": "6a30b553025b090517dd9bf066df50e83aa45687",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadAccount\\VoyagerBreadAccountServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadAccount\\": "src",
+                    "Joy\\VoyagerBreadAccount\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadAccount\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadAccount support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-account",
+            "keywords": [
+                "bread-account",
+                "cms",
+                "joy",
+                "joy-voyager-bread-account",
+                "laravel",
+                "voyager",
+                "voyager-bread-account"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-account/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-account/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-call",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-call.git",
+                "reference": "c07a22ba90aeab01604065203be5a1ade95bb91f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-call/zipball/c07a22ba90aeab01604065203be5a1ade95bb91f",
+                "reference": "c07a22ba90aeab01604065203be5a1ade95bb91f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadCall\\VoyagerBreadCallServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadCall\\": "src",
+                    "Joy\\VoyagerBreadCall\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadCall\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadCall support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-call",
+            "keywords": [
+                "bread-call",
+                "cms",
+                "joy",
+                "joy-voyager-bread-call",
+                "laravel",
+                "voyager",
+                "voyager-bread-call"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-call/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-call/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-campaign",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-campaign.git",
+                "reference": "6b0750cd6d520e8a9dc3da40f016b364455ac2de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-campaign/zipball/6b0750cd6d520e8a9dc3da40f016b364455ac2de",
+                "reference": "6b0750cd6d520e8a9dc3da40f016b364455ac2de",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadCampaign\\VoyagerBreadCampaignServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadCampaign\\": "src",
+                    "Joy\\VoyagerBreadCampaign\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadCampaign\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadCampaign support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-campaign",
+            "keywords": [
+                "bread-campaign",
+                "cms",
+                "joy",
+                "joy-voyager-bread-campaign",
+                "laravel",
+                "voyager",
+                "voyager-bread-campaign"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-campaign/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-campaign/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-contact",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-contact.git",
+                "reference": "a83a1eb188c9da0499ce60395e2132026d87c593"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-contact/zipball/a83a1eb188c9da0499ce60395e2132026d87c593",
+                "reference": "a83a1eb188c9da0499ce60395e2132026d87c593",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadContact\\VoyagerBreadContactServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadContact\\": "src",
+                    "Joy\\VoyagerBreadContact\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadContact\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadContact support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-contact",
+            "keywords": [
+                "bread-contact",
+                "cms",
+                "joy",
+                "joy-voyager-bread-contact",
+                "laravel",
+                "voyager",
+                "voyager-bread-contact"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-contact/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-contact/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-contract",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-contract.git",
+                "reference": "97292d1604510b1e2818c1a37f3b324cd0ff922a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-contract/zipball/97292d1604510b1e2818c1a37f3b324cd0ff922a",
+                "reference": "97292d1604510b1e2818c1a37f3b324cd0ff922a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadContract\\VoyagerBreadContractServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadContract\\": "src",
+                    "Joy\\VoyagerBreadContract\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadContract\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadContract support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-contract",
+            "keywords": [
+                "bread-contract",
+                "cms",
+                "joy",
+                "joy-voyager-bread-contract",
+                "laravel",
+                "voyager",
+                "voyager-bread-contract"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-contract/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-contract/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-document",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-document.git",
+                "reference": "ab0cb7fe86a0cf20dc77d2bc993ded31baab38cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-document/zipball/ab0cb7fe86a0cf20dc77d2bc993ded31baab38cc",
+                "reference": "ab0cb7fe86a0cf20dc77d2bc993ded31baab38cc",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadDocument\\VoyagerBreadDocumentServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadDocument\\": "src",
+                    "Joy\\VoyagerBreadDocument\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadDocument\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadDocument support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-document",
+            "keywords": [
+                "bread-document",
+                "cms",
+                "joy",
+                "joy-voyager-bread-document",
+                "laravel",
+                "voyager",
+                "voyager-bread-document"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-document/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-document/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-email",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-email.git",
+                "reference": "61504bc79f31d855d35d5f2e6d6a76315ba6418c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-email/zipball/61504bc79f31d855d35d5f2e6d6a76315ba6418c",
+                "reference": "61504bc79f31d855d35d5f2e6d6a76315ba6418c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadEmail\\VoyagerBreadEmailServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadEmail\\": "src",
+                    "Joy\\VoyagerBreadEmail\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadEmail\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadEmail support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-email",
+            "keywords": [
+                "bread-email",
+                "cms",
+                "joy",
+                "joy-voyager-bread-email",
+                "laravel",
+                "voyager",
+                "voyager-bread-email"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-email/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-email/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-email-template",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-email-template.git",
+                "reference": "4a4afd79d7719fe4ac3e436bf9d4ffe904dc781e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-email-template/zipball/4a4afd79d7719fe4ac3e436bf9d4ffe904dc781e",
+                "reference": "4a4afd79d7719fe4ac3e436bf9d4ffe904dc781e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadEmailTemplate\\VoyagerBreadEmailTemplateServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadEmailTemplate\\": "src",
+                    "Joy\\VoyagerBreadEmailTemplate\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadEmailTemplate\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadEmailTemplate support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-email-template",
+            "keywords": [
+                "bread-email-template",
+                "cms",
+                "joy",
+                "joy-voyager-bread-email-template",
+                "laravel",
+                "voyager",
+                "voyager-bread-email-template"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-email-template/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-email-template/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-event",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-event.git",
+                "reference": "b1ba4c951d531fcd66e0c89dfea240715104914d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-event/zipball/b1ba4c951d531fcd66e0c89dfea240715104914d",
+                "reference": "b1ba4c951d531fcd66e0c89dfea240715104914d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadEvent\\VoyagerBreadEventServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadEvent\\": "src",
+                    "Joy\\VoyagerBreadEvent\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadEvent\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadEvent support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-event",
+            "keywords": [
+                "bread-event",
+                "cms",
+                "joy",
+                "joy-voyager-bread-event",
+                "laravel",
+                "voyager",
+                "voyager-bread-event"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-event/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-event/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-group",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-group.git",
+                "reference": "7ed34933bba17731abf66405e4f6d7da2ca799ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-group/zipball/7ed34933bba17731abf66405e4f6d7da2ca799ce",
+                "reference": "7ed34933bba17731abf66405e4f6d7da2ca799ce",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadGroup\\VoyagerBreadGroupServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadGroup\\": "src",
+                    "Joy\\VoyagerBreadGroup\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadGroup\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadGroup support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-group",
+            "keywords": [
+                "bread-group",
+                "cms",
+                "joy",
+                "joy-voyager-bread-group",
+                "laravel",
+                "voyager",
+                "voyager-bread-group"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-group/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-group/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-invoice",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-invoice.git",
+                "reference": "9d6e582065359888703fc038b836a6c2cd0e2021"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-invoice/zipball/9d6e582065359888703fc038b836a6c2cd0e2021",
+                "reference": "9d6e582065359888703fc038b836a6c2cd0e2021",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadInvoice\\VoyagerBreadInvoiceServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadInvoice\\": "src",
+                    "Joy\\VoyagerBreadInvoice\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadInvoice\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadInvoice support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-invoice",
+            "keywords": [
+                "bread-invoice",
+                "cms",
+                "joy",
+                "joy-voyager-bread-invoice",
+                "laravel",
+                "voyager",
+                "voyager-bread-invoice"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-invoice/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-invoice/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-lead",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-lead.git",
+                "reference": "0abe0e7d68b5aded5c2e1a46d5b1ef008b536862"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-lead/zipball/0abe0e7d68b5aded5c2e1a46d5b1ef008b536862",
+                "reference": "0abe0e7d68b5aded5c2e1a46d5b1ef008b536862",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadLead\\VoyagerBreadLeadServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadLead\\": "src",
+                    "Joy\\VoyagerBreadLead\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadLead\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadLead support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-lead",
+            "keywords": [
+                "bread-lead",
+                "cms",
+                "joy",
+                "joy-voyager-bread-lead",
+                "laravel",
+                "voyager",
+                "voyager-bread-lead"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-lead/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-lead/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-line-item",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-line-item.git",
+                "reference": "b97c88c4fd3a518fa1ad2f65d86f09aa50f2c5be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-line-item/zipball/b97c88c4fd3a518fa1ad2f65d86f09aa50f2c5be",
+                "reference": "b97c88c4fd3a518fa1ad2f65d86f09aa50f2c5be",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadLineItem\\VoyagerBreadLineItemServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadLineItem\\": "src",
+                    "Joy\\VoyagerBreadLineItem\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadLineItem\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadLineItem support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-line-item",
+            "keywords": [
+                "bread-line-item",
+                "cms",
+                "joy",
+                "joy-voyager-bread-line-item",
+                "laravel",
+                "voyager",
+                "voyager-bread-line-item"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-line-item/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-line-item/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-location",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-location.git",
+                "reference": "4719f7478cd7bd4dea8166e72e89b7aa4e0c1c46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-location/zipball/4719f7478cd7bd4dea8166e72e89b7aa4e0c1c46",
+                "reference": "4719f7478cd7bd4dea8166e72e89b7aa4e0c1c46",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadLocation\\VoyagerBreadLocationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadLocation\\": "src",
+                    "Joy\\VoyagerBreadLocation\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadLocation\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadLocation support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-location",
+            "keywords": [
+                "bread-location",
+                "cms",
+                "joy",
+                "joy-voyager-bread-location",
+                "laravel",
+                "voyager",
+                "voyager-bread-location"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-location/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-location/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-meeting",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-meeting.git",
+                "reference": "8e4f72dfbfdb92841b5bbc53514d0334898aed1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-meeting/zipball/8e4f72dfbfdb92841b5bbc53514d0334898aed1e",
+                "reference": "8e4f72dfbfdb92841b5bbc53514d0334898aed1e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadMeeting\\VoyagerBreadMeetingServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadMeeting\\": "src",
+                    "Joy\\VoyagerBreadMeeting\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadMeeting\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadMeeting support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-meeting",
+            "keywords": [
+                "bread-meeting",
+                "cms",
+                "joy",
+                "joy-voyager-bread-meeting",
+                "laravel",
+                "voyager",
+                "voyager-bread-meeting"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-meeting/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-meeting/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-note",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-note.git",
+                "reference": "678ddc86d1f9d3a4ee058994ae555f39380b3053"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-note/zipball/678ddc86d1f9d3a4ee058994ae555f39380b3053",
+                "reference": "678ddc86d1f9d3a4ee058994ae555f39380b3053",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadNote\\VoyagerBreadNoteServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadNote\\": "src",
+                    "Joy\\VoyagerBreadNote\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadNote\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadNote support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-note",
+            "keywords": [
+                "bread-note",
+                "cms",
+                "joy",
+                "joy-voyager-bread-note",
+                "laravel",
+                "voyager",
+                "voyager-bread-note"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-note/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-note/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-opportunity",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-opportunity.git",
+                "reference": "78476012c5c2182c3f1682577fe6c51bbf1348c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-opportunity/zipball/78476012c5c2182c3f1682577fe6c51bbf1348c9",
+                "reference": "78476012c5c2182c3f1682577fe6c51bbf1348c9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadOpportunity\\VoyagerBreadOpportunityServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadOpportunity\\": "src",
+                    "Joy\\VoyagerBreadOpportunity\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadOpportunity\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadOpportunity support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-opportunity",
+            "keywords": [
+                "bread-opportunity",
+                "cms",
+                "joy",
+                "joy-voyager-bread-opportunity",
+                "laravel",
+                "voyager",
+                "voyager-bread-opportunity"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-opportunity/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-opportunity/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-pdf-template",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-pdf-template.git",
+                "reference": "b9be991275733171aa6234b2294f72d2dce33385"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-pdf-template/zipball/b9be991275733171aa6234b2294f72d2dce33385",
+                "reference": "b9be991275733171aa6234b2294f72d2dce33385",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadPdfTemplate\\VoyagerBreadPdfTemplateServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadPdfTemplate\\": "src",
+                    "Joy\\VoyagerBreadPdfTemplate\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadPdfTemplate\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadPdfTemplate support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-pdf-template",
+            "keywords": [
+                "bread-pdf-template",
+                "cms",
+                "joy",
+                "joy-voyager-bread-pdf-template",
+                "laravel",
+                "voyager",
+                "voyager-bread-pdf-template"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-pdf-template/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-pdf-template/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-product",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-product.git",
+                "reference": "c8b56e24a4c6d7cdbdc8e817ce7760587864a4e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-product/zipball/c8b56e24a4c6d7cdbdc8e817ce7760587864a4e9",
+                "reference": "c8b56e24a4c6d7cdbdc8e817ce7760587864a4e9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadProduct\\VoyagerBreadProductServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadProduct\\": "src",
+                    "Joy\\VoyagerBreadProduct\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadProduct\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadProduct support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-product",
+            "keywords": [
+                "bread-product",
+                "cms",
+                "joy",
+                "joy-voyager-bread-product",
+                "laravel",
+                "voyager",
+                "voyager-bread-product"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-product/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-product/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-product-category",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-product-category.git",
+                "reference": "395a5913a34dbae42b14b7eba0aaac87a772efda"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-product-category/zipball/395a5913a34dbae42b14b7eba0aaac87a772efda",
+                "reference": "395a5913a34dbae42b14b7eba0aaac87a772efda",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadProductCategory\\VoyagerBreadProductCategoryServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadProductCategory\\": "src",
+                    "Joy\\VoyagerBreadProductCategory\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadProductCategory\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadProductCategory support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-product-category",
+            "keywords": [
+                "bread-product-category",
+                "cms",
+                "joy",
+                "joy-voyager-bread-product-category",
+                "laravel",
+                "voyager",
+                "voyager-bread-product-category"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-product-category/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-product-category/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-project",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-project.git",
+                "reference": "7d3066d839a4c7b45f76d2d97d695cbf1bb22cfc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-project/zipball/7d3066d839a4c7b45f76d2d97d695cbf1bb22cfc",
+                "reference": "7d3066d839a4c7b45f76d2d97d695cbf1bb22cfc",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadProject\\VoyagerBreadProjectServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadProject\\": "src",
+                    "Joy\\VoyagerBreadProject\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadProject\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadProject support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-project",
+            "keywords": [
+                "bread-project",
+                "cms",
+                "joy",
+                "joy-voyager-bread-project",
+                "laravel",
+                "voyager",
+                "voyager-bread-project"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-project/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-project/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-project-task",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-project-task.git",
+                "reference": "0bf8a3a41debe99bf6e03be65ed6b8e85fa55169"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-project-task/zipball/0bf8a3a41debe99bf6e03be65ed6b8e85fa55169",
+                "reference": "0bf8a3a41debe99bf6e03be65ed6b8e85fa55169",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadProjectTask\\VoyagerBreadProjectTaskServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadProjectTask\\": "src",
+                    "Joy\\VoyagerBreadProjectTask\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadProjectTask\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadProjectTask support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-project-task",
+            "keywords": [
+                "bread-project-task",
+                "cms",
+                "joy",
+                "joy-voyager-bread-project-task",
+                "laravel",
+                "voyager",
+                "voyager-bread-project-task"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-project-task/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-project-task/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-quote",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-quote.git",
+                "reference": "68241d753ea6cd6a9006fad54f4db1beaef01ead"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-quote/zipball/68241d753ea6cd6a9006fad54f4db1beaef01ead",
+                "reference": "68241d753ea6cd6a9006fad54f4db1beaef01ead",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadQuote\\VoyagerBreadQuoteServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadQuote\\": "src",
+                    "Joy\\VoyagerBreadQuote\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadQuote\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadQuote support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-quote",
+            "keywords": [
+                "bread-quote",
+                "cms",
+                "joy",
+                "joy-voyager-bread-quote",
+                "laravel",
+                "voyager",
+                "voyager-bread-quote"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-quote/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-quote/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-sample",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-sample.git",
+                "reference": "c5f26b4b870b5da66bf8bfe09185a14c280ed197"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-sample/zipball/c5f26b4b870b5da66bf8bfe09185a14c280ed197",
+                "reference": "c5f26b4b870b5da66bf8bfe09185a14c280ed197",
                 "shasum": ""
             },
             "require": {
@@ -2303,7 +4189,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-sample/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-sample/tree/v1.0.1"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-sample/tree/v1.2.3"
             },
             "funding": [
                 {
@@ -2311,20 +4197,348 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T11:47:43+00:00"
+            "time": "2022-03-17T21:43:27+00:00"
         },
         {
-            "name": "joy/voyager-core",
-            "version": "v1.1.2",
+            "name": "joy/voyager-bread-target",
+            "version": "v1.2.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-core.git",
-                "reference": "c5618e24c54487794da212912bf65b99311c6160"
+                "url": "https://github.com/rxcod9/joy-voyager-bread-target.git",
+                "reference": "b749a7722129b047704331c296396342411f6367"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-core/zipball/c5618e24c54487794da212912bf65b99311c6160",
-                "reference": "c5618e24c54487794da212912bf65b99311c6160",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-target/zipball/b749a7722129b047704331c296396342411f6367",
+                "reference": "b749a7722129b047704331c296396342411f6367",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadTarget\\VoyagerBreadTargetServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadTarget\\": "src",
+                    "Joy\\VoyagerBreadTarget\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadTarget\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadTarget support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-target",
+            "keywords": [
+                "bread-target",
+                "cms",
+                "joy",
+                "joy-voyager-bread-target",
+                "laravel",
+                "voyager",
+                "voyager-bread-target"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-target/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-target/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-target-list",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-target-list.git",
+                "reference": "e877a9890cb0a5c684f8f6ff7ab5fc50f4aa739a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-target-list/zipball/e877a9890cb0a5c684f8f6ff7ab5fc50f4aa739a",
+                "reference": "e877a9890cb0a5c684f8f6ff7ab5fc50f4aa739a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadTargetList\\VoyagerBreadTargetListServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadTargetList\\": "src",
+                    "Joy\\VoyagerBreadTargetList\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadTargetList\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadTargetList support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-target-list",
+            "keywords": [
+                "bread-target-list",
+                "cms",
+                "joy",
+                "joy-voyager-bread-target-list",
+                "laravel",
+                "voyager",
+                "voyager-bread-target-list"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-target-list/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-target-list/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-task",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-task.git",
+                "reference": "13d0acebd7b121401987174d51e40305c3211b87"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-task/zipball/13d0acebd7b121401987174d51e40305c3211b87",
+                "reference": "13d0acebd7b121401987174d51e40305c3211b87",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadTask\\VoyagerBreadTaskServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadTask\\": "src",
+                    "Joy\\VoyagerBreadTask\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadTask\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadTask support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-task",
+            "keywords": [
+                "bread-task",
+                "cms",
+                "joy",
+                "joy-voyager-bread-task",
+                "laravel",
+                "voyager",
+                "voyager-bread-task"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-task/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-task/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-ticket",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-ticket.git",
+                "reference": "1cc68b6c759ccca4c9c16c9eace2fb11d81207b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-ticket/zipball/1cc68b6c759ccca4c9c16c9eace2fb11d81207b8",
+                "reference": "1cc68b6c759ccca4c9c16c9eace2fb11d81207b8",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadTicket\\VoyagerBreadTicketServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadTicket\\": "src",
+                    "Joy\\VoyagerBreadTicket\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadTicket\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadTicket support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-ticket",
+            "keywords": [
+                "bread-ticket",
+                "cms",
+                "joy",
+                "joy-voyager-bread-ticket",
+                "laravel",
+                "voyager",
+                "voyager-bread-ticket"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-ticket/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-ticket/tree/v1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T21:43:27+00:00"
+        },
+        {
+            "name": "joy/voyager-core",
+            "version": "v1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-core.git",
+                "reference": "666d41ea56d0262dd4f49c194b7c482cc4a102b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-core/zipball/666d41ea56d0262dd4f49c194b7c482cc4a102b7",
+                "reference": "666d41ea56d0262dd4f49c194b7c482cc4a102b7",
                 "shasum": ""
             },
             "require": {
@@ -2367,7 +4581,7 @@
                     "name": "Ramakant Gangwar",
                     "email": "gangwar.ramakant@gmail.com",
                     "homepage": "https://github.com/rxcod9",
-                    "role": "Tech Lead"
+                    "role": "Tech Lead & Architect"
                 }
             ],
             "description": "This Laravel/Voyager module adds VoyagerCore support to Voyager.",
@@ -2383,7 +4597,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-core/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-core/tree/v1.1.2"
+                "source": "https://github.com/rxcod9/joy-voyager-core/tree/v1.2.2"
             },
             "funding": [
                 {
@@ -2391,20 +4605,129 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-08T20:12:43+00:00"
+            "time": "2022-03-17T21:12:02+00:00"
         },
         {
-            "name": "joy/voyager-datatable",
-            "version": "v1.1.2",
+            "name": "joy/voyager-crm",
+            "version": "v1.2.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-datatable.git",
-                "reference": "13536c346ff16dc61047dd37ff3ba5c8cf43cae0"
+                "url": "https://github.com/rxcod9/joy-voyager-crm.git",
+                "reference": "d40165a89aa615282a443358309221dfd727722e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/13536c346ff16dc61047dd37ff3ba5c8cf43cae0",
-                "reference": "13536c346ff16dc61047dd37ff3ba5c8cf43cae0",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-crm/zipball/d40165a89aa615282a443358309221dfd727722e",
+                "reference": "d40165a89aa615282a443358309221dfd727722e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-bread-account": "^1.0",
+                "joy/voyager-bread-call": "^1.0",
+                "joy/voyager-bread-campaign": "^1.0",
+                "joy/voyager-bread-contact": "^1.0",
+                "joy/voyager-bread-contract": "^1.0",
+                "joy/voyager-bread-document": "^1.0",
+                "joy/voyager-bread-email": "^1.0",
+                "joy/voyager-bread-email-template": "^1.0",
+                "joy/voyager-bread-event": "^1.0",
+                "joy/voyager-bread-group": "^1.0",
+                "joy/voyager-bread-invoice": "^1.0",
+                "joy/voyager-bread-lead": "^1.0",
+                "joy/voyager-bread-line-item": "^1.0",
+                "joy/voyager-bread-location": "^1.1",
+                "joy/voyager-bread-meeting": "^1.0",
+                "joy/voyager-bread-note": "^1.0",
+                "joy/voyager-bread-opportunity": "^1.0",
+                "joy/voyager-bread-pdf-template": "^1.0",
+                "joy/voyager-bread-product": "^1.0",
+                "joy/voyager-bread-product-category": "^1.0",
+                "joy/voyager-bread-project": "^1.0",
+                "joy/voyager-bread-project-task": "^1.0",
+                "joy/voyager-bread-quote": "^1.0",
+                "joy/voyager-bread-target": "^1.0",
+                "joy/voyager-bread-target-list": "^1.0",
+                "joy/voyager-bread-task": "^1.0",
+                "joy/voyager-bread-ticket": "^1.0",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerCrm\\VoyagerCrmServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerCrm\\": "src",
+                    "Joy\\VoyagerCrm\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerCrm\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerCrm support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-crm",
+            "keywords": [
+                "cms",
+                "joy",
+                "joy-voyager-crm",
+                "laravel",
+                "voyager",
+                "voyager-crm",
+                "voyager-voyager-crm"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-crm/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-crm/tree/v1.2.6"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-17T22:28:48+00:00"
+        },
+        {
+            "name": "joy/voyager-datatable",
+            "version": "v1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-datatable.git",
+                "reference": "137af32e8a91b103fe06e6487c81fd26f48d0187"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/137af32e8a91b103fe06e6487c81fd26f48d0187",
+                "reference": "137af32e8a91b103fe06e6487c81fd26f48d0187",
                 "shasum": ""
             },
             "require": {
@@ -2448,7 +4771,7 @@
                     "name": "Ramakant Gangwar",
                     "email": "gangwar.ramakant@gmail.com",
                     "homepage": "https://github.com/rxcod9",
-                    "role": "Tech Lead"
+                    "role": "Tech Lead & Architect"
                 }
             ],
             "description": "joy voyager datatable",
@@ -2462,7 +4785,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-datatable/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/v1.1.2"
+                "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/v1.2.2"
             },
             "funding": [
                 {
@@ -2470,11 +4793,11 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-08T20:13:03+00:00"
+            "time": "2022-03-17T21:12:02+00:00"
         },
         {
             "name": "joy/voyager-export",
-            "version": "v1.1.4",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-export.git",
@@ -2544,7 +4867,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-export/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-export/tree/v1.1.4"
+                "source": "https://github.com/rxcod9/joy-voyager-export/tree/v1.2.2"
             },
             "funding": [
                 {
@@ -2556,16 +4879,16 @@
         },
         {
             "name": "joy/voyager-import",
-            "version": "v1.1.5",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-import.git",
-                "reference": "c86bd86e33ddea596b30e9a3359ebd9018348fa4"
+                "reference": "902aa19120115b04f71e5ad5e42ebad9281f3327"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-import/zipball/c86bd86e33ddea596b30e9a3359ebd9018348fa4",
-                "reference": "c86bd86e33ddea596b30e9a3359ebd9018348fa4",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-import/zipball/902aa19120115b04f71e5ad5e42ebad9281f3327",
+                "reference": "902aa19120115b04f71e5ad5e42ebad9281f3327",
                 "shasum": ""
             },
             "require": {
@@ -2588,8 +4911,8 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Joy\\VoyagerImport\\VoyagerImportServiceProvider",
-                        "Joy\\VoyagerImport\\ImportServiceProvider"
+                        "Joy\\VoyagerBulkUpdate\\VoyagerBulkUpdateServiceProvider",
+                        "Joy\\VoyagerBulkUpdate\\ImportServiceProvider"
                     ]
                 }
             },
@@ -2598,7 +4921,7 @@
                     "src/helper.php"
                 ],
                 "psr-4": {
-                    "Joy\\VoyagerImport\\": "src"
+                    "Joy\\VoyagerBulkUpdate\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2613,20 +4936,20 @@
                     "role": "Tech Lead & Architect"
                 }
             ],
-            "description": "This Laravel/Voyager module adds VoyagerImport support to Voyager.",
-            "homepage": "https://github.com/rxcod9/joy-voyager-import",
+            "description": "This Laravel/Voyager module adds VoyagerBulkUpdate support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bulk-update",
             "keywords": [
                 "cms",
                 "joy",
-                "joy-voyager-import",
+                "joy-voyager-bulk-update",
                 "laravel",
                 "voyager",
-                "voyager-import",
-                "voyager-voyager-import"
+                "voyager-bulk-update",
+                "voyager-voyager-bulk-update"
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-import/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-import/tree/v1.1.5"
+                "source": "https://github.com/rxcod9/joy-voyager-import/tree/v1.2.2"
             },
             "funding": [
                 {
@@ -2634,20 +4957,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-14T06:40:58+00:00"
+            "time": "2022-03-17T16:34:37+00:00"
         },
         {
             "name": "joy/voyager-relations-table",
-            "version": "v1.1.2",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-relations-table.git",
-                "reference": "da522a00ba0690d4dd4036b67f796b93de7c836a"
+                "reference": "96b89898dbd1212ab345bb1b171cb4228b141bfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-relations-table/zipball/da522a00ba0690d4dd4036b67f796b93de7c836a",
-                "reference": "da522a00ba0690d4dd4036b67f796b93de7c836a",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-relations-table/zipball/96b89898dbd1212ab345bb1b171cb4228b141bfa",
+                "reference": "96b89898dbd1212ab345bb1b171cb4228b141bfa",
                 "shasum": ""
             },
             "require": {
@@ -2692,7 +5015,7 @@
                     "name": "Ramakant Gangwar",
                     "email": "gangwar.ramakant@gmail.com",
                     "homepage": "https://github.com/rxcod9",
-                    "role": "Tech Lead"
+                    "role": "Tech Lead & Architect"
                 }
             ],
             "description": "This Laravel/Voyager module adds VoyagerRelationsTable support to Voyager.",
@@ -2708,7 +5031,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-relations-table/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-relations-table/tree/v1.1.2"
+                "source": "https://github.com/rxcod9/joy-voyager-relations-table/tree/v1.2.2"
             },
             "funding": [
                 {
@@ -2716,11 +5039,11 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-08T20:03:18+00:00"
+            "time": "2022-03-13T14:15:33+00:00"
         },
         {
             "name": "joy/voyager-user-settings",
-            "version": "v1.1.8",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-user-settings.git",
@@ -2788,7 +5111,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-user-settings/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-user-settings/tree/v1.1.8"
+                "source": "https://github.com/rxcod9/joy-voyager-user-settings/tree/v1.2.2"
             },
             "funding": [
                 {
