@@ -37,6 +37,13 @@ class ChangeNullablePagesTable extends Migration
      */
     public function down()
     {
+        if (! Type::hasType('enum')) {
+            Type::addType('enum', StringType::class);
+        }
+        // For point types
+        // DB::getDoctrineSchemaManager()->getDatabasePlatform()->registerDoctrineTypeMapping('point', 'string');
+        DB::getDoctrineSchemaManager()->getDatabasePlatform()->registerDoctrineTypeMapping('enum', 'string');
+
         Schema::table('pages', function (Blueprint $table) {
             $table->integer('author_id')->change();
             $table->enum('status', Page::$statuses)->default(Page::STATUS_INACTIVE)->change();

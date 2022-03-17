@@ -36,6 +36,13 @@ class ChangeNullablePostsTable extends Migration
      */
     public function down()
     {
+        if (! Type::hasType('enum')) {
+            Type::addType('enum', StringType::class);
+        }
+        // For point types
+        // DB::getDoctrineSchemaManager()->getDatabasePlatform()->registerDoctrineTypeMapping('point', 'string');
+        DB::getDoctrineSchemaManager()->getDatabasePlatform()->registerDoctrineTypeMapping('enum', 'string');
+
         Schema::table('posts', function (Blueprint $table) {
             // Reverting this may not be possible until you remove nullable rows
             $table->integer('author_id')->change();
