@@ -12,10 +12,12 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "dompdf/dompdf": "^1.2",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^3.0",
         "guzzlehttp/guzzle": "^7.4",
         "joy/voyager-api": "^1.0",
+        "joy/voyager-bread-sample": "^1.0",
         "joy/voyager-datatable": "^1.0",
         "joy/voyager-export": "^1.0",
         "joy/voyager-import": "^1.0",
@@ -23,8 +25,10 @@
         "joy/voyager-user-settings": "^1.1",
         "laravel/framework": "~6.0|~7.0|~8.0",
         "laravel/tinker": "^2.7",
+        "mpdf/mpdf": "^8.0",
         "symfony/filesystem": "^5.4|^6.0",
-        "tcg/voyager": "^1.4"
+        "tcg/voyager": "^1.4",
+        "tecnickcom/tcpdf": "^6.4"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
