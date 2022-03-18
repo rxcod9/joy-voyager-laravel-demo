@@ -18,6 +18,7 @@
         "guzzlehttp/guzzle": "^7.4",
         "joy/voyager-api": "^1.0",
         "joy/voyager-bread-sample": "^1.1",
+        "joy/voyager-bulk-update": "^1.2",
         "joy/voyager-crm": "^1.1",
         "joy/voyager-datatable": "^1.0",
         "joy/voyager-export": "^1.0",

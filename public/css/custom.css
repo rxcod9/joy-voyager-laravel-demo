@@ -1,0 +1,11 @@
+@media (max-width:768px) {
+    #bulk_delete_btn span,
+    #bulk_update_btn span,
+    #bulk_import_btn span,
+    .btn.btn-primary.dropdown-toggle span,
+    .btn.btn-info span,
+    .btn.btn-primary span,
+    .btn-add-new span {
+        display: none
+    }
+}
