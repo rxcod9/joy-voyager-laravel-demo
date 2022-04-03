@@ -17,14 +17,20 @@
         "fruitcake/laravel-cors": "^3.0",
         "guzzlehttp/guzzle": "^7.4",
         "joy/voyager-api": "^1.0",
-        "joy/voyager-bread-sample": "^1.1",
-        "joy/voyager-bulk-update": "^1.2",
-        "joy/voyager-crm": "^1.1",
+        "joy/voyager-bread-sample": "^1.2",
+        "joy/voyager-bulk-update": "^1.0",
+        "joy/voyager-convert-to": "^1.0",
+        "joy/voyager-crm": "^1.0",
+        "joy/voyager-dashboard": "^1.0",
         "joy/voyager-datatable": "^1.0",
+        "joy/voyager-duplicate": "^1.0",
         "joy/voyager-export": "^1.0",
         "joy/voyager-import": "^1.0",
+        "joy/voyager-login-as-user": "^1.0",
+        "joy/voyager-merge": "^1.0",
         "joy/voyager-relations-table": "^1.0",
-        "joy/voyager-user-settings": "^1.1",
+        "joy/voyager-user-settings": "^1.0",
+        "joy/voyager-widgets": "^1.0",
         "laravel/framework": "~6.0|~7.0|~8.0",
         "laravel/tinker": "^2.7",
         "mpdf/mpdf": "^8.0",
@@ -82,6 +88,5 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "repositories": {
-    }
+    "repositories": {}
 }

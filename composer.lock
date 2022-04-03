@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "04b28245c5c104309641c5b98441546a",
+    "content-hash": "b22dc685dbcbc4dc2e4d80a672d05bf2",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -203,16 +203,16 @@
         },
         {
             "name": "darkaonline/l5-swagger",
-            "version": "8.3.0",
+            "version": "8.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DarkaOnLine/L5-Swagger.git",
-                "reference": "b2e7885df13b0c43b48a8a1028d77428126228da"
+                "reference": "95326884fa22c9840866b688a60242f5f80acd00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DarkaOnLine/L5-Swagger/zipball/b2e7885df13b0c43b48a8a1028d77428126228da",
-                "reference": "b2e7885df13b0c43b48a8a1028d77428126228da",
+                "url": "https://api.github.com/repos/DarkaOnLine/L5-Swagger/zipball/95326884fa22c9840866b688a60242f5f80acd00",
+                "reference": "95326884fa22c9840866b688a60242f5f80acd00",
                 "shasum": ""
             },
             "require": {
@@ -270,7 +270,7 @@
             ],
             "support": {
                 "issues": "https://github.com/DarkaOnLine/L5-Swagger/issues",
-                "source": "https://github.com/DarkaOnLine/L5-Swagger/tree/8.3.0"
+                "source": "https://github.com/DarkaOnLine/L5-Swagger/tree/8.3.1"
             },
             "funding": [
                 {
@@ -278,7 +278,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-02-14T07:30:01+00:00"
+            "time": "2022-04-01T08:06:18+00:00"
         },
         {
             "name": "defuse/php-encryption",
@@ -1007,16 +1007,16 @@
         },
         {
             "name": "dompdf/dompdf",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dompdf/dompdf.git",
-                "reference": "60b704331479a69e9bcdb3496da2315b5c4f94fd"
+                "reference": "c6dfd9bb8b0040609f04754f729d4cb3016e0575"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/60b704331479a69e9bcdb3496da2315b5c4f94fd",
-                "reference": "60b704331479a69e9bcdb3496da2315b5c4f94fd",
+                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/c6dfd9bb8b0040609f04754f729d4cb3016e0575",
+                "reference": "c6dfd9bb8b0040609f04754f729d4cb3016e0575",
                 "shasum": ""
             },
             "require": {
@@ -1068,9 +1068,9 @@
             "homepage": "https://github.com/dompdf/dompdf",
             "support": {
                 "issues": "https://github.com/dompdf/dompdf/issues",
-                "source": "https://github.com/dompdf/dompdf/tree/v1.2.0"
+                "source": "https://github.com/dompdf/dompdf/tree/v1.2.1"
             },
-            "time": "2022-02-07T13:02:10+00:00"
+            "time": "2022-03-24T12:57:42+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -1581,16 +1581,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.4.1",
+            "version": "7.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "ee0a041b1760e6a53d2a39c8c34115adc2af2c79"
+                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
-                "reference": "ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ac1ec1cd9b5624694c3a40be801d94137afb12b4",
+                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4",
                 "shasum": ""
             },
             "require": {
@@ -1685,7 +1685,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.4.1"
+                "source": "https://github.com/guzzle/guzzle/tree/7.4.2"
             },
             "funding": [
                 {
@@ -1701,7 +1701,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-06T18:43:05+00:00"
+            "time": "2022-03-20T14:16:28+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -1789,16 +1789,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.1.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72"
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c94a94f120803a18554c1805ef2e539f8285f9a2",
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2",
                 "shasum": ""
             },
             "require": {
@@ -1822,7 +1822,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -1884,7 +1884,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.1.0"
+                "source": "https://github.com/guzzle/psr7/tree/2.2.1"
             },
             "funding": [
                 {
@@ -1900,7 +1900,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-06T17:43:30+00:00"
+            "time": "2022-03-20T21:55:58+00:00"
         },
         {
             "name": "intervention/image",
@@ -1988,16 +1988,16 @@
         },
         {
             "name": "joy/core",
-            "version": "v1.2.2",
+            "version": "v1.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-core.git",
-                "reference": "56ecc402d605749e8cda181887c180ec8f9b075c"
+                "reference": "a9b22f0e4e9f67e642fede6ecbefee5cc7efa0c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-core/zipball/56ecc402d605749e8cda181887c180ec8f9b075c",
-                "reference": "56ecc402d605749e8cda181887c180ec8f9b075c",
+                "url": "https://api.github.com/repos/rxcod9/joy-core/zipball/a9b22f0e4e9f67e642fede6ecbefee5cc7efa0c4",
+                "reference": "a9b22f0e4e9f67e642fede6ecbefee5cc7efa0c4",
                 "shasum": ""
             },
             "require": {
@@ -2051,7 +2051,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-core/issues",
-                "source": "https://github.com/rxcod9/joy-core/tree/v1.2.2"
+                "source": "https://github.com/rxcod9/joy-core/tree/v1.2.9"
             },
             "funding": [
                 {
@@ -2059,20 +2059,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:12:01+00:00"
+            "time": "2022-04-03T18:20:21+00:00"
         },
         {
             "name": "joy/voyager-api",
-            "version": "v1.2.2",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-api.git",
-                "reference": "15766d561a2262fe189c961257bf87750b9d1913"
+                "reference": "47578d6e1393c1757c2b92e4812588ec6c8794fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api/zipball/15766d561a2262fe189c961257bf87750b9d1913",
-                "reference": "15766d561a2262fe189c961257bf87750b9d1913",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api/zipball/47578d6e1393c1757c2b92e4812588ec6c8794fc",
+                "reference": "47578d6e1393c1757c2b92e4812588ec6c8794fc",
                 "shasum": ""
             },
             "require": {
@@ -2137,7 +2137,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-api/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-api/tree/v1.2.2"
+                "source": "https://github.com/rxcod9/joy-voyager-api/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -2145,20 +2145,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-13T14:12:24+00:00"
+            "time": "2022-03-18T22:24:04+00:00"
         },
         {
             "name": "joy/voyager-api-auth",
-            "version": "v1.2.2",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-api-auth.git",
-                "reference": "0d2a73c75720a56825427b5db03c977bc0fa4e63"
+                "reference": "e719f4073409fadbdd5a78ebd5273a9f251ff887"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api-auth/zipball/0d2a73c75720a56825427b5db03c977bc0fa4e63",
-                "reference": "0d2a73c75720a56825427b5db03c977bc0fa4e63",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api-auth/zipball/e719f4073409fadbdd5a78ebd5273a9f251ff887",
+                "reference": "e719f4073409fadbdd5a78ebd5273a9f251ff887",
                 "shasum": ""
             },
             "require": {
@@ -2221,7 +2221,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-api-auth/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-api-auth/tree/v1.2.2"
+                "source": "https://github.com/rxcod9/joy-voyager-api-auth/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -2229,25 +2229,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:12:01+00:00"
+            "time": "2022-03-18T22:01:37+00:00"
         },
         {
             "name": "joy/voyager-bread-account",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-account.git",
-                "reference": "6a30b553025b090517dd9bf066df50e83aa45687"
+                "reference": "11e7706ff056796a00fdaafce60ed079d03efce8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-account/zipball/6a30b553025b090517dd9bf066df50e83aa45687",
-                "reference": "6a30b553025b090517dd9bf066df50e83aa45687",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-account/zipball/11e7706ff056796a00fdaafce60ed079d03efce8",
+                "reference": "11e7706ff056796a00fdaafce60ed079d03efce8",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -2303,7 +2304,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-account/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-account/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-account/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -2311,25 +2312,273 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:20+00:00"
         },
         {
-            "name": "joy/voyager-bread-call",
-            "version": "v1.2.3",
+            "name": "joy/voyager-bread-activity",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-bread-call.git",
-                "reference": "c07a22ba90aeab01604065203be5a1ade95bb91f"
+                "url": "https://github.com/rxcod9/joy-voyager-bread-activity.git",
+                "reference": "3c9175a84edf32e177377d24c4726b879c926ef1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-call/zipball/c07a22ba90aeab01604065203be5a1ade95bb91f",
-                "reference": "c07a22ba90aeab01604065203be5a1ade95bb91f",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-activity/zipball/3c9175a84edf32e177377d24c4726b879c926ef1",
+                "reference": "3c9175a84edf32e177377d24c4726b879c926ef1",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadActivity\\VoyagerBreadActivityServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadActivity\\": "src",
+                    "Joy\\VoyagerBreadActivity\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadActivity\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadActivity support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-activity",
+            "keywords": [
+                "bread-activity",
+                "cms",
+                "joy",
+                "joy-voyager-bread-activity",
+                "laravel",
+                "voyager",
+                "voyager-bread-activity"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-activity/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-activity/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T20:37:20+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-article",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-article.git",
+                "reference": "e3cce1cb1247a013d822763ae19e30b143a8a039"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-article/zipball/e3cce1cb1247a013d822763ae19e30b143a8a039",
+                "reference": "e3cce1cb1247a013d822763ae19e30b143a8a039",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadArticle\\VoyagerBreadArticleServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadArticle\\": "src",
+                    "Joy\\VoyagerBreadArticle\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadArticle\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadArticle support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-article",
+            "keywords": [
+                "bread-article",
+                "cms",
+                "joy",
+                "joy-voyager-bread-article",
+                "laravel",
+                "voyager",
+                "voyager-bread-article"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-article/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-article/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T20:37:20+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-article-category",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-article-category.git",
+                "reference": "91a9e39ae28a6586a727a86bee2d2924db89e275"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-article-category/zipball/91a9e39ae28a6586a727a86bee2d2924db89e275",
+                "reference": "91a9e39ae28a6586a727a86bee2d2924db89e275",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadArticleCategory\\VoyagerBreadArticleCategoryServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadArticleCategory\\": "src",
+                    "Joy\\VoyagerBreadArticleCategory\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadArticleCategory\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadArticleCategory support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-article-category",
+            "keywords": [
+                "bread-article-category",
+                "cms",
+                "joy",
+                "joy-voyager-bread-article-category",
+                "laravel",
+                "voyager",
+                "voyager-bread-article-category"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-article-category/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-article-category/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T20:37:20+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-call",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-call.git",
+                "reference": "2b13b41e28ccf0a5cf16f20946fa27df48c92ed1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-call/zipball/2b13b41e28ccf0a5cf16f20946fa27df48c92ed1",
+                "reference": "2b13b41e28ccf0a5cf16f20946fa27df48c92ed1",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -2385,7 +2634,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-call/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-call/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-call/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -2393,25 +2642,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:20+00:00"
         },
         {
             "name": "joy/voyager-bread-campaign",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-campaign.git",
-                "reference": "6b0750cd6d520e8a9dc3da40f016b364455ac2de"
+                "reference": "25e98002880b488f0e521eead2700dacc4df3120"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-campaign/zipball/6b0750cd6d520e8a9dc3da40f016b364455ac2de",
-                "reference": "6b0750cd6d520e8a9dc3da40f016b364455ac2de",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-campaign/zipball/25e98002880b488f0e521eead2700dacc4df3120",
+                "reference": "25e98002880b488f0e521eead2700dacc4df3120",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -2467,7 +2717,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-campaign/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-campaign/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-campaign/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -2475,25 +2725,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:20+00:00"
         },
         {
             "name": "joy/voyager-bread-contact",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-contact.git",
-                "reference": "a83a1eb188c9da0499ce60395e2132026d87c593"
+                "reference": "9db54ffb30b4755c21b31dafb463d185321c6338"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-contact/zipball/a83a1eb188c9da0499ce60395e2132026d87c593",
-                "reference": "a83a1eb188c9da0499ce60395e2132026d87c593",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-contact/zipball/9db54ffb30b4755c21b31dafb463d185321c6338",
+                "reference": "9db54ffb30b4755c21b31dafb463d185321c6338",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -2549,7 +2800,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-contact/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-contact/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-contact/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -2557,25 +2808,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:20+00:00"
         },
         {
             "name": "joy/voyager-bread-contract",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-contract.git",
-                "reference": "97292d1604510b1e2818c1a37f3b324cd0ff922a"
+                "reference": "41226a6b40f41e31507ebe2f392b3fe91b91522a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-contract/zipball/97292d1604510b1e2818c1a37f3b324cd0ff922a",
-                "reference": "97292d1604510b1e2818c1a37f3b324cd0ff922a",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-contract/zipball/41226a6b40f41e31507ebe2f392b3fe91b91522a",
+                "reference": "41226a6b40f41e31507ebe2f392b3fe91b91522a",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -2631,7 +2883,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-contract/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-contract/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-contract/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -2639,25 +2891,192 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:20+00:00"
         },
         {
-            "name": "joy/voyager-bread-document",
-            "version": "v1.2.3",
+            "name": "joy/voyager-bread-currency",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-bread-document.git",
-                "reference": "ab0cb7fe86a0cf20dc77d2bc993ded31baab38cc"
+                "url": "https://github.com/rxcod9/joy-voyager-bread-currency.git",
+                "reference": "f69d615acb29a6dde1cbe66d1131f1aa36d59319"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-document/zipball/ab0cb7fe86a0cf20dc77d2bc993ded31baab38cc",
-                "reference": "ab0cb7fe86a0cf20dc77d2bc993ded31baab38cc",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-currency/zipball/f69d615acb29a6dde1cbe66d1131f1aa36d59319",
+                "reference": "f69d615acb29a6dde1cbe66d1131f1aa36d59319",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadCurrency\\VoyagerBreadCurrencyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadCurrency\\": "src",
+                    "Joy\\VoyagerBreadCurrency\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadCurrency\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadCurrency support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-currency",
+            "keywords": [
+                "bread-currency",
+                "cms",
+                "joy",
+                "joy-voyager-bread-currency",
+                "laravel",
+                "voyager",
+                "voyager-bread-currency"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-currency/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-currency/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T20:37:20+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-deal",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-deal.git",
+                "reference": "e63cf272ba04ddf098f67adec46366197682db0d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-deal/zipball/e63cf272ba04ddf098f67adec46366197682db0d",
+                "reference": "e63cf272ba04ddf098f67adec46366197682db0d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadDeal\\VoyagerBreadDealServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadDeal\\": "src",
+                    "Joy\\VoyagerBreadDeal\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadDeal\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadDeal support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-deal",
+            "keywords": [
+                "bread-deal",
+                "cms",
+                "joy",
+                "joy-voyager-bread-deal",
+                "laravel",
+                "voyager",
+                "voyager-bread-deal"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-deal/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-deal/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T20:37:20+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-document",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-document.git",
+                "reference": "4faad356b4855ca68b43427e33ea82535af7dda9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-document/zipball/4faad356b4855ca68b43427e33ea82535af7dda9",
+                "reference": "4faad356b4855ca68b43427e33ea82535af7dda9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -2713,7 +3132,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-document/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-document/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-document/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -2721,25 +3140,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:20+00:00"
         },
         {
             "name": "joy/voyager-bread-email",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-email.git",
-                "reference": "61504bc79f31d855d35d5f2e6d6a76315ba6418c"
+                "reference": "2f1ee19fe8e56c26f100708f9fa246c5a83a7e29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-email/zipball/61504bc79f31d855d35d5f2e6d6a76315ba6418c",
-                "reference": "61504bc79f31d855d35d5f2e6d6a76315ba6418c",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-email/zipball/2f1ee19fe8e56c26f100708f9fa246c5a83a7e29",
+                "reference": "2f1ee19fe8e56c26f100708f9fa246c5a83a7e29",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -2795,7 +3215,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-email/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-email/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-email/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -2803,25 +3223,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:20+00:00"
         },
         {
             "name": "joy/voyager-bread-email-template",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-email-template.git",
-                "reference": "4a4afd79d7719fe4ac3e436bf9d4ffe904dc781e"
+                "reference": "58874da7ffbc8c0a641f74e0a1dc90f5c03f1f8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-email-template/zipball/4a4afd79d7719fe4ac3e436bf9d4ffe904dc781e",
-                "reference": "4a4afd79d7719fe4ac3e436bf9d4ffe904dc781e",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-email-template/zipball/58874da7ffbc8c0a641f74e0a1dc90f5c03f1f8d",
+                "reference": "58874da7ffbc8c0a641f74e0a1dc90f5c03f1f8d",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -2877,7 +3298,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-email-template/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-email-template/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-email-template/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -2885,25 +3306,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:20+00:00"
         },
         {
             "name": "joy/voyager-bread-event",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-event.git",
-                "reference": "b1ba4c951d531fcd66e0c89dfea240715104914d"
+                "reference": "8ce6d5cbbf96e9a0a24cd1f2593b852825bee70f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-event/zipball/b1ba4c951d531fcd66e0c89dfea240715104914d",
-                "reference": "b1ba4c951d531fcd66e0c89dfea240715104914d",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-event/zipball/8ce6d5cbbf96e9a0a24cd1f2593b852825bee70f",
+                "reference": "8ce6d5cbbf96e9a0a24cd1f2593b852825bee70f",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -2959,7 +3381,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-event/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-event/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-event/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -2967,25 +3389,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:20+00:00"
         },
         {
             "name": "joy/voyager-bread-group",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-group.git",
-                "reference": "7ed34933bba17731abf66405e4f6d7da2ca799ce"
+                "reference": "d3bed8aaed2cb71b2361447bef0087fe76ceb4f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-group/zipball/7ed34933bba17731abf66405e4f6d7da2ca799ce",
-                "reference": "7ed34933bba17731abf66405e4f6d7da2ca799ce",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-group/zipball/d3bed8aaed2cb71b2361447bef0087fe76ceb4f1",
+                "reference": "d3bed8aaed2cb71b2361447bef0087fe76ceb4f1",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -3041,7 +3464,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-group/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-group/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-group/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -3049,25 +3472,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
             "name": "joy/voyager-bread-invoice",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-invoice.git",
-                "reference": "9d6e582065359888703fc038b836a6c2cd0e2021"
+                "reference": "d38ebde886d25057d4218f27fc134221459f99c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-invoice/zipball/9d6e582065359888703fc038b836a6c2cd0e2021",
-                "reference": "9d6e582065359888703fc038b836a6c2cd0e2021",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-invoice/zipball/d38ebde886d25057d4218f27fc134221459f99c8",
+                "reference": "d38ebde886d25057d4218f27fc134221459f99c8",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -3123,7 +3547,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-invoice/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-invoice/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-invoice/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -3131,25 +3555,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
             "name": "joy/voyager-bread-lead",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-lead.git",
-                "reference": "0abe0e7d68b5aded5c2e1a46d5b1ef008b536862"
+                "reference": "a96e0e5fd8c4b831ed28d9a92819a855781800a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-lead/zipball/0abe0e7d68b5aded5c2e1a46d5b1ef008b536862",
-                "reference": "0abe0e7d68b5aded5c2e1a46d5b1ef008b536862",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-lead/zipball/a96e0e5fd8c4b831ed28d9a92819a855781800a3",
+                "reference": "a96e0e5fd8c4b831ed28d9a92819a855781800a3",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -3205,7 +3630,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-lead/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-lead/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-lead/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -3213,25 +3638,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
             "name": "joy/voyager-bread-line-item",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-line-item.git",
-                "reference": "b97c88c4fd3a518fa1ad2f65d86f09aa50f2c5be"
+                "reference": "a0021ab458a35e788a68f451add1757a2fe6ac62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-line-item/zipball/b97c88c4fd3a518fa1ad2f65d86f09aa50f2c5be",
-                "reference": "b97c88c4fd3a518fa1ad2f65d86f09aa50f2c5be",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-line-item/zipball/a0021ab458a35e788a68f451add1757a2fe6ac62",
+                "reference": "a0021ab458a35e788a68f451add1757a2fe6ac62",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -3287,7 +3713,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-line-item/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-line-item/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-line-item/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -3295,25 +3721,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
             "name": "joy/voyager-bread-location",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-location.git",
-                "reference": "4719f7478cd7bd4dea8166e72e89b7aa4e0c1c46"
+                "reference": "94d44edb5ef7a04ddf30460640dbedf97b48c123"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-location/zipball/4719f7478cd7bd4dea8166e72e89b7aa4e0c1c46",
-                "reference": "4719f7478cd7bd4dea8166e72e89b7aa4e0c1c46",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-location/zipball/94d44edb5ef7a04ddf30460640dbedf97b48c123",
+                "reference": "94d44edb5ef7a04ddf30460640dbedf97b48c123",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -3369,7 +3796,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-location/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-location/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-location/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -3377,25 +3804,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
             "name": "joy/voyager-bread-meeting",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-meeting.git",
-                "reference": "8e4f72dfbfdb92841b5bbc53514d0334898aed1e"
+                "reference": "f1b0d9d87219bd80e15d6df638c9a7332797f181"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-meeting/zipball/8e4f72dfbfdb92841b5bbc53514d0334898aed1e",
-                "reference": "8e4f72dfbfdb92841b5bbc53514d0334898aed1e",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-meeting/zipball/f1b0d9d87219bd80e15d6df638c9a7332797f181",
+                "reference": "f1b0d9d87219bd80e15d6df638c9a7332797f181",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -3451,7 +3879,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-meeting/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-meeting/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-meeting/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -3459,25 +3887,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
             "name": "joy/voyager-bread-note",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-note.git",
-                "reference": "678ddc86d1f9d3a4ee058994ae555f39380b3053"
+                "reference": "a1e0fec18d5832344261a8ac649b9fca7f687d7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-note/zipball/678ddc86d1f9d3a4ee058994ae555f39380b3053",
-                "reference": "678ddc86d1f9d3a4ee058994ae555f39380b3053",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-note/zipball/a1e0fec18d5832344261a8ac649b9fca7f687d7c",
+                "reference": "a1e0fec18d5832344261a8ac649b9fca7f687d7c",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -3533,7 +3962,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-note/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-note/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-note/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -3541,25 +3970,109 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
-            "name": "joy/voyager-bread-opportunity",
-            "version": "v1.2.3",
+            "name": "joy/voyager-bread-notification",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-bread-opportunity.git",
-                "reference": "78476012c5c2182c3f1682577fe6c51bbf1348c9"
+                "url": "https://github.com/rxcod9/joy-voyager-bread-notification.git",
+                "reference": "d8d428cd6f026e6aff5fb327c93be248ced9e758"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-opportunity/zipball/78476012c5c2182c3f1682577fe6c51bbf1348c9",
-                "reference": "78476012c5c2182c3f1682577fe6c51bbf1348c9",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-notification/zipball/d8d428cd6f026e6aff5fb327c93be248ced9e758",
+                "reference": "d8d428cd6f026e6aff5fb327c93be248ced9e758",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadNotification\\VoyagerBreadNotificationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadNotification\\": "src",
+                    "Joy\\VoyagerBreadNotification\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadNotification\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadNotification support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-notification",
+            "keywords": [
+                "bread-notification",
+                "cms",
+                "joy",
+                "joy-voyager-bread-notification",
+                "laravel",
+                "voyager",
+                "voyager-bread-notification"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-notification/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-notification/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T20:37:21+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-opportunity",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-opportunity.git",
+                "reference": "981b5424cbacd84b44e30780a85fb448eac9e403"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-opportunity/zipball/981b5424cbacd84b44e30780a85fb448eac9e403",
+                "reference": "981b5424cbacd84b44e30780a85fb448eac9e403",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -3615,7 +4128,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-opportunity/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-opportunity/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-opportunity/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -3623,25 +4136,109 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
-            "name": "joy/voyager-bread-pdf-template",
-            "version": "v1.2.3",
+            "name": "joy/voyager-bread-order",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-bread-pdf-template.git",
-                "reference": "b9be991275733171aa6234b2294f72d2dce33385"
+                "url": "https://github.com/rxcod9/joy-voyager-bread-order.git",
+                "reference": "2080bed709d0ff3bf50652d0668acafa1e30e040"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-pdf-template/zipball/b9be991275733171aa6234b2294f72d2dce33385",
-                "reference": "b9be991275733171aa6234b2294f72d2dce33385",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-order/zipball/2080bed709d0ff3bf50652d0668acafa1e30e040",
+                "reference": "2080bed709d0ff3bf50652d0668acafa1e30e040",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadOrder\\VoyagerBreadOrderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadOrder\\": "src",
+                    "Joy\\VoyagerBreadOrder\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadOrder\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadOrder support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-order",
+            "keywords": [
+                "bread-order",
+                "cms",
+                "joy",
+                "joy-voyager-bread-order",
+                "laravel",
+                "voyager",
+                "voyager-bread-order"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-order/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-order/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T20:37:21+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-pdf-template",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-pdf-template.git",
+                "reference": "f370084dd88de4bb013342c488eeeb5ea770c7cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-pdf-template/zipball/f370084dd88de4bb013342c488eeeb5ea770c7cb",
+                "reference": "f370084dd88de4bb013342c488eeeb5ea770c7cb",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -3697,7 +4294,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-pdf-template/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-pdf-template/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-pdf-template/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -3705,25 +4302,192 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
-            "name": "joy/voyager-bread-product",
-            "version": "v1.2.3",
+            "name": "joy/voyager-bread-pipeline",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-bread-product.git",
-                "reference": "c8b56e24a4c6d7cdbdc8e817ce7760587864a4e9"
+                "url": "https://github.com/rxcod9/joy-voyager-bread-pipeline.git",
+                "reference": "ab6e1655216c9c6b79e78982b811c38785868c68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-product/zipball/c8b56e24a4c6d7cdbdc8e817ce7760587864a4e9",
-                "reference": "c8b56e24a4c6d7cdbdc8e817ce7760587864a4e9",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-pipeline/zipball/ab6e1655216c9c6b79e78982b811c38785868c68",
+                "reference": "ab6e1655216c9c6b79e78982b811c38785868c68",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadPipeline\\VoyagerBreadPipelineServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadPipeline\\": "src",
+                    "Joy\\VoyagerBreadPipeline\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadPipeline\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadPipeline support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-pipeline",
+            "keywords": [
+                "bread-pipeline",
+                "cms",
+                "joy",
+                "joy-voyager-bread-pipeline",
+                "laravel",
+                "voyager",
+                "voyager-bread-pipeline"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-pipeline/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-pipeline/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T20:37:21+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-plan",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-plan.git",
+                "reference": "d63b6a7a2c2f8e17453c49d3a658240b0c6296f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-plan/zipball/d63b6a7a2c2f8e17453c49d3a658240b0c6296f0",
+                "reference": "d63b6a7a2c2f8e17453c49d3a658240b0c6296f0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadPlan\\VoyagerBreadPlanServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadPlan\\": "src",
+                    "Joy\\VoyagerBreadPlan\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadPlan\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadPlan support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-plan",
+            "keywords": [
+                "bread-plan",
+                "cms",
+                "joy",
+                "joy-voyager-bread-plan",
+                "laravel",
+                "voyager",
+                "voyager-bread-plan"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-plan/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-plan/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T20:37:21+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-product",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-product.git",
+                "reference": "84218aa8265edf555e9c81b7620494119e6392c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-product/zipball/84218aa8265edf555e9c81b7620494119e6392c3",
+                "reference": "84218aa8265edf555e9c81b7620494119e6392c3",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -3779,7 +4543,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-product/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-product/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-product/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -3787,25 +4551,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
             "name": "joy/voyager-bread-product-category",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-product-category.git",
-                "reference": "395a5913a34dbae42b14b7eba0aaac87a772efda"
+                "reference": "8926236033bc482aa0f87e3b7c8024eaa4cf0e83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-product-category/zipball/395a5913a34dbae42b14b7eba0aaac87a772efda",
-                "reference": "395a5913a34dbae42b14b7eba0aaac87a772efda",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-product-category/zipball/8926236033bc482aa0f87e3b7c8024eaa4cf0e83",
+                "reference": "8926236033bc482aa0f87e3b7c8024eaa4cf0e83",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -3861,7 +4626,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-product-category/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-product-category/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-product-category/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -3869,25 +4634,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
             "name": "joy/voyager-bread-project",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-project.git",
-                "reference": "7d3066d839a4c7b45f76d2d97d695cbf1bb22cfc"
+                "reference": "1e098ce542c08b98be277438915d382e5e1d52be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-project/zipball/7d3066d839a4c7b45f76d2d97d695cbf1bb22cfc",
-                "reference": "7d3066d839a4c7b45f76d2d97d695cbf1bb22cfc",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-project/zipball/1e098ce542c08b98be277438915d382e5e1d52be",
+                "reference": "1e098ce542c08b98be277438915d382e5e1d52be",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -3943,7 +4709,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-project/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-project/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-project/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -3951,25 +4717,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
             "name": "joy/voyager-bread-project-task",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-project-task.git",
-                "reference": "0bf8a3a41debe99bf6e03be65ed6b8e85fa55169"
+                "reference": "1ab0c5c28e52a4f1d87295a7b3facba7e16989c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-project-task/zipball/0bf8a3a41debe99bf6e03be65ed6b8e85fa55169",
-                "reference": "0bf8a3a41debe99bf6e03be65ed6b8e85fa55169",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-project-task/zipball/1ab0c5c28e52a4f1d87295a7b3facba7e16989c7",
+                "reference": "1ab0c5c28e52a4f1d87295a7b3facba7e16989c7",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -4025,7 +4792,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-project-task/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-project-task/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-project-task/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -4033,25 +4800,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
             "name": "joy/voyager-bread-quote",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-quote.git",
-                "reference": "68241d753ea6cd6a9006fad54f4db1beaef01ead"
+                "reference": "30fd800377e42706804316fc23df4eefcff0a87a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-quote/zipball/68241d753ea6cd6a9006fad54f4db1beaef01ead",
-                "reference": "68241d753ea6cd6a9006fad54f4db1beaef01ead",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-quote/zipball/30fd800377e42706804316fc23df4eefcff0a87a",
+                "reference": "30fd800377e42706804316fc23df4eefcff0a87a",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -4107,7 +4875,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-quote/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-quote/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-quote/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -4115,25 +4883,191 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
-            "name": "joy/voyager-bread-sample",
-            "version": "v1.2.3",
+            "name": "joy/voyager-bread-relatable",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-bread-sample.git",
-                "reference": "c5f26b4b870b5da66bf8bfe09185a14c280ed197"
+                "url": "https://github.com/rxcod9/joy-voyager-bread-relatable.git",
+                "reference": "0c0d69df977518e31ab0fd89629ad680c25a4179"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-sample/zipball/c5f26b4b870b5da66bf8bfe09185a14c280ed197",
-                "reference": "c5f26b4b870b5da66bf8bfe09185a14c280ed197",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-relatable/zipball/0c0d69df977518e31ab0fd89629ad680c25a4179",
+                "reference": "0c0d69df977518e31ab0fd89629ad680c25a4179",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadRelatable\\VoyagerBreadRelatableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadRelatable\\": "src",
+                    "Joy\\VoyagerBreadRelatable\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadRelatable\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadRelatable support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-relatable",
+            "keywords": [
+                "bread-relatable",
+                "cms",
+                "joy",
+                "joy-voyager-bread-relatable",
+                "laravel",
+                "voyager",
+                "voyager-bread-relatable"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-relatable/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-relatable/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T20:37:21+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-report",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-report.git",
+                "reference": "f87f7d1ee5328c9ff906b78691f0c2f72b4018d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-report/zipball/f87f7d1ee5328c9ff906b78691f0c2f72b4018d6",
+                "reference": "f87f7d1ee5328c9ff906b78691f0c2f72b4018d6",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadReport\\VoyagerBreadReportServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadReport\\": "src",
+                    "Joy\\VoyagerBreadReport\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadReport\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadReport support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-report",
+            "keywords": [
+                "bread-report",
+                "cms",
+                "joy",
+                "joy-voyager-bread-report",
+                "laravel",
+                "voyager",
+                "voyager-bread-report"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-report/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-report/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T20:37:21+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-sample",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-sample.git",
+                "reference": "17d76a4f6bc9715d1b047b685ba1636fa45557a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-sample/zipball/17d76a4f6bc9715d1b047b685ba1636fa45557a6",
+                "reference": "17d76a4f6bc9715d1b047b685ba1636fa45557a6",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -4189,7 +5123,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-sample/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-sample/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-sample/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -4197,25 +5131,109 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
-            "name": "joy/voyager-bread-target",
-            "version": "v1.2.3",
+            "name": "joy/voyager-bread-subscription",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-bread-target.git",
-                "reference": "b749a7722129b047704331c296396342411f6367"
+                "url": "https://github.com/rxcod9/joy-voyager-bread-subscription.git",
+                "reference": "5881a0895a344e67208715c6df1e91f7e36b74a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-target/zipball/b749a7722129b047704331c296396342411f6367",
-                "reference": "b749a7722129b047704331c296396342411f6367",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-subscription/zipball/5881a0895a344e67208715c6df1e91f7e36b74a6",
+                "reference": "5881a0895a344e67208715c6df1e91f7e36b74a6",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadSubscription\\VoyagerBreadSubscriptionServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadSubscription\\": "src",
+                    "Joy\\VoyagerBreadSubscription\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadSubscription\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadSubscription support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-subscription",
+            "keywords": [
+                "bread-subscription",
+                "cms",
+                "joy",
+                "joy-voyager-bread-subscription",
+                "laravel",
+                "voyager",
+                "voyager-bread-subscription"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-subscription/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-subscription/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T20:37:21+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-target",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-target.git",
+                "reference": "abd1c69ee22a9ab3e9c50bd63c8bcce747e82a54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-target/zipball/abd1c69ee22a9ab3e9c50bd63c8bcce747e82a54",
+                "reference": "abd1c69ee22a9ab3e9c50bd63c8bcce747e82a54",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -4271,7 +5289,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-target/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-target/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-target/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -4279,25 +5297,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
             "name": "joy/voyager-bread-target-list",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-target-list.git",
-                "reference": "e877a9890cb0a5c684f8f6ff7ab5fc50f4aa739a"
+                "reference": "f9bb55585f52397276cbfd7b727831f1cc10e0ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-target-list/zipball/e877a9890cb0a5c684f8f6ff7ab5fc50f4aa739a",
-                "reference": "e877a9890cb0a5c684f8f6ff7ab5fc50f4aa739a",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-target-list/zipball/f9bb55585f52397276cbfd7b727831f1cc10e0ce",
+                "reference": "f9bb55585f52397276cbfd7b727831f1cc10e0ce",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -4353,7 +5372,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-target-list/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-target-list/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-target-list/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -4361,25 +5380,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
             "name": "joy/voyager-bread-task",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-bread-task.git",
-                "reference": "13d0acebd7b121401987174d51e40305c3211b87"
+                "reference": "e47d292b8047ed9519fe440550f63bcc71a1dcbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-task/zipball/13d0acebd7b121401987174d51e40305c3211b87",
-                "reference": "13d0acebd7b121401987174d51e40305c3211b87",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-task/zipball/e47d292b8047ed9519fe440550f63bcc71a1dcbb",
+                "reference": "e47d292b8047ed9519fe440550f63bcc71a1dcbb",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -4435,7 +5455,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-task/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-task/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-task/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -4443,25 +5463,109 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
-            "name": "joy/voyager-bread-ticket",
-            "version": "v1.2.3",
+            "name": "joy/voyager-bread-team",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-bread-ticket.git",
-                "reference": "1cc68b6c759ccca4c9c16c9eace2fb11d81207b8"
+                "url": "https://github.com/rxcod9/joy-voyager-bread-team.git",
+                "reference": "246a7eb9148a4f366c8abbc0bbfa7f7f1a4f6e15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-ticket/zipball/1cc68b6c759ccca4c9c16c9eace2fb11d81207b8",
-                "reference": "1cc68b6c759ccca4c9c16c9eace2fb11d81207b8",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-team/zipball/246a7eb9148a4f366c8abbc0bbfa7f7f1a4f6e15",
+                "reference": "246a7eb9148a4f366c8abbc0bbfa7f7f1a4f6e15",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadTeam\\VoyagerBreadTeamServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadTeam\\": "src",
+                    "Joy\\VoyagerBreadTeam\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadTeam\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadTeam support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-team",
+            "keywords": [
+                "bread-team",
+                "cms",
+                "joy",
+                "joy-voyager-bread-team",
+                "laravel",
+                "voyager",
+                "voyager-bread-team"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-team/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-team/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T20:37:21+00:00"
+        },
+        {
+            "name": "joy/voyager-bread-ticket",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bread-ticket.git",
+                "reference": "a0ec22396e31a7c54e5a34ef4edf2ffb243aee04"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-ticket/zipball/a0ec22396e31a7c54e5a34ef4edf2ffb243aee04",
+                "reference": "a0ec22396e31a7c54e5a34ef4edf2ffb243aee04",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
             },
@@ -4517,7 +5621,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bread-ticket/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bread-ticket/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-bread-ticket/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -4525,20 +5629,103 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:43:27+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
-            "name": "joy/voyager-bulk-update",
-            "version": "v1.2.5",
+            "name": "joy/voyager-bread-watcher",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-bulk-update.git",
-                "reference": "102c5e203ccd68b59669615aaefe49ee95620c18"
+                "url": "https://github.com/rxcod9/joy-voyager-bread-watcher.git",
+                "reference": "d2bcecfe4b73441d67566659675e5e2c3746654d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bulk-update/zipball/102c5e203ccd68b59669615aaefe49ee95620c18",
-                "reference": "102c5e203ccd68b59669615aaefe49ee95620c18",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-watcher/zipball/d2bcecfe4b73441d67566659675e5e2c3746654d",
+                "reference": "d2bcecfe4b73441d67566659675e5e2c3746654d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadWatcher\\VoyagerBreadWatcherServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadWatcher\\": "src",
+                    "Joy\\VoyagerBreadWatcher\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadWatcher\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadWatcher support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-watcher",
+            "keywords": [
+                "bread-watcher",
+                "cms",
+                "joy",
+                "joy-voyager-bread-watcher",
+                "laravel",
+                "voyager",
+                "voyager-bread-watcher"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-watcher/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-watcher/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T20:37:21+00:00"
+        },
+        {
+            "name": "joy/voyager-bulk-update",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bulk-update.git",
+                "reference": "db9c43122c3f5a83845f6f16ec58e8345d122ac4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bulk-update/zipball/db9c43122c3f5a83845f6f16ec58e8345d122ac4",
+                "reference": "db9c43122c3f5a83845f6f16ec58e8345d122ac4",
                 "shasum": ""
             },
             "require": {
@@ -4598,7 +5785,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bulk-update/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bulk-update/tree/v1.2.5"
+                "source": "https://github.com/rxcod9/joy-voyager-bulk-update/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -4606,20 +5793,100 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-18T02:30:54+00:00"
+            "time": "2022-04-03T16:32:59+00:00"
         },
         {
-            "name": "joy/voyager-core",
-            "version": "v1.2.2",
+            "name": "joy/voyager-convert-to",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-core.git",
-                "reference": "666d41ea56d0262dd4f49c194b7c482cc4a102b7"
+                "url": "https://github.com/rxcod9/joy-voyager-convert-to.git",
+                "reference": "18d260d1b7a8273b0bcd4470533ffb80a6f78b7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-core/zipball/666d41ea56d0262dd4f49c194b7c482cc4a102b7",
-                "reference": "666d41ea56d0262dd4f49c194b7c482cc4a102b7",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-convert-to/zipball/18d260d1b7a8273b0bcd4470533ffb80a6f78b7a",
+                "reference": "18d260d1b7a8273b0bcd4470533ffb80a6f78b7a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerConvertTo\\VoyagerConvertToServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerConvertTo\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerConvertTo support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-convert-to",
+            "keywords": [
+                "cms",
+                "convert-to",
+                "joy",
+                "joy-voyager-convert-to",
+                "laravel",
+                "voyager",
+                "voyager-convert-to"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-convert-to/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-convert-to/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T19:51:59+00:00"
+        },
+        {
+            "name": "joy/voyager-core",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-core.git",
+                "reference": "038e83e737f251c025f4fda4e835d4206e2e4516"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-core/zipball/038e83e737f251c025f4fda4e835d4206e2e4516",
+                "reference": "038e83e737f251c025f4fda4e835d4206e2e4516",
                 "shasum": ""
             },
             "require": {
@@ -4678,7 +5945,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-core/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-core/tree/v1.2.2"
+                "source": "https://github.com/rxcod9/joy-voyager-core/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -4686,29 +5953,34 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:12:02+00:00"
+            "time": "2022-03-18T22:36:18+00:00"
         },
         {
             "name": "joy/voyager-crm",
-            "version": "v1.2.6",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-crm.git",
-                "reference": "d40165a89aa615282a443358309221dfd727722e"
+                "reference": "444a902158780c3a62bc28ad43f9d1a793a17f2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-crm/zipball/d40165a89aa615282a443358309221dfd727722e",
-                "reference": "d40165a89aa615282a443358309221dfd727722e",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-crm/zipball/444a902158780c3a62bc28ad43f9d1a793a17f2b",
+                "reference": "444a902158780c3a62bc28ad43f9d1a793a17f2b",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7|^8",
                 "joy/voyager-bread-account": "^1.0",
+                "joy/voyager-bread-activity": "^1.0",
+                "joy/voyager-bread-article": "^1.0",
+                "joy/voyager-bread-article-category": "^1.0",
                 "joy/voyager-bread-call": "^1.0",
                 "joy/voyager-bread-campaign": "^1.0",
                 "joy/voyager-bread-contact": "^1.0",
                 "joy/voyager-bread-contract": "^1.0",
+                "joy/voyager-bread-currency": "^1.0",
+                "joy/voyager-bread-deal": "^1.0",
                 "joy/voyager-bread-document": "^1.0",
                 "joy/voyager-bread-email": "^1.0",
                 "joy/voyager-bread-email-template": "^1.0",
@@ -4717,20 +5989,29 @@
                 "joy/voyager-bread-invoice": "^1.0",
                 "joy/voyager-bread-lead": "^1.0",
                 "joy/voyager-bread-line-item": "^1.0",
-                "joy/voyager-bread-location": "^1.1",
+                "joy/voyager-bread-location": "^1.0",
                 "joy/voyager-bread-meeting": "^1.0",
                 "joy/voyager-bread-note": "^1.0",
+                "joy/voyager-bread-notification": "^1.0",
                 "joy/voyager-bread-opportunity": "^1.0",
+                "joy/voyager-bread-order": "^1.0",
                 "joy/voyager-bread-pdf-template": "^1.0",
+                "joy/voyager-bread-pipeline": "^1.0",
+                "joy/voyager-bread-plan": "^1.0",
                 "joy/voyager-bread-product": "^1.0",
                 "joy/voyager-bread-product-category": "^1.0",
                 "joy/voyager-bread-project": "^1.0",
                 "joy/voyager-bread-project-task": "^1.0",
                 "joy/voyager-bread-quote": "^1.0",
+                "joy/voyager-bread-relatable": "^1.0",
+                "joy/voyager-bread-report": "^1.0",
+                "joy/voyager-bread-subscription": "^1.0",
                 "joy/voyager-bread-target": "^1.0",
                 "joy/voyager-bread-target-list": "^1.0",
                 "joy/voyager-bread-task": "^1.0",
+                "joy/voyager-bread-team": "^1.0",
                 "joy/voyager-bread-ticket": "^1.0",
+                "joy/voyager-bread-watcher": "^1.0",
                 "joy/voyager-core": "^1.0",
                 "php": "^7.3|^8.0",
                 "tcg/voyager": "^1.4"
@@ -4787,7 +6068,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-crm/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-crm/tree/v1.2.6"
+                "source": "https://github.com/rxcod9/joy-voyager-crm/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -4795,20 +6076,100 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T22:28:48+00:00"
+            "time": "2022-04-03T20:37:21+00:00"
         },
         {
-            "name": "joy/voyager-datatable",
-            "version": "v1.2.2",
+            "name": "joy/voyager-dashboard",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-datatable.git",
-                "reference": "137af32e8a91b103fe06e6487c81fd26f48d0187"
+                "url": "https://github.com/rxcod9/joy-voyager-dashboard.git",
+                "reference": "0d220cd512e417ceeecf89b4fbd9f79d64488677"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/137af32e8a91b103fe06e6487c81fd26f48d0187",
-                "reference": "137af32e8a91b103fe06e6487c81fd26f48d0187",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-dashboard/zipball/0d220cd512e417ceeecf89b4fbd9f79d64488677",
+                "reference": "0d220cd512e417ceeecf89b4fbd9f79d64488677",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerDashboard\\VoyagerDashboardServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerDashboard\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerDashboard support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-dashboard",
+            "keywords": [
+                "cms",
+                "joy",
+                "joy-voyager-dashboard",
+                "laravel",
+                "voyager",
+                "voyager-dashboard",
+                "voyager-voyager-dashboard"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-dashboard/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-dashboard/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-18T22:32:34+00:00"
+        },
+        {
+            "name": "joy/voyager-datatable",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-datatable.git",
+                "reference": "038b8bf017b48be7e1c505fead92330cf3a5d902"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/038b8bf017b48be7e1c505fead92330cf3a5d902",
+                "reference": "038b8bf017b48be7e1c505fead92330cf3a5d902",
                 "shasum": ""
             },
             "require": {
@@ -4866,7 +6227,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-datatable/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/v1.2.2"
+                "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -4874,20 +6235,100 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T21:12:02+00:00"
+            "time": "2022-04-03T16:43:53+00:00"
         },
         {
-            "name": "joy/voyager-export",
-            "version": "v1.2.2",
+            "name": "joy/voyager-duplicate",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-export.git",
-                "reference": "cd7fbc6d81c005ddb7545b31039e9550251aab1f"
+                "url": "https://github.com/rxcod9/joy-voyager-duplicate.git",
+                "reference": "bb0d8591ece91f3cefee38c41c0f8309f895c125"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-export/zipball/cd7fbc6d81c005ddb7545b31039e9550251aab1f",
-                "reference": "cd7fbc6d81c005ddb7545b31039e9550251aab1f",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-duplicate/zipball/bb0d8591ece91f3cefee38c41c0f8309f895c125",
+                "reference": "bb0d8591ece91f3cefee38c41c0f8309f895c125",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerDuplicate\\VoyagerDuplicateServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerDuplicate\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerDuplicate support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-duplicate",
+            "keywords": [
+                "cms",
+                "duplicate",
+                "joy",
+                "joy-voyager-duplicate",
+                "laravel",
+                "voyager",
+                "voyager-duplicate"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-duplicate/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-duplicate/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T19:43:51+00:00"
+        },
+        {
+            "name": "joy/voyager-export",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-export.git",
+                "reference": "7e00de1cebd1eb7125385fdb4bda73a2f46c8b71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-export/zipball/7e00de1cebd1eb7125385fdb4bda73a2f46c8b71",
+                "reference": "7e00de1cebd1eb7125385fdb4bda73a2f46c8b71",
                 "shasum": ""
             },
             "require": {
@@ -4948,7 +6389,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-export/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-export/tree/v1.2.2"
+                "source": "https://github.com/rxcod9/joy-voyager-export/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -4956,20 +6397,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-14T06:38:13+00:00"
+            "time": "2022-04-03T16:36:07+00:00"
         },
         {
             "name": "joy/voyager-import",
-            "version": "v1.2.3",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-import.git",
-                "reference": "bd87667dad26f0329dbcb43f5b38fe9665fc7ebb"
+                "reference": "b487e20168f7bada7b8091798d6d5afb767bba4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-import/zipball/bd87667dad26f0329dbcb43f5b38fe9665fc7ebb",
-                "reference": "bd87667dad26f0329dbcb43f5b38fe9665fc7ebb",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-import/zipball/b487e20168f7bada7b8091798d6d5afb767bba4c",
+                "reference": "b487e20168f7bada7b8091798d6d5afb767bba4c",
                 "shasum": ""
             },
             "require": {
@@ -5030,7 +6471,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-import/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-import/tree/v1.2.3"
+                "source": "https://github.com/rxcod9/joy-voyager-import/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -5038,20 +6479,181 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-17T23:48:21+00:00"
+            "time": "2022-04-03T16:36:15+00:00"
         },
         {
-            "name": "joy/voyager-relations-table",
-            "version": "v1.2.2",
+            "name": "joy/voyager-login-as-user",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-relations-table.git",
-                "reference": "96b89898dbd1212ab345bb1b171cb4228b141bfa"
+                "url": "https://github.com/rxcod9/joy-voyager-login-as-user.git",
+                "reference": "25dc483f7088d3cf2c6ceb8fd2c46b4a669164bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-relations-table/zipball/96b89898dbd1212ab345bb1b171cb4228b141bfa",
-                "reference": "96b89898dbd1212ab345bb1b171cb4228b141bfa",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-login-as-user/zipball/25dc483f7088d3cf2c6ceb8fd2c46b4a669164bf",
+                "reference": "25dc483f7088d3cf2c6ceb8fd2c46b4a669164bf",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerLoginAsUser\\VoyagerLoginAsUserServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerLoginAsUser\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerLoginAsUser support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-login-as-user",
+            "keywords": [
+                "cms",
+                "joy",
+                "joy-voyager-login-as-user",
+                "laravel",
+                "login-as-user",
+                "voyager",
+                "voyager-login-as-user"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-login-as-user/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-login-as-user/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T19:42:10+00:00"
+        },
+        {
+            "name": "joy/voyager-merge",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-merge.git",
+                "reference": "bf39bf674f0b11d2891bd727b0f7b51f09f9c419"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-merge/zipball/bf39bf674f0b11d2891bd727b0f7b51f09f9c419",
+                "reference": "bf39bf674f0b11d2891bd727b0f7b51f09f9c419",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerMerge\\VoyagerMergeServiceProvider",
+                        "Joy\\VoyagerMerge\\MergeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerMerge\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerMerge support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-merge",
+            "keywords": [
+                "cms",
+                "joy",
+                "joy-voyager-merge",
+                "laravel",
+                "voyager",
+                "voyager-merge",
+                "voyager-voyager-merge"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-merge/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-merge/tree/v1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T16:32:59+00:00"
+        },
+        {
+            "name": "joy/voyager-relations-table",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-relations-table.git",
+                "reference": "3ad67825220251195b0f69081794aa786d161863"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-relations-table/zipball/3ad67825220251195b0f69081794aa786d161863",
+                "reference": "3ad67825220251195b0f69081794aa786d161863",
                 "shasum": ""
             },
             "require": {
@@ -5112,7 +6714,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-relations-table/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-relations-table/tree/v1.2.2"
+                "source": "https://github.com/rxcod9/joy-voyager-relations-table/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -5120,11 +6722,11 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-13T14:15:33+00:00"
+            "time": "2022-04-03T16:36:23+00:00"
         },
         {
             "name": "joy/voyager-user-settings",
-            "version": "v1.2.2",
+            "version": "v1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-user-settings.git",
@@ -5192,7 +6794,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-user-settings/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-user-settings/tree/v1.2.2"
+                "source": "https://github.com/rxcod9/joy-voyager-user-settings/tree/v1.2.15"
             },
             "funding": [
                 {
@@ -5201,6 +6803,86 @@
                 }
             ],
             "time": "2022-03-13T22:14:22+00:00"
+        },
+        {
+            "name": "joy/voyager-widgets",
+            "version": "v1.2.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-widgets.git",
+                "reference": "c64891b30428926b8655d130948da70525642f1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-widgets/zipball/c64891b30428926b8655d130948da70525642f1d",
+                "reference": "c64891b30428926b8655d130948da70525642f1d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8",
+                "joy/voyager-core": "^1.0",
+                "php": "^7.3|^8.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerWidgets\\VoyagerWidgetsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerWidgets\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerWidgets support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-widgets",
+            "keywords": [
+                "cms",
+                "joy",
+                "joy-voyager-widgets",
+                "laravel",
+                "voyager",
+                "voyager-widgets",
+                "widgets"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-widgets/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-widgets/tree/v1.2.11"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-03T19:24:22+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -5330,16 +7012,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.83.5",
+            "version": "v8.83.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "33b1b981266e3a19fbc826b60c4a6847e311ac95"
+                "reference": "dffcec0cb686eafaa3b8f33db11da2cd9d69af1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/33b1b981266e3a19fbc826b60c4a6847e311ac95",
-                "reference": "33b1b981266e3a19fbc826b60c4a6847e311ac95",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/dffcec0cb686eafaa3b8f33db11da2cd9d69af1c",
+                "reference": "dffcec0cb686eafaa3b8f33db11da2cd9d69af1c",
                 "shasum": ""
             },
             "require": {
@@ -5499,7 +7181,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-03-15T13:37:44+00:00"
+            "time": "2022-03-29T14:41:02+00:00"
         },
         {
             "name": "laravel/passport",
@@ -5639,16 +7321,16 @@
         },
         {
             "name": "laravel/tinker",
-            "version": "v2.7.1",
+            "version": "v2.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/tinker.git",
-                "reference": "1e2d500585a4e546346fadd3adc6f9c1a97e15f4"
+                "reference": "dff39b661e827dae6e092412f976658df82dbac5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/1e2d500585a4e546346fadd3adc6f9c1a97e15f4",
-                "reference": "1e2d500585a4e546346fadd3adc6f9c1a97e15f4",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/dff39b661e827dae6e092412f976658df82dbac5",
+                "reference": "dff39b661e827dae6e092412f976658df82dbac5",
                 "shasum": ""
             },
             "require": {
@@ -5701,9 +7383,9 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/tinker/issues",
-                "source": "https://github.com/laravel/tinker/tree/v2.7.1"
+                "source": "https://github.com/laravel/tinker/tree/v2.7.2"
             },
-            "time": "2022-03-15T15:25:01+00:00"
+            "time": "2022-03-23T12:38:24+00:00"
         },
         {
             "name": "laravel/ui",
@@ -6380,16 +8062,16 @@
         },
         {
             "name": "maatwebsite/excel",
-            "version": "3.1.37",
+            "version": "3.1.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SpartnerNL/Laravel-Excel.git",
-                "reference": "49ccd4142d3d7bce492d6bfb9dd9a27b12935408"
+                "reference": "dff132ce4d30b19863f4e84de1613fca99604992"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SpartnerNL/Laravel-Excel/zipball/49ccd4142d3d7bce492d6bfb9dd9a27b12935408",
-                "reference": "49ccd4142d3d7bce492d6bfb9dd9a27b12935408",
+                "url": "https://api.github.com/repos/SpartnerNL/Laravel-Excel/zipball/dff132ce4d30b19863f4e84de1613fca99604992",
+                "reference": "dff132ce4d30b19863f4e84de1613fca99604992",
                 "shasum": ""
             },
             "require": {
@@ -6442,7 +8124,7 @@
             ],
             "support": {
                 "issues": "https://github.com/SpartnerNL/Laravel-Excel/issues",
-                "source": "https://github.com/SpartnerNL/Laravel-Excel/tree/3.1.37"
+                "source": "https://github.com/SpartnerNL/Laravel-Excel/tree/3.1.38"
             },
             "funding": [
                 {
@@ -6454,7 +8136,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-02-28T10:20:04+00:00"
+            "time": "2022-03-24T16:00:29+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -8749,16 +10431,16 @@
         },
         {
             "name": "swagger-api/swagger-ui",
-            "version": "v4.6.2",
+            "version": "v4.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swagger-api/swagger-ui.git",
-                "reference": "d191c1ca18443a77273e9912ac2603ce1f7dc216"
+                "reference": "7260f967ec53c8be13ffe0dbe3107bbc6a3766aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/d191c1ca18443a77273e9912ac2603ce1f7dc216",
-                "reference": "d191c1ca18443a77273e9912ac2603ce1f7dc216",
+                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/7260f967ec53c8be13ffe0dbe3107bbc6a3766aa",
+                "reference": "7260f967ec53c8be13ffe0dbe3107bbc6a3766aa",
                 "shasum": ""
             },
             "type": "library",
@@ -8804,9 +10486,9 @@
             ],
             "support": {
                 "issues": "https://github.com/swagger-api/swagger-ui/issues",
-                "source": "https://github.com/swagger-api/swagger-ui/tree/v4.6.2"
+                "source": "https://github.com/swagger-api/swagger-ui/tree/v4.10.3"
             },
-            "time": "2022-03-10T11:36:38+00:00"
+            "time": "2022-04-01T22:06:17+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -8886,16 +10568,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v5.4.5",
+            "version": "v5.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "d8111acc99876953f52fe16d4c50eb60940d49ad"
+                "reference": "900275254f0a1a2afff1ab0e11abd5587a10e1d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/d8111acc99876953f52fe16d4c50eb60940d49ad",
-                "reference": "d8111acc99876953f52fe16d4c50eb60940d49ad",
+                "url": "https://api.github.com/repos/symfony/console/zipball/900275254f0a1a2afff1ab0e11abd5587a10e1d6",
+                "reference": "900275254f0a1a2afff1ab0e11abd5587a10e1d6",
                 "shasum": ""
             },
             "require": {
@@ -8965,7 +10647,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v5.4.5"
+                "source": "https://github.com/symfony/console/tree/v5.4.7"
             },
             "funding": [
                 {
@@ -8981,7 +10663,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-02-24T12:45:35+00:00"
+            "time": "2022-03-31T17:09:19+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -9118,16 +10800,16 @@
         },
         {
             "name": "symfony/error-handler",
-            "version": "v5.4.3",
+            "version": "v5.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/error-handler.git",
-                "reference": "c4ffc2cd919950d13c8c9ce32a70c70214c3ffc5"
+                "reference": "060bc01856a1846e3e4385261bc9ed11a1dd7b6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/error-handler/zipball/c4ffc2cd919950d13c8c9ce32a70c70214c3ffc5",
-                "reference": "c4ffc2cd919950d13c8c9ce32a70c70214c3ffc5",
+                "url": "https://api.github.com/repos/symfony/error-handler/zipball/060bc01856a1846e3e4385261bc9ed11a1dd7b6a",
+                "reference": "060bc01856a1846e3e4385261bc9ed11a1dd7b6a",
                 "shasum": ""
             },
             "require": {
@@ -9169,7 +10851,7 @@
             "description": "Provides tools to manage errors and ease debugging PHP code",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/error-handler/tree/v5.4.3"
+                "source": "https://github.com/symfony/error-handler/tree/v5.4.7"
             },
             "funding": [
                 {
@@ -9185,7 +10867,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-02T09:53:40+00:00"
+            "time": "2022-03-18T16:21:29+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -9353,16 +11035,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v5.4.6",
+            "version": "v5.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "d53a45039974952af7f7ebc461ccdd4295e29440"
+                "reference": "3a4442138d80c9f7b600fb297534ac718b61d37f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/d53a45039974952af7f7ebc461ccdd4295e29440",
-                "reference": "d53a45039974952af7f7ebc461ccdd4295e29440",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/3a4442138d80c9f7b600fb297534ac718b61d37f",
+                "reference": "3a4442138d80c9f7b600fb297534ac718b61d37f",
                 "shasum": ""
             },
             "require": {
@@ -9397,7 +11079,7 @@
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v5.4.6"
+                "source": "https://github.com/symfony/filesystem/tree/v5.4.7"
             },
             "funding": [
                 {
@@ -9413,7 +11095,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-02T12:42:23+00:00"
+            "time": "2022-04-01T12:33:59+00:00"
         },
         {
             "name": "symfony/finder",
@@ -9553,16 +11235,16 @@
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v5.4.6",
+            "version": "v5.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "d41f29ae9af1b5f40c7ebcddf09082953229411d"
+                "reference": "509243b9b3656db966284c45dffce9316c1ecc5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/d41f29ae9af1b5f40c7ebcddf09082953229411d",
-                "reference": "d41f29ae9af1b5f40c7ebcddf09082953229411d",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/509243b9b3656db966284c45dffce9316c1ecc5c",
+                "reference": "509243b9b3656db966284c45dffce9316c1ecc5c",
                 "shasum": ""
             },
             "require": {
@@ -9645,7 +11327,7 @@
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-kernel/tree/v5.4.6"
+                "source": "https://github.com/symfony/http-kernel/tree/v5.4.7"
             },
             "funding": [
                 {
@@ -9661,20 +11343,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-05T21:14:51+00:00"
+            "time": "2022-04-02T06:04:20+00:00"
         },
         {
             "name": "symfony/mime",
-            "version": "v5.4.3",
+            "version": "v5.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mime.git",
-                "reference": "e1503cfb5c9a225350f549d3bb99296f4abfb80f"
+                "reference": "92d27a34dea2e199fa9b687e3fff3a7d169b7b1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mime/zipball/e1503cfb5c9a225350f549d3bb99296f4abfb80f",
-                "reference": "e1503cfb5c9a225350f549d3bb99296f4abfb80f",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/92d27a34dea2e199fa9b687e3fff3a7d169b7b1c",
+                "reference": "92d27a34dea2e199fa9b687e3fff3a7d169b7b1c",
                 "shasum": ""
             },
             "require": {
@@ -9728,7 +11410,7 @@
                 "mime-type"
             ],
             "support": {
-                "source": "https://github.com/symfony/mime/tree/v5.4.3"
+                "source": "https://github.com/symfony/mime/tree/v5.4.7"
             },
             "funding": [
                 {
@@ -9744,7 +11426,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-02T09:53:40+00:00"
+            "time": "2022-03-11T16:08:05+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -10565,16 +12247,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v5.4.5",
+            "version": "v5.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "95440409896f90a5f85db07a32b517ecec17fa4c"
+                "reference": "38a44b2517b470a436e1c944bf9b9ba3961137fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/95440409896f90a5f85db07a32b517ecec17fa4c",
-                "reference": "95440409896f90a5f85db07a32b517ecec17fa4c",
+                "url": "https://api.github.com/repos/symfony/process/zipball/38a44b2517b470a436e1c944bf9b9ba3961137fb",
+                "reference": "38a44b2517b470a436e1c944bf9b9ba3961137fb",
                 "shasum": ""
             },
             "require": {
@@ -10607,7 +12289,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v5.4.5"
+                "source": "https://github.com/symfony/process/tree/v5.4.7"
             },
             "funding": [
                 {
@@ -10623,7 +12305,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-30T18:16:22+00:00"
+            "time": "2022-03-18T16:18:52+00:00"
         },
         {
             "name": "symfony/psr-http-message-bridge",
@@ -10974,16 +12656,16 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v5.4.6",
+            "version": "v5.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "a7ca9fdfffb0174209440c2ffa1dee228e15d95b"
+                "reference": "e1eb790575202ee3ac2659f55b93b05853726f8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/a7ca9fdfffb0174209440c2ffa1dee228e15d95b",
-                "reference": "a7ca9fdfffb0174209440c2ffa1dee228e15d95b",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/e1eb790575202ee3ac2659f55b93b05853726f8e",
+                "reference": "e1eb790575202ee3ac2659f55b93b05853726f8e",
                 "shasum": ""
             },
             "require": {
@@ -11051,7 +12733,7 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/translation/tree/v5.4.6"
+                "source": "https://github.com/symfony/translation/tree/v5.4.7"
             },
             "funding": [
                 {
@@ -11067,7 +12749,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-02T12:56:28+00:00"
+            "time": "2022-03-24T17:09:09+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -11830,16 +13512,16 @@
         },
         {
             "name": "zircote/swagger-php",
-            "version": "4.2.11",
+            "version": "4.2.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zircote/swagger-php.git",
-                "reference": "1c7a04e381b07e14aae080a61e02f2fe9cdea424"
+                "reference": "8888655d7dc21eda6ec71e521f71a757605f48fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/1c7a04e381b07e14aae080a61e02f2fe9cdea424",
-                "reference": "1c7a04e381b07e14aae080a61e02f2fe9cdea424",
+                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/8888655d7dc21eda6ec71e521f71a757605f48fe",
+                "reference": "8888655d7dc21eda6ec71e521f71a757605f48fe",
                 "shasum": ""
             },
             "require": {
@@ -11899,9 +13581,9 @@
             ],
             "support": {
                 "issues": "https://github.com/zircote/swagger-php/issues",
-                "source": "https://github.com/zircote/swagger-php/tree/4.2.11"
+                "source": "https://github.com/zircote/swagger-php/tree/4.2.13"
             },
-            "time": "2022-03-06T19:16:21+00:00"
+            "time": "2022-03-23T08:54:27+00:00"
         }
     ],
     "packages-dev": [
@@ -12063,16 +13745,16 @@
         },
         {
             "name": "composer/semver",
-            "version": "3.3.1",
+            "version": "3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "5d8e574bb0e69188786b8ef77d43341222a41a71"
+                "reference": "3953f23262f2bff1919fc82183ad9acb13ff62c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/5d8e574bb0e69188786b8ef77d43341222a41a71",
-                "reference": "5d8e574bb0e69188786b8ef77d43341222a41a71",
+                "url": "https://api.github.com/repos/composer/semver/zipball/3953f23262f2bff1919fc82183ad9acb13ff62c9",
+                "reference": "3953f23262f2bff1919fc82183ad9acb13ff62c9",
                 "shasum": ""
             },
             "require": {
@@ -12124,7 +13806,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/semver/issues",
-                "source": "https://github.com/composer/semver/tree/3.3.1"
+                "source": "https://github.com/composer/semver/tree/3.3.2"
             },
             "funding": [
                 {
@@ -12140,7 +13822,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-16T11:22:07+00:00"
+            "time": "2022-04-01T19:23:25+00:00"
         },
         {
             "name": "composer/xdebug-handler",
@@ -12614,16 +14296,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.7.0",
+            "version": "v3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "7705d5a985132a40282d18a176eb9a4a0497747c"
+                "reference": "cbad1115aac4b5c3c5540e7210d3c9fba2f81fa3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/7705d5a985132a40282d18a176eb9a4a0497747c",
-                "reference": "7705d5a985132a40282d18a176eb9a4a0497747c",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/cbad1115aac4b5c3c5540e7210d3c9fba2f81fa3",
+                "reference": "cbad1115aac4b5c3c5540e7210d3c9fba2f81fa3",
                 "shasum": ""
             },
             "require": {
@@ -12691,7 +14373,7 @@
             "description": "A tool to automatically fix PHP code style",
             "support": {
                 "issues": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues",
-                "source": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/tree/v3.7.0"
+                "source": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/tree/v3.8.0"
             },
             "funding": [
                 {
@@ -12699,7 +14381,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-07T16:59:59+00:00"
+            "time": "2022-03-18T17:20:59+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -12795,16 +14477,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.13.7",
+            "version": "v1.13.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "2092e1ce6e4ba534bff443de8c3a7bb280aba121"
+                "reference": "b00f1b64afff9c16355d23bb1e0f83a7ea9bbb7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/2092e1ce6e4ba534bff443de8c3a7bb280aba121",
-                "reference": "2092e1ce6e4ba534bff443de8c3a7bb280aba121",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/b00f1b64afff9c16355d23bb1e0f83a7ea9bbb7e",
+                "reference": "b00f1b64afff9c16355d23bb1e0f83a7ea9bbb7e",
                 "shasum": ""
             },
             "require": {
@@ -12851,7 +14533,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2022-03-11T14:11:15+00:00"
+            "time": "2022-03-23T12:35:34+00:00"
         },
         {
             "name": "maximebf/debugbar",
@@ -13353,16 +15035,16 @@
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "93ebd0014cab80c4ea9f5e297ea48672f1b87706"
+                "reference": "77a32518733312af16a44300404e945338981de3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/93ebd0014cab80c4ea9f5e297ea48672f1b87706",
-                "reference": "93ebd0014cab80c4ea9f5e297ea48672f1b87706",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/77a32518733312af16a44300404e945338981de3",
+                "reference": "77a32518733312af16a44300404e945338981de3",
                 "shasum": ""
             },
             "require": {
@@ -13397,9 +15079,9 @@
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
             "support": {
                 "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
-                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.6.0"
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.6.1"
             },
-            "time": "2022-01-04T19:58:01+00:00"
+            "time": "2022-03-15T21:29:03+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -13788,16 +15470,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.5.19",
+            "version": "9.5.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "35ea4b7f3acabb26f4bb640f8c30866c401da807"
+                "reference": "12bc8879fb65aef2138b26fc633cb1e3620cffba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/35ea4b7f3acabb26f4bb640f8c30866c401da807",
-                "reference": "35ea4b7f3acabb26f4bb640f8c30866c401da807",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/12bc8879fb65aef2138b26fc633cb1e3620cffba",
+                "reference": "12bc8879fb65aef2138b26fc633cb1e3620cffba",
                 "shasum": ""
             },
             "require": {
@@ -13875,7 +15557,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.19"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.20"
             },
             "funding": [
                 {
@@ -13887,7 +15569,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-15T09:57:31+00:00"
+            "time": "2022-04-01T12:37:26+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -14255,16 +15937,16 @@
         },
         {
             "name": "sebastian/environment",
-            "version": "5.1.3",
+            "version": "5.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "388b6ced16caa751030f6a69e588299fa09200ac"
+                "reference": "1b5dff7bb151a4db11d49d90e5408e4e938270f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/388b6ced16caa751030f6a69e588299fa09200ac",
-                "reference": "388b6ced16caa751030f6a69e588299fa09200ac",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/1b5dff7bb151a4db11d49d90e5408e4e938270f7",
+                "reference": "1b5dff7bb151a4db11d49d90e5408e4e938270f7",
                 "shasum": ""
             },
             "require": {
@@ -14306,7 +15988,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/environment/issues",
-                "source": "https://github.com/sebastianbergmann/environment/tree/5.1.3"
+                "source": "https://github.com/sebastianbergmann/environment/tree/5.1.4"
             },
             "funding": [
                 {
@@ -14314,7 +15996,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-28T05:52:38+00:00"
+            "time": "2022-04-03T09:37:03+00:00"
         },
         {
             "name": "sebastian/exporter",
