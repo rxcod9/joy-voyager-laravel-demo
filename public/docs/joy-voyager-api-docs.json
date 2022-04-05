@@ -1753,6 +1753,652 @@
                 ]
             }
         },
+        "\/api\/samples": {
+            "get": {
+                "tags": [
+                    "samples"
+                ],
+                "summary": "samples index",
+                "operationId": "samples_index",
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Global search",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "length",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "order_by",
+                        "in": "query",
+                        "description": "Sort by column",
+                        "required": false,
+                        "schema": {
+                            "enum": [
+                                "id",
+                                "name",
+                                "description",
+                                "image",
+                                "created_by_id",
+                                "modified_by_id",
+                                "assigned_to_id",
+                                "parent_id",
+                                "status",
+                                "created_at",
+                                "updated_at",
+                                "sample_belongsto_created_by_relationship",
+                                "sample_belongsto_modified_by_relationship",
+                                "sample_belongsto_assigned_to_relationship",
+                                "sample_belongsto_parent_relationship"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "sort_order",
+                        "in": "query",
+                        "description": "Sort by direction",
+                        "required": false,
+                        "schema": {
+                            "enum": [
+                                "asc",
+                                "desc"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[name]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[description]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[created_at]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "example": "2020-01-01 00:00,,2021-06-01 00:00"
+                        }
+                    },
+                    {
+                        "name": "filters[image]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[created_by_id][]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    {
+                        "name": "filters[modified_by_id][]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    {
+                        "name": "filters[assigned_to_id][]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    {
+                        "name": "filters[parent_id][]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#\/components\/schemas\/VoyagerSamplesBrowseResource"
+                                            }
+                                        },
+                                        "links": {
+                                            "$ref": "#\/components\/schemas\/Links"
+                                        },
+                                        "meta": {
+                                            "$ref": "#\/components\/schemas\/Meta"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "samples"
+                ],
+                "summary": "samples store",
+                "operationId": "samples_store",
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerSamplesStoreRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerSamplesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/samples\/create": {
+            "get": {
+                "tags": [
+                    "samples"
+                ],
+                "summary": "samples create",
+                "operationId": "samples_create",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {}
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/samples\/{id}": {
+            "get": {
+                "tags": [
+                    "samples"
+                ],
+                "summary": "samples show",
+                "operationId": "samples_show",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerSamplesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "samples"
+                ],
+                "summary": "samples update",
+                "operationId": "samples_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerSamplesUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerSamplesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "samples"
+                ],
+                "summary": "samples delete",
+                "operationId": "samples_delete",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/samples\/{id}\/single\/{field}": {
+            "post": {
+                "tags": [
+                    "samples"
+                ],
+                "summary": "samples single update",
+                "operationId": "samples_single_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "field",
+                        "in": "path",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "nullable": true,
+                            "enum": [
+                                "name",
+                                "description",
+                                "image",
+                                "assigned_to_id",
+                                "sample_belongsto_assigned_to_relationship",
+                                "parent_id",
+                                "sample_belongsto_parent_relationship"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "fields[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "name",
+                                    "description",
+                                    "image",
+                                    "assigned_to_id",
+                                    "sample_belongsto_assigned_to_relationship",
+                                    "parent_id",
+                                    "sample_belongsto_parent_relationship"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerSamplesSingleUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerSamplesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/samples\/{id}\/edit": {
+            "get": {
+                "tags": [
+                    "samples"
+                ],
+                "summary": "samples edit",
+                "operationId": "samples_edit",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerSamplesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/samples\/relation": {
+            "get": {
+                "tags": [
+                    "samples"
+                ],
+                "summary": "samples relation",
+                "operationId": "samples_relation",
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "method",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "required",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {}
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/samples\/{id}\/restore": {
+            "get": {
+                "tags": [
+                    "samples"
+                ],
+                "summary": "samples restore",
+                "operationId": "samples_restore",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
         "\/api\/accounts": {
             "get": {
                 "tags": [
@@ -30183,6 +30829,118 @@
                     }
                 }
             },
+            "VoyagerSamplesBrowseResource": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name"
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Description"
+                    },
+                    "created_at": {
+                        "pattern": "\/([0-9]{4})-(?:[0-9]{2})-([0-9]{2}) ([0-9]{2}):([0-9]{2})\/",
+                        "type": "date-time",
+                        "description": "Created at",
+                        "example": "2021-05-17 00:00"
+                    },
+                    "image": {
+                        "type": "string",
+                        "description": "jpg,jpeg,png",
+                        "format": "binary"
+                    },
+                    "created_by_id": {
+                        "type": "string",
+                        "description": "Created by"
+                    },
+                    "sample_belongsto_created_by_relationship": {
+                        "type": "integer",
+                        "description": "Created by"
+                    },
+                    "modified_by_id": {
+                        "type": "string",
+                        "description": "Modified by"
+                    },
+                    "sample_belongsto_modified_by_relationship": {
+                        "type": "integer",
+                        "description": "Modified by"
+                    },
+                    "assigned_to_id": {
+                        "type": "string",
+                        "description": "Assigned to"
+                    },
+                    "sample_belongsto_assigned_to_relationship": {
+                        "type": "integer",
+                        "description": "Assigned to"
+                    },
+                    "parent_id": {
+                        "type": "string",
+                        "description": "Parent"
+                    },
+                    "sample_belongsto_parent_relationship": {
+                        "type": "integer",
+                        "description": "Parent"
+                    }
+                }
+            },
+            "VoyagerSamplesReadResource": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name"
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Description"
+                    },
+                    "created_at": {
+                        "pattern": "\/([0-9]{4})-(?:[0-9]{2})-([0-9]{2}) ([0-9]{2}):([0-9]{2})\/",
+                        "type": "date-time",
+                        "description": "Created at",
+                        "example": "2021-05-17 00:00"
+                    },
+                    "image": {
+                        "type": "string",
+                        "description": "jpg,jpeg,png",
+                        "format": "binary"
+                    },
+                    "created_by_id": {
+                        "type": "string",
+                        "description": "Created by"
+                    },
+                    "sample_belongsto_created_by_relationship": {
+                        "type": "integer",
+                        "description": "Created by"
+                    },
+                    "modified_by_id": {
+                        "type": "string",
+                        "description": "Modified by"
+                    },
+                    "sample_belongsto_modified_by_relationship": {
+                        "type": "integer",
+                        "description": "Modified by"
+                    },
+                    "assigned_to_id": {
+                        "type": "string",
+                        "description": "Assigned to"
+                    },
+                    "sample_belongsto_assigned_to_relationship": {
+                        "type": "integer",
+                        "description": "Assigned to"
+                    },
+                    "parent_id": {
+                        "type": "string",
+                        "description": "Parent"
+                    },
+                    "sample_belongsto_parent_relationship": {
+                        "type": "integer",
+                        "description": "Parent"
+                    }
+                }
+            },
             "VoyagerAccountsBrowseResource": {
                 "type": "object",
                 "properties": {
@@ -35262,6 +36020,141 @@
                                 "display_name": {
                                     "type": "string",
                                     "description": "Display Name"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerSamplesStoreRequest": {
+                "content": {
+                    "multipart\/form-data": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                },
+                                "description": {
+                                    "type": "string",
+                                    "description": "Description"
+                                },
+                                "image": {
+                                    "type": "string",
+                                    "description": "jpg,jpeg,png",
+                                    "format": "binary"
+                                },
+                                "assigned_to_id": {
+                                    "type": "string",
+                                    "description": "Assigned to"
+                                },
+                                "sample_belongsto_assigned_to_relationship": {
+                                    "type": "integer",
+                                    "description": "Assigned to"
+                                },
+                                "parent_id": {
+                                    "type": "string",
+                                    "description": "Parent"
+                                },
+                                "sample_belongsto_parent_relationship": {
+                                    "type": "integer",
+                                    "description": "Parent"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerSamplesUpdateRequest": {
+                "content": {
+                    "multipart\/form-data": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                },
+                                "description": {
+                                    "type": "string",
+                                    "description": "Description"
+                                },
+                                "image": {
+                                    "type": "string",
+                                    "description": "jpg,jpeg,png",
+                                    "format": "binary"
+                                },
+                                "assigned_to_id": {
+                                    "type": "string",
+                                    "description": "Assigned to"
+                                },
+                                "sample_belongsto_assigned_to_relationship": {
+                                    "type": "integer",
+                                    "description": "Assigned to"
+                                },
+                                "parent_id": {
+                                    "type": "string",
+                                    "description": "Parent"
+                                },
+                                "sample_belongsto_parent_relationship": {
+                                    "type": "integer",
+                                    "description": "Parent"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerSamplesSingleUpdateRequest": {
+                "content": {
+                    "multipart\/form-data": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                },
+                                "description": {
+                                    "type": "string",
+                                    "description": "Description"
+                                },
+                                "image": {
+                                    "type": "string",
+                                    "description": "jpg,jpeg,png",
+                                    "format": "binary"
+                                },
+                                "assigned_to_id": {
+                                    "type": "string",
+                                    "description": "Assigned to"
+                                },
+                                "sample_belongsto_assigned_to_relationship": {
+                                    "type": "integer",
+                                    "description": "Assigned to"
+                                },
+                                "parent_id": {
+                                    "type": "string",
+                                    "description": "Parent"
+                                },
+                                "sample_belongsto_parent_relationship": {
+                                    "type": "integer",
+                                    "description": "Parent"
                                 }
                             }
                         }

@@ -9,3 +9,11 @@
         display: none
     }
 }
+
+#dataTable .bread-actions .btn,
+.actions a.btn {
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 12px;
+}

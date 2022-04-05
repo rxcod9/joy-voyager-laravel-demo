@@ -19,7 +19,6 @@
         "joy/voyager-api": "^1.0",
         "joy/voyager-bread-sample": "^1.2",
         "joy/voyager-bulk-update": "^1.0",
-        "joy/voyager-convert-to": "^1.0",
         "joy/voyager-crm": "^1.0",
         "joy/voyager-dashboard": "^1.0",
         "joy/voyager-datatable": "^1.0",
