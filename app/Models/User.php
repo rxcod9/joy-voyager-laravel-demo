@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Notifications\Notifiable;
+use Lab404\Impersonate\Models\Impersonate;
 use Laravel\Passport\HasApiTokens;
 
 class User extends \TCG\Voyager\Models\User
@@ -12,6 +13,7 @@ class User extends \TCG\Voyager\Models\User
     use HasApiTokens;
     use HasFactory;
     use Notifiable;
+    use Impersonate;
 
     /**
      * The attributes that are mass assignable.
@@ -49,5 +51,21 @@ class User extends \TCG\Voyager\Models\User
             ->whereId((int) $value)
             ->orWhere('name', 'LIKE', '%' . $value . '%')
             ->orWhere('email', 'LIKE', '%' . $value . '%');
+    }
+
+    /**
+     * @return bool
+     */
+    public function canImpersonate()
+    {
+        return $this->hasRole('admin');
+    }
+
+    /**
+     * @return bool
+     */
+    public function canBeImpersonated()
+    {
+        return !$this->hasRole('admin');
     }
 }
