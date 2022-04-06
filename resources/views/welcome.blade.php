@@ -32,6 +32,18 @@
                         @else
                             <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
                         @endif
+                        @if (Route::has('impersonate.leave'))
+                            @impersonating($guard = null)
+                                <a href="{{ route('impersonate.leave') }}" class="text-sm text-gray-700 underline">Leave impersonation</a>
+                            @endImpersonating
+                        @endif
+                        @if (Route::has('voyager.logout'))
+                            <form action="{{ route('voyager.logout') }}" method="POST" style="display: inline-block;">
+                                <!-- CSRF TOKEN -->
+                                {{ csrf_field() }}
+                                <button type="submit" class="text-sm text-gray-700 underline"><i class="voyager-power"></i>Logout</button>
+                            </form>
+                        @endif
                     @else
                         <a href="{{ route('voyager.login') }}" class="text-sm text-gray-700 underline">Log in</a>
 

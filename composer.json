@@ -25,7 +25,7 @@
         "joy/voyager-duplicate": "^1.0",
         "joy/voyager-export": "^1.0",
         "joy/voyager-import": "^1.0",
-        "joy/voyager-login-as-user": "^1.0",
+        "joy/voyager-login-as-user": "^1.2",
         "joy/voyager-merge": "^1.0",
         "joy/voyager-relations-table": "^1.0",
         "joy/voyager-user-settings": "^1.0",
