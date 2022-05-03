@@ -23,6 +23,8 @@ class VoyagerDummyDatabaseSeeder extends Seeder
             PermissionRoleTableSeeder::class,
             SeedersVoyagerDummyDatabaseSeeder::class,
             \Joy\VoyagerCrm\Database\Seeders\VoyagerDummyDatabaseSeeder::class,
+            \Joy\VoyagerDataSettings\Database\Seeders\VoyagerDummyDatabaseSeeder::class,
+            \Joy\VoyagerDataTypeSettings\Database\Seeders\VoyagerDummyDatabaseSeeder::class,
         ]);
     }
 }
