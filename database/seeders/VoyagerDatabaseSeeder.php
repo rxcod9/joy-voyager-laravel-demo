@@ -31,6 +31,8 @@ class VoyagerDatabaseSeeder extends Seeder
             UserSettingsTableSeeder::class,
             SeedersVoyagerDatabaseSeeder::class,
             \Joy\VoyagerCrm\Database\Seeders\VoyagerDatabaseSeeder::class,
+            \Joy\VoyagerDataSettings\Database\Seeders\VoyagerDatabaseSeeder::class,
+            \Joy\VoyagerDataTypeSettings\Database\Seeders\VoyagerDatabaseSeeder::class,
         ]);
     }
 }

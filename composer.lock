@@ -6082,16 +6082,16 @@
         },
         {
             "name": "joy/voyager-data-settings",
-            "version": "v1.2.25",
+            "version": "v1.2.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-data-settings.git",
-                "reference": "74dc35400d45d02b4223e773af303ae374710a2e"
+                "reference": "17d3c5b2892b5d0602ea3730e575f49ae277bc59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-data-settings/zipball/74dc35400d45d02b4223e773af303ae374710a2e",
-                "reference": "74dc35400d45d02b4223e773af303ae374710a2e",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-data-settings/zipball/17d3c5b2892b5d0602ea3730e575f49ae277bc59",
+                "reference": "17d3c5b2892b5d0602ea3730e575f49ae277bc59",
                 "shasum": ""
             },
             "require": {
@@ -6150,7 +6150,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-data-settings/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-data-settings/tree/v1.2.25"
+                "source": "https://github.com/rxcod9/joy-voyager-data-settings/tree/v1.2.26"
             },
             "funding": [
                 {
@@ -6158,20 +6158,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-05-03T07:56:10+00:00"
+            "time": "2022-05-03T09:18:18+00:00"
         },
         {
             "name": "joy/voyager-data-type-settings",
-            "version": "v1.2.26",
+            "version": "v1.2.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-data-type-settings.git",
-                "reference": "1980a3d2ff44010d8f8951273e6c89dd556262d1"
+                "reference": "e94a165d8956128fc0f2e43ad527fbb2df6ec4f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-data-type-settings/zipball/1980a3d2ff44010d8f8951273e6c89dd556262d1",
-                "reference": "1980a3d2ff44010d8f8951273e6c89dd556262d1",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-data-type-settings/zipball/e94a165d8956128fc0f2e43ad527fbb2df6ec4f5",
+                "reference": "e94a165d8956128fc0f2e43ad527fbb2df6ec4f5",
                 "shasum": ""
             },
             "require": {
@@ -6230,7 +6230,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-data-type-settings/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-data-type-settings/tree/v1.2.26"
+                "source": "https://github.com/rxcod9/joy-voyager-data-type-settings/tree/v1.2.27"
             },
             "funding": [
                 {
@@ -6238,7 +6238,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-05-03T08:24:46+00:00"
+            "time": "2022-05-03T09:18:59+00:00"
         },
         {
             "name": "joy/voyager-datatable",
