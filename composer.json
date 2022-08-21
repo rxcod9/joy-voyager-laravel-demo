@@ -12,7 +12,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
-        "dompdf/dompdf": "^1.2",
+        "dompdf/dompdf": "^2.0",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^3.0",
         "guzzlehttp/guzzle": "^7.4",
