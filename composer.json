@@ -33,7 +33,6 @@
         "joy/voyager-user-settings": "^1.2",
         "joy/voyager-widgets": "^1.0",
         "laravel/framework": "~6.0|~7.0|~8.0|^9.0",
-        "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "symfony/filesystem": "^5.4|^6.0",
         "tcg/voyager": "^1.5",
@@ -44,12 +43,10 @@
         "fakerphp/faker": "^1.9.1",
         "friendsofphp/php-cs-fixer": "^3.7",
         "henzeb/composer-link": "^0.0.3@alpha",
-        "laravel/pint": "^1.0",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^5.11|^6.0",
-        "phpunit/phpunit": "^9.5.10",
-        "spatie/laravel-ignition": "^1.0"
+        "phpunit/phpunit": "^9.5.10"
     },
     "autoload": {
         "psr-4": {
