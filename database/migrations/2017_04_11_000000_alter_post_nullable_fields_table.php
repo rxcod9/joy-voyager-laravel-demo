@@ -30,13 +30,6 @@ class AlterPostNullableFieldsTable extends Migration
      */
     public function down()
     {
-        if (! Type::hasType('enum')) {
-            Type::addType('enum', StringType::class);
-        }
-        // For point types
-        // DB::getDoctrineSchemaManager()->getDatabasePlatform()->registerDoctrineTypeMapping('point', 'string');
-        DB::getDoctrineSchemaManager()->getDatabasePlatform()->registerDoctrineTypeMapping('enum', 'string');
-
         Schema::table('posts', function (Blueprint $table) {
             $table->text('excerpt')->change();
             $table->text('meta_description')->change();
