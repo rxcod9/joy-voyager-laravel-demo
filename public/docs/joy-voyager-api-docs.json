@@ -16006,14 +16006,16 @@
                         "schema": {
                             "enum": [
                                 "id",
-                                "name",
-                                "description",
-                                "image",
+                                "type",
+                                "notifiable_type",
+                                "notifiable_id",
+                                "data",
                                 "created_by_id",
                                 "modified_by_id",
                                 "assigned_to_id",
                                 "parent_id",
                                 "status",
+                                "read_at",
                                 "created_at",
                                 "updated_at",
                                 "notification_belongsto_created_by_relationship",
@@ -16038,7 +16040,7 @@
                         }
                     },
                     {
-                        "name": "filters[name]",
+                        "name": "filters[type]",
                         "in": "query",
                         "required": false,
                         "schema": {
@@ -16046,7 +16048,23 @@
                         }
                     },
                     {
-                        "name": "filters[description]",
+                        "name": "filters[notifiable_type]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[notifiable_id]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[data]",
                         "in": "query",
                         "required": false,
                         "schema": {
@@ -16060,14 +16078,6 @@
                         "schema": {
                             "type": "string",
                             "example": "2020-01-01 00:00,,2021-06-01 00:00"
-                        }
-                    },
-                    {
-                        "name": "filters[image]",
-                        "in": "query",
-                        "required": false,
-                        "schema": {
-                            "type": "string"
                         }
                     },
                     {
@@ -16273,7 +16283,7 @@
                     }
                 ]
             },
-            "post": {
+            "put": {
                 "tags": [
                     "notifications"
                 ],
@@ -16368,7 +16378,7 @@
             }
         },
         "\/api\/notifications\/{id}\/single\/{field}": {
-            "post": {
+            "put": {
                 "tags": [
                     "notifications"
                 ],
@@ -16391,9 +16401,10 @@
                             "type": "string",
                             "nullable": true,
                             "enum": [
-                                "name",
-                                "description",
-                                "image",
+                                "type",
+                                "notifiable_type",
+                                "notifiable_id",
+                                "data",
                                 "assigned_to_id",
                                 "notification_belongsto_assigned_to_relationship",
                                 "parent_id",
@@ -16410,9 +16421,10 @@
                             "items": {
                                 "type": "string",
                                 "enum": [
-                                    "name",
-                                    "description",
-                                    "image",
+                                    "type",
+                                    "notifiable_type",
+                                    "notifiable_id",
+                                    "data",
                                     "assigned_to_id",
                                     "notification_belongsto_assigned_to_relationship",
                                     "parent_id",
@@ -33296,24 +33308,27 @@
             "VoyagerNotificationsBrowseResource": {
                 "type": "object",
                 "properties": {
-                    "name": {
+                    "type": {
                         "type": "string",
-                        "description": "Name"
+                        "description": "Type"
                     },
-                    "description": {
+                    "notifiable_type": {
                         "type": "string",
-                        "description": "Description"
+                        "description": "Notifiable type"
+                    },
+                    "notifiable_id": {
+                        "type": "string",
+                        "description": "Notifiable id"
+                    },
+                    "data": {
+                        "type": "string",
+                        "description": "Data"
                     },
                     "created_at": {
                         "pattern": "\/([0-9]{4})-(?:[0-9]{2})-([0-9]{2}) ([0-9]{2}):([0-9]{2})\/",
                         "type": "date-time",
                         "description": "Created at",
                         "example": "2021-05-17 00:00"
-                    },
-                    "image": {
-                        "type": "string",
-                        "description": "jpg,jpeg,png",
-                        "format": "binary"
                     },
                     "created_by_id": {
                         "type": "string",
@@ -33352,24 +33367,27 @@
             "VoyagerNotificationsReadResource": {
                 "type": "object",
                 "properties": {
-                    "name": {
+                    "type": {
                         "type": "string",
-                        "description": "Name"
+                        "description": "Type"
                     },
-                    "description": {
+                    "notifiable_type": {
                         "type": "string",
-                        "description": "Description"
+                        "description": "Notifiable type"
+                    },
+                    "notifiable_id": {
+                        "type": "string",
+                        "description": "Notifiable id"
+                    },
+                    "data": {
+                        "type": "string",
+                        "description": "Data"
                     },
                     "created_at": {
                         "pattern": "\/([0-9]{4})-(?:[0-9]{2})-([0-9]{2}) ([0-9]{2}):([0-9]{2})\/",
                         "type": "date-time",
                         "description": "Created at",
                         "example": "2021-05-17 00:00"
-                    },
-                    "image": {
-                        "type": "string",
-                        "description": "jpg,jpeg,png",
-                        "format": "binary"
                     },
                     "created_by_id": {
                         "type": "string",
@@ -38999,7 +39017,7 @@
             },
             "VoyagerNotificationsStoreRequest": {
                 "content": {
-                    "multipart\/form-data": {
+                    "application\/x-www-form-urlencoded": {
                         "schema": {
                             "type": "object",
                             "properties": {
@@ -39007,18 +39025,21 @@
                                     "type": "boolean",
                                     "description": "Use dry-run only to validate"
                                 },
-                                "name": {
+                                "type": {
                                     "type": "string",
-                                    "description": "Name"
+                                    "description": "Type"
                                 },
-                                "description": {
+                                "notifiable_type": {
                                     "type": "string",
-                                    "description": "Description"
+                                    "description": "Notifiable type"
                                 },
-                                "image": {
+                                "notifiable_id": {
                                     "type": "string",
-                                    "description": "jpg,jpeg,png",
-                                    "format": "binary"
+                                    "description": "Notifiable id"
+                                },
+                                "data": {
+                                    "type": "string",
+                                    "description": "Data"
                                 },
                                 "assigned_to_id": {
                                     "type": "string",
@@ -39044,7 +39065,7 @@
             },
             "VoyagerNotificationsUpdateRequest": {
                 "content": {
-                    "multipart\/form-data": {
+                    "application\/x-www-form-urlencoded": {
                         "schema": {
                             "type": "object",
                             "properties": {
@@ -39052,18 +39073,21 @@
                                     "type": "boolean",
                                     "description": "Use dry-run only to validate"
                                 },
-                                "name": {
+                                "type": {
                                     "type": "string",
-                                    "description": "Name"
+                                    "description": "Type"
                                 },
-                                "description": {
+                                "notifiable_type": {
                                     "type": "string",
-                                    "description": "Description"
+                                    "description": "Notifiable type"
                                 },
-                                "image": {
+                                "notifiable_id": {
                                     "type": "string",
-                                    "description": "jpg,jpeg,png",
-                                    "format": "binary"
+                                    "description": "Notifiable id"
+                                },
+                                "data": {
+                                    "type": "string",
+                                    "description": "Data"
                                 },
                                 "assigned_to_id": {
                                     "type": "string",
@@ -39089,7 +39113,7 @@
             },
             "VoyagerNotificationsSingleUpdateRequest": {
                 "content": {
-                    "multipart\/form-data": {
+                    "application\/x-www-form-urlencoded": {
                         "schema": {
                             "type": "object",
                             "properties": {
@@ -39097,18 +39121,21 @@
                                     "type": "boolean",
                                     "description": "Use dry-run only to validate"
                                 },
-                                "name": {
+                                "type": {
                                     "type": "string",
-                                    "description": "Name"
+                                    "description": "Type"
                                 },
-                                "description": {
+                                "notifiable_type": {
                                     "type": "string",
-                                    "description": "Description"
+                                    "description": "Notifiable type"
                                 },
-                                "image": {
+                                "notifiable_id": {
                                     "type": "string",
-                                    "description": "jpg,jpeg,png",
-                                    "format": "binary"
+                                    "description": "Notifiable id"
+                                },
+                                "data": {
+                                    "type": "string",
+                                    "description": "Data"
                                 },
                                 "assigned_to_id": {
                                     "type": "string",
