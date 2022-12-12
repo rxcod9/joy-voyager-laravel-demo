@@ -11,7 +11,7 @@ Laravel Admin & BREAD System
 
 ## Working Example
 
-You can try laravel demo here [https://joy-voyager.herokuapp.com](https://joy-voyager.herokuapp.com).
+You can try laravel demo here [https://joy-voyager.kodmonk.com](https://joy-voyager.kodmonk.com).
 
 ## Installation Steps
 
