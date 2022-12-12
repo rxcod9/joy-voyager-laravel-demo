@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 if [ ! -z "$WWWUSER" ]; then
-    sed -i "s/user\ \=.*/user\ \= $WWWUSER/g" /etc/php/7.4/fpm/pool.d/www.conf
     usermod -u $WWWUSER sail
 fi
 

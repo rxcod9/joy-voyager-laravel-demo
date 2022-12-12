@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:20.04
 
 LABEL maintainer="Taylor Otwell"
 
@@ -23,7 +23,7 @@ RUN apt-get update \
     && gpg --export 0x14aa40ec0831756756d7f66c4f4ea0aae5267a6c > /usr/share/keyrings/ppa_ondrej_php.gpg \
     && echo "deb [signed-by=/usr/share/keyrings/ppa_ondrej_php.gpg] https://ppa.launchpadcontent.net/ondrej/php/ubuntu focal main" > /etc/apt/sources.list.d/ppa_ondrej_php.list \
     && apt-get update \
-    && apt-get install -y php7.4-cli php7.4-dev \
+    && apt-get install -y nginx php7.4-fpm php7.4-cli php7.4-dev \
        php7.4-pgsql php7.4-sqlite3 php7.4-gd \
        php7.4-curl php7.4-memcached \
        php7.4-imap php7.4-mysql php7.4-mbstring \
@@ -47,6 +47,8 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+
 RUN setcap "cap_net_bind_service=+ep" /usr/bin/php7.4
 
 RUN groupadd --force -g $WWWGROUP sail
@@ -56,6 +58,11 @@ COPY start-container /usr/local/bin/start-container
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY php.ini /etc/php/7.4/cli/conf.d/99-sail.ini
 RUN chmod +x /usr/local/bin/start-container
+
+COPY h5bp /etc/nginx/h5bp
+COPY default /etc/nginx/sites-available/default
+COPY php-fpm.conf /etc/php/7.4/fpm/php-fpm.conf
+# COPY xdebug.ini /etc/php/7.4/mods-available/xdebug.ini
 
 EXPOSE 8000
 
