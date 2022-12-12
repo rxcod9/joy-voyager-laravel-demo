@@ -16,9 +16,11 @@
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^3.0",
         "guzzlehttp/guzzle": "^7.2",
+        "joy/core": "^1.2",
         "joy/voyager-api": "^1.0",
         "joy/voyager-bread-sample": "^1.2",
         "joy/voyager-bulk-update": "^1.0",
+        "joy/voyager-core": "^1.2",
         "joy/voyager-crm": "^1.0",
         "joy/voyager-dashboard": "^1.0",
         "joy/voyager-data-settings": "^1.2",
@@ -34,6 +36,7 @@
         "joy/voyager-widgets": "^1.0",
         "laravel/framework": "~6.0|~7.0|~8.0|^9.0",
         "laravel/tinker": "^2.7",
+        "spatie/laravel-responsecache": "^7.4",
         "symfony/filesystem": "^5.4|^6.0",
         "tcg/voyager": "^1.5",
         "tecnickcom/tcpdf": "^6.4"
@@ -43,10 +46,12 @@
         "fakerphp/faker": "^1.9.1",
         "friendsofphp/php-cs-fixer": "^3.7",
         "henzeb/composer-link": "^0.0.3@alpha",
+        "kitloong/laravel-migrations-generator": "^6.6",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^5.11|^6.0",
-        "phpunit/phpunit": "^9.5.10"
+        "phpunit/phpunit": "^9.5.10",
+        "reliese/laravel": "^1.1"
     },
     "autoload": {
         "psr-4": {

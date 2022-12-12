@@ -23,7 +23,7 @@ RUN apt-get update \
     && gpg --export 0x14aa40ec0831756756d7f66c4f4ea0aae5267a6c > /usr/share/keyrings/ppa_ondrej_php.gpg \
     && echo "deb [signed-by=/usr/share/keyrings/ppa_ondrej_php.gpg] https://ppa.launchpadcontent.net/ondrej/php/ubuntu jammy main" > /etc/apt/sources.list.d/ppa_ondrej_php.list \
     && apt-get update \
-    && apt-get install -y php8.1-cli php8.1-dev \
+    && apt-get install -y nginx php8.1-fpm php8.1-cli php8.1-dev \
        php8.1-pgsql php8.1-sqlite3 php8.1-gd \
        php8.1-curl \
        php8.1-imap php8.1-mysql php8.1-mbstring \
@@ -48,6 +48,8 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+
 RUN setcap "cap_net_bind_service=+ep" /usr/bin/php8.1
 
 RUN groupadd --force -g $WWWGROUP sail
@@ -57,6 +59,11 @@ COPY start-container /usr/local/bin/start-container
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY php.ini /etc/php/8.1/cli/conf.d/99-sail.ini
 RUN chmod +x /usr/local/bin/start-container
+
+COPY h5bp /etc/nginx/h5bp
+COPY default /etc/nginx/sites-available/default
+COPY php-fpm.conf /etc/php/8.1/fpm/php-fpm.conf
+# COPY xdebug.ini /etc/php/8.1/mods-available/xdebug.ini
 
 EXPOSE 8000
 
