@@ -2399,6 +2399,662 @@
                 ]
             }
         },
+        "\/api\/notifications": {
+            "get": {
+                "tags": [
+                    "notifications"
+                ],
+                "summary": "notifications index",
+                "operationId": "notifications_index",
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Global search",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "length",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "order_by",
+                        "in": "query",
+                        "description": "Sort by column",
+                        "required": false,
+                        "schema": {
+                            "enum": [
+                                "id",
+                                "type",
+                                "notifiable_type",
+                                "notifiable_id",
+                                "data",
+                                "created_by_id",
+                                "modified_by_id",
+                                "assigned_to_id",
+                                "parent_id",
+                                "status",
+                                "read_at",
+                                "created_at",
+                                "updated_at",
+                                "notification_belongsto_created_by_relationship",
+                                "notification_belongsto_modified_by_relationship",
+                                "notification_belongsto_assigned_to_relationship",
+                                "notification_belongsto_parent_relationship"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "sort_order",
+                        "in": "query",
+                        "description": "Sort by direction",
+                        "required": false,
+                        "schema": {
+                            "enum": [
+                                "asc",
+                                "desc"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[type]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[notifiable_type]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[notifiable_id]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[data]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filters[created_at]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "example": "2020-01-01 00:00,,2021-06-01 00:00"
+                        }
+                    },
+                    {
+                        "name": "filters[created_by_id][]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    {
+                        "name": "filters[modified_by_id][]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    {
+                        "name": "filters[assigned_to_id][]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    {
+                        "name": "filters[parent_id][]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#\/components\/schemas\/VoyagerNotificationsBrowseResource"
+                                            }
+                                        },
+                                        "links": {
+                                            "$ref": "#\/components\/schemas\/Links"
+                                        },
+                                        "meta": {
+                                            "$ref": "#\/components\/schemas\/Meta"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "notifications"
+                ],
+                "summary": "notifications store",
+                "operationId": "notifications_store",
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerNotificationsStoreRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerNotificationsReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/notifications\/create": {
+            "get": {
+                "tags": [
+                    "notifications"
+                ],
+                "summary": "notifications create",
+                "operationId": "notifications_create",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {}
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/notifications\/{id}": {
+            "get": {
+                "tags": [
+                    "notifications"
+                ],
+                "summary": "notifications show",
+                "operationId": "notifications_show",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerNotificationsReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "put": {
+                "tags": [
+                    "notifications"
+                ],
+                "summary": "notifications update",
+                "operationId": "notifications_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerNotificationsUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerNotificationsReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "notifications"
+                ],
+                "summary": "notifications delete",
+                "operationId": "notifications_delete",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/notifications\/{id}\/single\/{field}": {
+            "put": {
+                "tags": [
+                    "notifications"
+                ],
+                "summary": "notifications single update",
+                "operationId": "notifications_single_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "field",
+                        "in": "path",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "nullable": true,
+                            "enum": [
+                                "type",
+                                "notifiable_type",
+                                "notifiable_id",
+                                "assigned_to_id",
+                                "notification_belongsto_assigned_to_relationship",
+                                "parent_id",
+                                "notification_belongsto_parent_relationship"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "fields[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "type",
+                                    "notifiable_type",
+                                    "notifiable_id",
+                                    "assigned_to_id",
+                                    "notification_belongsto_assigned_to_relationship",
+                                    "parent_id",
+                                    "notification_belongsto_parent_relationship"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerNotificationsSingleUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerNotificationsReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/notifications\/{id}\/edit": {
+            "get": {
+                "tags": [
+                    "notifications"
+                ],
+                "summary": "notifications edit",
+                "operationId": "notifications_edit",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerNotificationsReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/notifications\/relation": {
+            "get": {
+                "tags": [
+                    "notifications"
+                ],
+                "summary": "notifications relation",
+                "operationId": "notifications_relation",
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "method",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "required",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {}
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/notifications\/{id}\/restore": {
+            "get": {
+                "tags": [
+                    "notifications"
+                ],
+                "summary": "notifications restore",
+                "operationId": "notifications_restore",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
         "\/api\/categories": {
             "get": {
                 "tags": [
@@ -4455,6 +5111,124 @@
                     }
                 }
             },
+            "VoyagerNotificationsBrowseResource": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "description": "Type"
+                    },
+                    "notifiable_type": {
+                        "type": "string",
+                        "description": "Notifiable type"
+                    },
+                    "notifiable_id": {
+                        "type": "string",
+                        "description": "Notifiable id"
+                    },
+                    "data": {
+                        "type": "string",
+                        "description": "Data"
+                    },
+                    "created_at": {
+                        "pattern": "\/([0-9]{4})-(?:[0-9]{2})-([0-9]{2}) ([0-9]{2}):([0-9]{2})\/",
+                        "type": "date-time",
+                        "description": "Created at",
+                        "example": "2021-05-17 00:00"
+                    },
+                    "created_by_id": {
+                        "type": "string",
+                        "description": "Created by"
+                    },
+                    "notification_belongsto_created_by_relationship": {
+                        "type": "integer",
+                        "description": "Created by"
+                    },
+                    "modified_by_id": {
+                        "type": "string",
+                        "description": "Modified by"
+                    },
+                    "notification_belongsto_modified_by_relationship": {
+                        "type": "integer",
+                        "description": "Modified by"
+                    },
+                    "assigned_to_id": {
+                        "type": "string",
+                        "description": "Assigned to"
+                    },
+                    "notification_belongsto_assigned_to_relationship": {
+                        "type": "integer",
+                        "description": "Assigned to"
+                    },
+                    "parent_id": {
+                        "type": "string",
+                        "description": "Parent"
+                    },
+                    "notification_belongsto_parent_relationship": {
+                        "type": "integer",
+                        "description": "Parent"
+                    }
+                }
+            },
+            "VoyagerNotificationsReadResource": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "description": "Type"
+                    },
+                    "notifiable_type": {
+                        "type": "string",
+                        "description": "Notifiable type"
+                    },
+                    "notifiable_id": {
+                        "type": "string",
+                        "description": "Notifiable id"
+                    },
+                    "data": {
+                        "type": "string",
+                        "description": "Data"
+                    },
+                    "created_at": {
+                        "pattern": "\/([0-9]{4})-(?:[0-9]{2})-([0-9]{2}) ([0-9]{2}):([0-9]{2})\/",
+                        "type": "date-time",
+                        "description": "Created at",
+                        "example": "2021-05-17 00:00"
+                    },
+                    "created_by_id": {
+                        "type": "string",
+                        "description": "Created by"
+                    },
+                    "notification_belongsto_created_by_relationship": {
+                        "type": "integer",
+                        "description": "Created by"
+                    },
+                    "modified_by_id": {
+                        "type": "string",
+                        "description": "Modified by"
+                    },
+                    "notification_belongsto_modified_by_relationship": {
+                        "type": "integer",
+                        "description": "Modified by"
+                    },
+                    "assigned_to_id": {
+                        "type": "string",
+                        "description": "Assigned to"
+                    },
+                    "notification_belongsto_assigned_to_relationship": {
+                        "type": "integer",
+                        "description": "Assigned to"
+                    },
+                    "parent_id": {
+                        "type": "string",
+                        "description": "Parent"
+                    },
+                    "notification_belongsto_parent_relationship": {
+                        "type": "integer",
+                        "description": "Parent"
+                    }
+                }
+            },
             "VoyagerCategoriesBrowseResource": {
                 "type": "object",
                 "properties": {
@@ -5075,6 +5849,138 @@
                                     "description": "Parent"
                                 },
                                 "sample_belongsto_parent_relationship": {
+                                    "type": "integer",
+                                    "description": "Parent"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerNotificationsStoreRequest": {
+                "content": {
+                    "application\/x-www-form-urlencoded": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "description": "Type"
+                                },
+                                "notifiable_type": {
+                                    "type": "string",
+                                    "description": "Notifiable type"
+                                },
+                                "notifiable_id": {
+                                    "type": "string",
+                                    "description": "Notifiable id"
+                                },
+                                "assigned_to_id": {
+                                    "type": "string",
+                                    "description": "Assigned to"
+                                },
+                                "notification_belongsto_assigned_to_relationship": {
+                                    "type": "integer",
+                                    "description": "Assigned to"
+                                },
+                                "parent_id": {
+                                    "type": "string",
+                                    "description": "Parent"
+                                },
+                                "notification_belongsto_parent_relationship": {
+                                    "type": "integer",
+                                    "description": "Parent"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerNotificationsUpdateRequest": {
+                "content": {
+                    "application\/x-www-form-urlencoded": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "description": "Type"
+                                },
+                                "notifiable_type": {
+                                    "type": "string",
+                                    "description": "Notifiable type"
+                                },
+                                "notifiable_id": {
+                                    "type": "string",
+                                    "description": "Notifiable id"
+                                },
+                                "assigned_to_id": {
+                                    "type": "string",
+                                    "description": "Assigned to"
+                                },
+                                "notification_belongsto_assigned_to_relationship": {
+                                    "type": "integer",
+                                    "description": "Assigned to"
+                                },
+                                "parent_id": {
+                                    "type": "string",
+                                    "description": "Parent"
+                                },
+                                "notification_belongsto_parent_relationship": {
+                                    "type": "integer",
+                                    "description": "Parent"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerNotificationsSingleUpdateRequest": {
+                "content": {
+                    "application\/x-www-form-urlencoded": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "description": "Type"
+                                },
+                                "notifiable_type": {
+                                    "type": "string",
+                                    "description": "Notifiable type"
+                                },
+                                "notifiable_id": {
+                                    "type": "string",
+                                    "description": "Notifiable id"
+                                },
+                                "assigned_to_id": {
+                                    "type": "string",
+                                    "description": "Assigned to"
+                                },
+                                "notification_belongsto_assigned_to_relationship": {
+                                    "type": "integer",
+                                    "description": "Assigned to"
+                                },
+                                "parent_id": {
+                                    "type": "string",
+                                    "description": "Parent"
+                                },
+                                "notification_belongsto_parent_relationship": {
                                     "type": "integer",
                                     "description": "Parent"
                                 }
