@@ -3,9 +3,6 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Joy\VoyagerBreadSample\Database\Seeders\VoyagerDatabaseSeeder as SeedersVoyagerDatabaseSeeder;
-use Joy\VoyagerUserSettings\Database\Seeders\UserSettingsTableSeeder;
-use Joy\VoyagerUserSettings\Database\Seeders\UserSettingsPermissionsTableSeeder;
 
 class VoyagerDatabaseSeeder extends Seeder
 {
@@ -22,14 +19,16 @@ class VoyagerDatabaseSeeder extends Seeder
             MenusTableSeeder::class,
             MenuItemsTableSeeder::class,
             // \Joy\VoyagerCrm\Database\Seeders\MenuItemsTableSeeder::class,
+            \Joy\VoyagerBreadNotification\Database\Seeders\MenuItemsTableSeeder::class,
             RolesTableSeeder::class,
             PermissionsTableSeeder::class,
             PermissionRoleTableSeeder::class,
             SettingsTableSeeder::class,
-            UserSettingsPermissionsTableSeeder::class,
+            \Joy\VoyagerUserSettings\Database\Seeders\UserSettingsPermissionsTableSeeder::class,
             PermissionRoleTableSeeder::class,
-            UserSettingsTableSeeder::class,
-            SeedersVoyagerDatabaseSeeder::class,
+            \Joy\VoyagerUserSettings\Database\Seeders\UserSettingsTableSeeder::class,
+            \Joy\VoyagerBreadSample\Database\Seeders\VoyagerDatabaseSeeder::class,
+            \Joy\VoyagerBreadNotification\Database\Seeders\VoyagerDatabaseSeeder::class,
             // \Joy\VoyagerCrm\Database\Seeders\VoyagerDatabaseSeeder::class,
             \Joy\VoyagerDataSettings\Database\Seeders\VoyagerDatabaseSeeder::class,
             \Joy\VoyagerDataTypeSettings\Database\Seeders\VoyagerDatabaseSeeder::class,
