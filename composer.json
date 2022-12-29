@@ -25,7 +25,7 @@
         "joy/voyager-dashboard": "^1.0",
         "joy/voyager-data-settings": "^1.2",
         "joy/voyager-data-type-settings": "^1.2",
-        "joy/voyager-datatable": "^1.0",
+        "joy/voyager-datatable": "^1.0|^2.0",
         "joy/voyager-duplicate": "^1.0",
         "joy/voyager-export": "^1.0",
         "joy/voyager-import": "^1.0",
