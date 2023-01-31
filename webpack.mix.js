@@ -1,4 +1,3 @@
-const { vue } = require('laravel-mix');
 let mix = require('laravel-mix');
 
 /*
@@ -12,11 +11,11 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.options({ processCssUrls: false }).sass('resources/sass/app.scss', 'public/css')
-.js('resources/js/app.js', 'public/js').vue({ version: 3 })
-.copy('node_modules/tinymce/skins', 'public/js/skins')
-.copy('resources/js/skins', 'public/js/skins')
-.copy('node_modules/tinymce/themes/silver', 'public/js/themes/silver')
-.copy('node_modules/tinymce/models/dom', 'public/js/models/dom')
-.copy('node_modules/tinymce/icons/default', 'public/js/icons/default')
-.copy('node_modules/ace-builds/src-noconflict', 'public/js/ace/libs');
+mix.options({ processCssUrls: false }).sass('resources/assets/sass/app.scss', 'public/assets/css')
+.js('resources/assets/js/app.js', 'public/assets/js').vue({ version: 2 })
+.copy('node_modules/tinymce/skins', 'public/assets/js/skins')
+.copy('resources/assets/js/skins', 'public/assets/js/skins')
+.copy('node_modules/tinymce/themes/silver', 'public/assets/js/themes/silver')
+.copy('node_modules/tinymce/models/dom', 'public/assets/js/models/dom')
+.copy('node_modules/tinymce/icons/default', 'public/assets/js/icons/default')
+.copy('node_modules/ace-builds/src-noconflict', 'public/assets/js/ace/libs');

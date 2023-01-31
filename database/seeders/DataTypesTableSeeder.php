@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Models\DataType;
 
 class DataTypesTableSeeder extends Seeder
@@ -66,6 +67,6 @@ class DataTypesTableSeeder extends Seeder
      */
     protected function dataType($field, $for)
     {
-        return DataType::firstOrNew([$field => $for]);
+        return Voyager::model('DataType')->firstOrNew([$field => $for]);
     }
 }

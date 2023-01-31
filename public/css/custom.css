@@ -220,6 +220,32 @@ table.dataTable tbody th {
     top: 0px;
 }
 
+.dt-col-filters .select2 {
+    min-width: 100px;
+}
+
+th.dt-col-filter {
+    padding-left: 0px !important;
+}
+
+.bootstrap-datetimepicker-widget .timepicker-picker table tr th,
+.bootstrap-datetimepicker-widget .timepicker-picker table tr td {
+    padding: 0px !important;
+    border-bottom: none !important;
+}
+
+
+.bootstrap-datetimepicker-widget .datepicker table thead th,
+.bootstrap-datetimepicker-widget .datepicker table thead td,
+.bootstrap-datetimepicker-widget .datepicker table tbody th,
+.bootstrap-datetimepicker-widget .datepicker table tbody td {
+    border-bottom: none !important;
+}
+
+thead.dt-col-filters > tr > th {
+    vertical-align: top;
+}
+
 @media only screen and (max-width: 768px) {
     .app-container > .row.content-container > .container-fluid {
         padding-left: 5px;

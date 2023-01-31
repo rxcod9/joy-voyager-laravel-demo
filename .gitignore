@@ -29,3 +29,4 @@ public/docs/voyager-api-docs.json
 composer.dev.json
 composer.json.dist
 linked.json
+/supervisord.log

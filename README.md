@@ -2,7 +2,7 @@
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/rxcod9/joy-voyager-laravel-demo/run-tests.yml?branch=main&label=tests)
 [![Total Downloads](https://img.shields.io/packagist/dt/joy/voyager-laravel-demo.svg?style=flat-square)](https://packagist.org/packages/joy/voyager-laravel-demo)
 
-# **Joy Voyager** - laravel demo
+# **Joy Voyager** - Laravel Demo
 By 🐼 [Ramakant Gangwar](https://github.com/rxcod9)
 
 <hr>
@@ -11,13 +11,13 @@ Laravel Admin & BREAD System
 
 ## Working Example
 
-You can try laravel demo here [https://joy-voyager.kodmonk.com](https://joy-voyager.kodmonk.com).
+You can try Laravel Demo here [https://joy-voyager.kodmonk.com](https://joy-voyager.kodmonk.com).
 
 ## Installation Steps
 
 ### 1. Clone repo/Install Using Composer
 
-You can clone/install the `Voyager Laravel Demo` with the following commands:
+You can clone/install the `Voyager Demo` with the following commands:
 
 ```bash
 git clone git@github.com:rxcod9/joy-voyager-laravel-demo.git

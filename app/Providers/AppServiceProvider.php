@@ -2,7 +2,10 @@
 
 namespace App\Providers;
 
+use App\Http\Middleware\VoyagerAdminMiddleware;
 use App\Models\User;
+use Illuminate\Contracts\Events\Dispatcher;
+use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 use TCG\Voyager\Facades\Voyager;
 
@@ -15,8 +18,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // Override User model
-        Voyager::useModel('User', User::class);
     }
 
     /**
@@ -24,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(Router $router, Dispatcher $event)
     {
         \URL::forceRootUrl(\Config::get('app.url'));
         // And this if you wanna handle https URL scheme
@@ -33,5 +34,9 @@ class AppServiceProvider extends ServiceProvider
             \URL::forceScheme('https');
             //use \URL:forceSchema('https') if you use laravel < 5.4
         }
+        // Override User model
+        Voyager::useModel('User', User::class);
+
+        $router->aliasMiddleware('admin.user', VoyagerAdminMiddleware::class);
     }
 }

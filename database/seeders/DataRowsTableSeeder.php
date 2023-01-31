@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Models\DataRow;
 use TCG\Voyager\Models\DataType;
 
@@ -13,9 +14,9 @@ class DataRowsTableSeeder extends Seeder
      */
     public function run()
     {
-        $userDataType = DataType::where('slug', 'users')->firstOrFail();
-        $menuDataType = DataType::where('slug', 'menus')->firstOrFail();
-        $roleDataType = DataType::where('slug', 'roles')->firstOrFail();
+        $userDataType = Voyager::model('DataType')->where('slug', 'users')->firstOrFail();
+        $menuDataType = Voyager::model('DataType')->where('slug', 'menus')->firstOrFail();
+        $roleDataType = Voyager::model('DataType')->where('slug', 'roles')->firstOrFail();
 
         $dataRow = $this->dataRow($userDataType, 'id');
         if (!$dataRow->exists) {
@@ -44,11 +45,6 @@ class DataRowsTableSeeder extends Seeder
                 'add'          => 1,
                 'delete'       => 1,
                 'order'        => 2,
-                'details'      => [
-                    'validation' => [
-                        'rule' => 'required'
-                    ]
-                ]
             ])->save();
         }
 
@@ -179,7 +175,7 @@ class DataRowsTableSeeder extends Seeder
                 'add'          => 1,
                 'delete'       => 0,
                 'details'      => [
-                    'model'       => 'TCG\\Voyager\\Models\\Role',
+                    'model'       => 'App\\Models\\Role',
                     'table'       => 'roles',
                     'type'        => 'belongsToMany',
                     'column'      => 'id',
@@ -369,7 +365,7 @@ class DataRowsTableSeeder extends Seeder
      */
     protected function dataRow($type, $field)
     {
-        return DataRow::firstOrNew([
+        return Voyager::model('DataRow')->firstOrNew([
             'data_type_id' => $type->id,
             'field'        => $field,
         ]);
