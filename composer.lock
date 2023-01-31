@@ -2891,16 +2891,16 @@
         },
         {
             "name": "joy/voyager-datatable",
-            "version": "v2.1.1",
+            "version": "v2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-datatable.git",
-                "reference": "0b7b784ec69ac441b2ca403277b71001bc4e2ee6"
+                "reference": "13758b425b29ced87275deca03608553db5a61e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/0b7b784ec69ac441b2ca403277b71001bc4e2ee6",
-                "reference": "0b7b784ec69ac441b2ca403277b71001bc4e2ee6",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/13758b425b29ced87275deca03608553db5a61e8",
+                "reference": "13758b425b29ced87275deca03608553db5a61e8",
                 "shasum": ""
             },
             "require": {
@@ -2958,7 +2958,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-datatable/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/v2.1.1"
+                "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/v2.1.2"
             },
             "funding": [
                 {
@@ -2966,7 +2966,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-01-31T01:55:49+00:00"
+            "time": "2023-01-31T04:17:15+00:00"
         },
         {
             "name": "joy/voyager-duplicate",
