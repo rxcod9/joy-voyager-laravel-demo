@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Models\DataRow;
 use TCG\Voyager\Models\DataType;
 use TCG\Voyager\Models\Menu;
@@ -35,7 +36,7 @@ class PagesTableSeeder extends Seeder
         }
 
         //Data Rows
-        $pageDataType = DataType::where('slug', 'pages')->firstOrFail();
+        $pageDataType = Voyager::model('DataType')->where('slug', 'pages')->firstOrFail();
         $dataRow = $this->dataRow($pageDataType, 'id');
         if (!$dataRow->exists) {
             $dataRow->fill([
@@ -232,8 +233,9 @@ class PagesTableSeeder extends Seeder
         }
 
         //Menu Item
-        $menu = Menu::where('name', 'admin')->firstOrFail();
-        $menuItem = MenuItem::firstOrNew([
+        $menu = Voyager::model('Menu')->where('name', 'admin')->firstOrFail();
+        $maxOrder = Voyager::model('MenuItem')->max('order') ?? 0;
+        $menuItem = Voyager::model('MenuItem')->firstOrNew([
             'menu_id' => $menu->id,
             'title'   => __('voyager::seeders.menu_items.pages'),
             'url'     => '',
@@ -245,14 +247,14 @@ class PagesTableSeeder extends Seeder
                 'icon_class' => 'voyager-file-text',
                 'color'      => null,
                 'parent_id'  => null,
-                'order'      => 7,
+                'order'      => ++$maxOrder,
             ])->save();
         }
 
         //Permissions
-        Permission::generateFor('pages');
+        Voyager::model('Permission')->generateFor('pages');
         //Content
-        $page = Page::firstOrNew([
+        $page = Voyager::model('Page')->firstOrNew([
             'slug' => 'hello-world',
         ]);
         if (!$page->exists) {
@@ -280,7 +282,7 @@ class PagesTableSeeder extends Seeder
      */
     protected function dataRow($type, $field)
     {
-        return DataRow::firstOrNew([
+        return Voyager::model('DataRow')->firstOrNew([
             'data_type_id' => $type->id,
             'field'        => $field,
         ]);
@@ -296,6 +298,6 @@ class PagesTableSeeder extends Seeder
      */
     protected function dataType($field, $for)
     {
-        return DataType::firstOrNew([$field => $for]);
+        return Voyager::model('DataType')->firstOrNew([$field => $for]);
     }
 }

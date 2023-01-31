@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Models\Menu;
 
 class MenusTableSeeder extends Seeder
@@ -14,7 +15,7 @@ class MenusTableSeeder extends Seeder
      */
     public function run()
     {
-        Menu::firstOrCreate([
+        Voyager::model('Menu')->firstOrCreate([
             'name' => 'admin',
         ]);
     }

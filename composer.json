@@ -1,7 +1,7 @@
 {
     "name": "joy/voyager-laravel-demo",
     "type": "project",
-    "description": "Voyager Laravel Demo",
+    "description": "Voyager Demo",
     "keywords": [
         "framework",
         "laravel",
@@ -38,6 +38,7 @@
         "laravel/pint": "^1.1",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
+        "psr/simple-cache": "^2.0",
         "spatie/laravel-ignition": "^1.4",
         "spatie/laravel-responsecache": "^7.4",
         "symfony/filesystem": "^5.4|^6.0",

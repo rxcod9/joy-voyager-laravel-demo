@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Models\Permission;
 use TCG\Voyager\Models\Role;
 
@@ -15,9 +16,9 @@ class PermissionRoleTableSeeder extends Seeder
      */
     public function run()
     {
-        $role = Role::where('name', 'admin')->firstOrFail();
+        $role = Voyager::model('Role')->where('name', 'admin')->firstOrFail();
 
-        $permissions = Permission::all();
+        $permissions = Voyager::model('Permission')->all();
 
         $role->permissions()->sync(
             $permissions->pluck('id')->all()

@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Models\Permission;
 
 class PermissionsTableSeeder extends Seeder
@@ -21,18 +22,18 @@ class PermissionsTableSeeder extends Seeder
         ];
 
         foreach ($keys as $key) {
-            Permission::firstOrCreate([
+            Voyager::model('Permission')->firstOrCreate([
                 'key'        => $key,
                 'table_name' => null,
             ]);
         }
 
-        Permission::generateFor('menus');
+        Voyager::model('Permission')->generateFor('menus');
 
-        Permission::generateFor('roles');
+        Voyager::model('Permission')->generateFor('roles');
 
-        Permission::generateFor('users');
+        Voyager::model('Permission')->generateFor('users');
 
-        Permission::generateFor('settings');
+        Voyager::model('Permission')->generateFor('settings');
     }
 }

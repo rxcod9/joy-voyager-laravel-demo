@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use TCG\Voyager\Facades\Voyager;
 
 class VoyagerDatabaseSeeder extends Seeder
 {
@@ -18,8 +19,6 @@ class VoyagerDatabaseSeeder extends Seeder
             DataRowsTableSeeder::class,
             MenusTableSeeder::class,
             MenuItemsTableSeeder::class,
-            // \Joy\VoyagerCrm\Database\Seeders\MenuItemsTableSeeder::class,
-            \Joy\VoyagerBreadNotification\Database\Seeders\MenuItemsTableSeeder::class,
             RolesTableSeeder::class,
             PermissionsTableSeeder::class,
             PermissionRoleTableSeeder::class,
@@ -29,7 +28,6 @@ class VoyagerDatabaseSeeder extends Seeder
             \Joy\VoyagerUserSettings\Database\Seeders\UserSettingsTableSeeder::class,
             \Joy\VoyagerBreadSample\Database\Seeders\VoyagerDatabaseSeeder::class,
             \Joy\VoyagerBreadNotification\Database\Seeders\VoyagerDatabaseSeeder::class,
-            // \Joy\VoyagerCrm\Database\Seeders\VoyagerDatabaseSeeder::class,
             \Joy\VoyagerDataSettings\Database\Seeders\VoyagerDatabaseSeeder::class,
             \Joy\VoyagerDataTypeSettings\Database\Seeders\VoyagerDatabaseSeeder::class,
         ]);

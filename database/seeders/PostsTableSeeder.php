@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Models\DataRow;
 use TCG\Voyager\Models\DataType;
 use TCG\Voyager\Models\Menu;
@@ -34,7 +35,7 @@ class PostsTableSeeder extends Seeder
         }
 
         //Data Rows
-        $postDataType = DataType::where('slug', 'posts')->firstOrFail();
+        $postDataType = Voyager::model('DataType')->where('slug', 'posts')->firstOrFail();
         $dataRow = $this->dataRow($postDataType, 'id');
         if (!$dataRow->exists) {
             $dataRow->fill([
@@ -302,8 +303,9 @@ class PostsTableSeeder extends Seeder
         }
 
         //Menu Item
-        $menu = Menu::where('name', 'admin')->firstOrFail();
-        $menuItem = MenuItem::firstOrNew([
+        $menu = Voyager::model('Menu')->where('name', 'admin')->firstOrFail();
+        $maxOrder = Voyager::model('MenuItem')->max('order') ?? 0;
+        $menuItem = Voyager::model('MenuItem')->firstOrNew([
             'menu_id' => $menu->id,
             'title'   => __('voyager::seeders.menu_items.posts'),
             'url'     => '',
@@ -315,12 +317,12 @@ class PostsTableSeeder extends Seeder
                 'icon_class' => 'voyager-news',
                 'color'      => null,
                 'parent_id'  => null,
-                'order'      => 6,
+                'order'      => ++$maxOrder,
             ])->save();
         }
 
         //Permissions
-        Permission::generateFor('posts');
+        Voyager::model('Permission')->generateFor('posts');
 
         //Content
         $post = $this->findPost('lorem-ipsum-post');
@@ -405,7 +407,7 @@ class PostsTableSeeder extends Seeder
      */
     protected function findPost($slug)
     {
-        return Post::firstOrNew(['slug' => $slug]);
+        return Voyager::model('Post')->firstOrNew(['slug' => $slug]);
     }
 
     /**
@@ -418,7 +420,7 @@ class PostsTableSeeder extends Seeder
      */
     protected function dataRow($type, $field)
     {
-        return DataRow::firstOrNew([
+        return Voyager::model('DataRow')->firstOrNew([
             'data_type_id' => $type->id,
             'field'        => $field,
         ]);
@@ -434,6 +436,6 @@ class PostsTableSeeder extends Seeder
      */
     protected function dataType($field, $for)
     {
-        return DataType::firstOrNew([$field => $for]);
+        return Voyager::model('DataType')->firstOrNew([$field => $for]);
     }
 }

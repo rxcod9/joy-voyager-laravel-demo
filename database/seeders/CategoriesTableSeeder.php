@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Models\Category;
 use TCG\Voyager\Models\DataRow;
 use TCG\Voyager\Models\DataType;
@@ -34,7 +35,7 @@ class CategoriesTableSeeder extends Seeder
             ])->save();
         }
         //Data Rows
-        $categoryDataType = DataType::where('slug', 'categories')->firstOrFail();
+        $categoryDataType = Voyager::model('DataType')->where('slug', 'categories')->firstOrFail();
         $dataRow = $this->dataRow($categoryDataType, 'id');
         if (!$dataRow->exists) {
             $dataRow->fill([
@@ -160,8 +161,9 @@ class CategoriesTableSeeder extends Seeder
         }
 
         //Menu Item
-        $menu = Menu::where('name', 'admin')->firstOrFail();
-        $menuItem = MenuItem::firstOrNew([
+        $menu = Voyager::model('Menu')->where('name', 'admin')->firstOrFail();
+        $maxOrder = Voyager::model('MenuItem')->max('order') ?? 0;
+        $menuItem = Voyager::model('MenuItem')->firstOrNew([
             'menu_id' => $menu->id,
             'title'   => __('voyager::seeders.menu_items.categories'),
             'url'     => '',
@@ -173,15 +175,15 @@ class CategoriesTableSeeder extends Seeder
                 'icon_class' => 'voyager-categories',
                 'color'      => null,
                 'parent_id'  => null,
-                'order'      => 8,
+                'order'      => ++$maxOrder,
             ])->save();
         }
 
         //Permissions
-        Permission::generateFor('categories');
+        Voyager::model('Permission')->generateFor('categories');
 
         //Content
-        $category = Category::firstOrNew([
+        $category = Voyager::model('Category')->firstOrNew([
             'slug' => 'category-1',
         ]);
         if (!$category->exists) {
@@ -190,7 +192,7 @@ class CategoriesTableSeeder extends Seeder
             ])->save();
         }
 
-        $category = Category::firstOrNew([
+        $category = Voyager::model('Category')->firstOrNew([
             'slug' => 'category-2',
         ]);
         if (!$category->exists) {
@@ -210,7 +212,7 @@ class CategoriesTableSeeder extends Seeder
      */
     protected function dataRow($type, $field)
     {
-        return DataRow::firstOrNew([
+        return Voyager::model('DataRow')->firstOrNew([
             'data_type_id' => $type->id,
             'field'        => $field,
         ]);
@@ -226,6 +228,6 @@ class CategoriesTableSeeder extends Seeder
      */
     protected function dataType($field, $for)
     {
-        return DataType::firstOrNew([$field => $for]);
+        return Voyager::model('DataType')->firstOrNew([$field => $for]);
     }
 }

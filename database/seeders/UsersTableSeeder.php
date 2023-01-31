@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use Illuminate\Database\Seeder;
+use TCG\Voyager\Facades\Voyager;
 use Illuminate\Support\Str;
 use TCG\Voyager\Models\Role;
 
@@ -17,7 +18,7 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         if (User::count() == 0) {
-            $role = Role::where('name', 'admin')->firstOrFail();
+            $role = Voyager::model('Role')->where('name', 'admin')->firstOrFail();
 
             User::create([
                 'name'           => 'Admin',
@@ -29,7 +30,7 @@ class UsersTableSeeder extends Seeder
         }
 
         $count = (int) env('USERS_COUNT', 100);
-        $role  = Role::firstOrNew(['name' => 'user']);
+        $role  = Voyager::model('Role')->firstOrNew(['name' => 'user']);
         if (User::whereRoleId($role->id)->count() <= 1) {
             User::factory()
                 ->count($count - 1)

@@ -1,7 +1,7 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Joy Voyager Laravel Demo",
+        "title": "Joy Voyager Demo",
         "description": "Joy VoyagerApi module adds REST Api end points to Voyager with Passport and Swagger support https:\/\/github.com\/rxcod9\/joy-voyager-api.",
         "version": "1.0.0"
     },
@@ -11,7 +11,7 @@
             "description": "Primary API Server"
         },
         {
-            "url": "https:\/\/joy-voyager.herokuapp.com",
+            "url": "https:\/\/joy-voyager.kodmonk.com",
             "description": "Another API Server"
         }
     ],
@@ -2013,13 +2013,53 @@
                                 "name",
                                 "description",
                                 "image",
-                                "created_by_id",
-                                "modified_by_id",
-                                "assigned_to_id",
                                 "parent_id",
                                 "status",
+                                "address",
+                                "browse",
+                                "checkbox",
+                                "wysiwyg",
+                                "color",
+                                "color_picker",
+                                "date",
+                                "date_picker",
+                                "start_date",
+                                "end_date",
+                                "datetime",
+                                "datetime_picker",
+                                "email",
+                                "hidden",
+                                "icon_picker",
+                                "month",
+                                "number",
+                                "float",
+                                "password",
+                                "radio",
+                                "range",
+                                "select",
+                                "select_from_array",
+                                "select2",
+                                "select2_from_ajax",
+                                "select2_from_array",
+                                "simplemde",
+                                "summernote",
+                                "table",
+                                "textarea",
+                                "text",
+                                "tinymce",
+                                "upload",
+                                "upload_multiple",
+                                "url",
+                                "video",
+                                "week",
+                                "extras",
+                                "assigned_to_id",
+                                "modified_by_id",
+                                "created_by_id",
                                 "created_at",
                                 "updated_at",
+                                "deleted_at",
+                                "base64_image",
                                 "sample_belongsto_created_by_relationship",
                                 "sample_belongsto_modified_by_relationship",
                                 "sample_belongsto_assigned_to_relationship",
@@ -2039,6 +2079,14 @@
                                 "desc"
                             ],
                             "type": "string"
+                        }
+                    },
+                    {
+                        "name": "showSoftDeleted",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
                         }
                     },
                     {
@@ -2075,47 +2123,35 @@
                         }
                     },
                     {
-                        "name": "filters[created_by_id][]",
+                        "name": "filters[created_by_id]",
                         "in": "query",
                         "required": false,
                         "schema": {
-                            "type": "array",
-                            "items": {
-                                "type": "integer"
-                            }
+                            "type": "string"
                         }
                     },
                     {
-                        "name": "filters[modified_by_id][]",
+                        "name": "filters[modified_by_id]",
                         "in": "query",
                         "required": false,
                         "schema": {
-                            "type": "array",
-                            "items": {
-                                "type": "integer"
-                            }
+                            "type": "string"
                         }
                     },
                     {
-                        "name": "filters[assigned_to_id][]",
+                        "name": "filters[assigned_to_id]",
                         "in": "query",
                         "required": false,
                         "schema": {
-                            "type": "array",
-                            "items": {
-                                "type": "integer"
-                            }
+                            "type": "string"
                         }
                     },
                     {
-                        "name": "filters[parent_id][]",
+                        "name": "filters[parent_id]",
                         "in": "query",
                         "required": false,
                         "schema": {
-                            "type": "array",
-                            "items": {
-                                "type": "integer"
-                            }
+                            "type": "string"
                         }
                     }
                 ],
@@ -2398,10 +2434,10 @@
                                 "name",
                                 "description",
                                 "image",
-                                "assigned_to_id",
                                 "sample_belongsto_assigned_to_relationship",
-                                "parent_id",
-                                "sample_belongsto_parent_relationship"
+                                "assigned_to_id",
+                                "sample_belongsto_parent_relationship",
+                                "parent_id"
                             ]
                         }
                     },
@@ -2417,10 +2453,10 @@
                                     "name",
                                     "description",
                                     "image",
-                                    "assigned_to_id",
                                     "sample_belongsto_assigned_to_relationship",
-                                    "parent_id",
-                                    "sample_belongsto_parent_relationship"
+                                    "assigned_to_id",
+                                    "sample_belongsto_parent_relationship",
+                                    "parent_id"
                                 ]
                             }
                         }
@@ -2668,6 +2704,7 @@
                                 "read_at",
                                 "created_at",
                                 "updated_at",
+                                "deleted_at",
                                 "notification_belongsto_created_by_relationship",
                                 "notification_belongsto_modified_by_relationship",
                                 "notification_belongsto_assigned_to_relationship",
@@ -2687,6 +2724,14 @@
                                 "desc"
                             ],
                             "type": "string"
+                        }
+                    },
+                    {
+                        "name": "showSoftDeleted",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
                         }
                     },
                     {
@@ -2731,47 +2776,35 @@
                         }
                     },
                     {
-                        "name": "filters[created_by_id][]",
+                        "name": "filters[created_by_id]",
                         "in": "query",
                         "required": false,
                         "schema": {
-                            "type": "array",
-                            "items": {
-                                "type": "integer"
-                            }
+                            "type": "string"
                         }
                     },
                     {
-                        "name": "filters[modified_by_id][]",
+                        "name": "filters[modified_by_id]",
                         "in": "query",
                         "required": false,
                         "schema": {
-                            "type": "array",
-                            "items": {
-                                "type": "integer"
-                            }
+                            "type": "string"
                         }
                     },
                     {
-                        "name": "filters[assigned_to_id][]",
+                        "name": "filters[assigned_to_id]",
                         "in": "query",
                         "required": false,
                         "schema": {
-                            "type": "array",
-                            "items": {
-                                "type": "integer"
-                            }
+                            "type": "string"
                         }
                     },
                     {
-                        "name": "filters[parent_id][]",
+                        "name": "filters[parent_id]",
                         "in": "query",
                         "required": false,
                         "schema": {
-                            "type": "array",
-                            "items": {
-                                "type": "integer"
-                            }
+                            "type": "string"
                         }
                     }
                 ],
@@ -3054,10 +3087,10 @@
                                 "type",
                                 "notifiable_type",
                                 "notifiable_id",
-                                "assigned_to_id",
                                 "notification_belongsto_assigned_to_relationship",
-                                "parent_id",
-                                "notification_belongsto_parent_relationship"
+                                "assigned_to_id",
+                                "notification_belongsto_parent_relationship",
+                                "parent_id"
                             ]
                         }
                     },
@@ -3073,10 +3106,10 @@
                                     "type",
                                     "notifiable_type",
                                     "notifiable_id",
-                                    "assigned_to_id",
                                     "notification_belongsto_assigned_to_relationship",
-                                    "parent_id",
-                                    "notification_belongsto_parent_relationship"
+                                    "assigned_to_id",
+                                    "notification_belongsto_parent_relationship",
+                                    "parent_id"
                                 ]
                             }
                         }
@@ -5319,36 +5352,36 @@
                         "description": "jpg,jpeg,png",
                         "format": "binary"
                     },
-                    "created_by_id": {
-                        "type": "string",
-                        "description": "Created by"
-                    },
                     "sample_belongsto_created_by_relationship": {
                         "type": "integer",
                         "description": "Created by"
                     },
-                    "modified_by_id": {
+                    "created_by_id": {
                         "type": "string",
-                        "description": "Modified by"
+                        "description": "Created by"
                     },
                     "sample_belongsto_modified_by_relationship": {
                         "type": "integer",
                         "description": "Modified by"
                     },
-                    "assigned_to_id": {
+                    "modified_by_id": {
                         "type": "string",
-                        "description": "Assigned to"
+                        "description": "Modified by"
                     },
                     "sample_belongsto_assigned_to_relationship": {
                         "type": "integer",
                         "description": "Assigned to"
                     },
-                    "parent_id": {
+                    "assigned_to_id": {
                         "type": "string",
-                        "description": "Parent"
+                        "description": "Assigned to"
                     },
                     "sample_belongsto_parent_relationship": {
                         "type": "integer",
+                        "description": "Parent"
+                    },
+                    "parent_id": {
+                        "type": "string",
                         "description": "Parent"
                     }
                 }
@@ -5375,36 +5408,36 @@
                         "description": "jpg,jpeg,png",
                         "format": "binary"
                     },
-                    "created_by_id": {
-                        "type": "string",
-                        "description": "Created by"
-                    },
                     "sample_belongsto_created_by_relationship": {
                         "type": "integer",
                         "description": "Created by"
                     },
-                    "modified_by_id": {
+                    "created_by_id": {
                         "type": "string",
-                        "description": "Modified by"
+                        "description": "Created by"
                     },
                     "sample_belongsto_modified_by_relationship": {
                         "type": "integer",
                         "description": "Modified by"
                     },
-                    "assigned_to_id": {
+                    "modified_by_id": {
                         "type": "string",
-                        "description": "Assigned to"
+                        "description": "Modified by"
                     },
                     "sample_belongsto_assigned_to_relationship": {
                         "type": "integer",
                         "description": "Assigned to"
                     },
-                    "parent_id": {
+                    "assigned_to_id": {
                         "type": "string",
-                        "description": "Parent"
+                        "description": "Assigned to"
                     },
                     "sample_belongsto_parent_relationship": {
                         "type": "integer",
+                        "description": "Parent"
+                    },
+                    "parent_id": {
+                        "type": "string",
                         "description": "Parent"
                     }
                 }
@@ -5434,36 +5467,36 @@
                         "description": "Created at",
                         "example": "2021-05-17 00:00"
                     },
-                    "created_by_id": {
-                        "type": "string",
-                        "description": "Created by"
-                    },
                     "notification_belongsto_created_by_relationship": {
                         "type": "integer",
                         "description": "Created by"
                     },
-                    "modified_by_id": {
+                    "created_by_id": {
                         "type": "string",
-                        "description": "Modified by"
+                        "description": "Created by"
                     },
                     "notification_belongsto_modified_by_relationship": {
                         "type": "integer",
                         "description": "Modified by"
                     },
-                    "assigned_to_id": {
+                    "modified_by_id": {
                         "type": "string",
-                        "description": "Assigned to"
+                        "description": "Modified by"
                     },
                     "notification_belongsto_assigned_to_relationship": {
                         "type": "integer",
                         "description": "Assigned to"
                     },
-                    "parent_id": {
+                    "assigned_to_id": {
                         "type": "string",
-                        "description": "Parent"
+                        "description": "Assigned to"
                     },
                     "notification_belongsto_parent_relationship": {
                         "type": "integer",
+                        "description": "Parent"
+                    },
+                    "parent_id": {
+                        "type": "string",
                         "description": "Parent"
                     }
                 }
@@ -5493,36 +5526,36 @@
                         "description": "Created at",
                         "example": "2021-05-17 00:00"
                     },
-                    "created_by_id": {
-                        "type": "string",
-                        "description": "Created by"
-                    },
                     "notification_belongsto_created_by_relationship": {
                         "type": "integer",
                         "description": "Created by"
                     },
-                    "modified_by_id": {
+                    "created_by_id": {
                         "type": "string",
-                        "description": "Modified by"
+                        "description": "Created by"
                     },
                     "notification_belongsto_modified_by_relationship": {
                         "type": "integer",
                         "description": "Modified by"
                     },
-                    "assigned_to_id": {
+                    "modified_by_id": {
                         "type": "string",
-                        "description": "Assigned to"
+                        "description": "Modified by"
                     },
                     "notification_belongsto_assigned_to_relationship": {
                         "type": "integer",
                         "description": "Assigned to"
                     },
-                    "parent_id": {
+                    "assigned_to_id": {
                         "type": "string",
-                        "description": "Parent"
+                        "description": "Assigned to"
                     },
                     "notification_belongsto_parent_relationship": {
                         "type": "integer",
+                        "description": "Parent"
+                    },
+                    "parent_id": {
+                        "type": "string",
                         "description": "Parent"
                     }
                 }
@@ -6052,20 +6085,20 @@
                                     "description": "jpg,jpeg,png",
                                     "format": "binary"
                                 },
-                                "assigned_to_id": {
-                                    "type": "string",
-                                    "description": "Assigned to"
-                                },
                                 "sample_belongsto_assigned_to_relationship": {
                                     "type": "integer",
                                     "description": "Assigned to"
                                 },
-                                "parent_id": {
+                                "assigned_to_id": {
                                     "type": "string",
-                                    "description": "Parent"
+                                    "description": "Assigned to"
                                 },
                                 "sample_belongsto_parent_relationship": {
                                     "type": "integer",
+                                    "description": "Parent"
+                                },
+                                "parent_id": {
+                                    "type": "string",
                                     "description": "Parent"
                                 }
                             }
@@ -6097,20 +6130,20 @@
                                     "description": "jpg,jpeg,png",
                                     "format": "binary"
                                 },
-                                "assigned_to_id": {
-                                    "type": "string",
-                                    "description": "Assigned to"
-                                },
                                 "sample_belongsto_assigned_to_relationship": {
                                     "type": "integer",
                                     "description": "Assigned to"
                                 },
-                                "parent_id": {
+                                "assigned_to_id": {
                                     "type": "string",
-                                    "description": "Parent"
+                                    "description": "Assigned to"
                                 },
                                 "sample_belongsto_parent_relationship": {
                                     "type": "integer",
+                                    "description": "Parent"
+                                },
+                                "parent_id": {
+                                    "type": "string",
                                     "description": "Parent"
                                 }
                             }
@@ -6142,20 +6175,20 @@
                                     "description": "jpg,jpeg,png",
                                     "format": "binary"
                                 },
-                                "assigned_to_id": {
-                                    "type": "string",
-                                    "description": "Assigned to"
-                                },
                                 "sample_belongsto_assigned_to_relationship": {
                                     "type": "integer",
                                     "description": "Assigned to"
                                 },
-                                "parent_id": {
+                                "assigned_to_id": {
                                     "type": "string",
-                                    "description": "Parent"
+                                    "description": "Assigned to"
                                 },
                                 "sample_belongsto_parent_relationship": {
                                     "type": "integer",
+                                    "description": "Parent"
+                                },
+                                "parent_id": {
+                                    "type": "string",
                                     "description": "Parent"
                                 }
                             }
@@ -6186,20 +6219,20 @@
                                     "type": "string",
                                     "description": "Notifiable id"
                                 },
-                                "assigned_to_id": {
-                                    "type": "string",
-                                    "description": "Assigned to"
-                                },
                                 "notification_belongsto_assigned_to_relationship": {
                                     "type": "integer",
                                     "description": "Assigned to"
                                 },
-                                "parent_id": {
+                                "assigned_to_id": {
                                     "type": "string",
-                                    "description": "Parent"
+                                    "description": "Assigned to"
                                 },
                                 "notification_belongsto_parent_relationship": {
                                     "type": "integer",
+                                    "description": "Parent"
+                                },
+                                "parent_id": {
+                                    "type": "string",
                                     "description": "Parent"
                                 }
                             }
@@ -6230,20 +6263,20 @@
                                     "type": "string",
                                     "description": "Notifiable id"
                                 },
-                                "assigned_to_id": {
-                                    "type": "string",
-                                    "description": "Assigned to"
-                                },
                                 "notification_belongsto_assigned_to_relationship": {
                                     "type": "integer",
                                     "description": "Assigned to"
                                 },
-                                "parent_id": {
+                                "assigned_to_id": {
                                     "type": "string",
-                                    "description": "Parent"
+                                    "description": "Assigned to"
                                 },
                                 "notification_belongsto_parent_relationship": {
                                     "type": "integer",
+                                    "description": "Parent"
+                                },
+                                "parent_id": {
+                                    "type": "string",
                                     "description": "Parent"
                                 }
                             }
@@ -6274,20 +6307,20 @@
                                     "type": "string",
                                     "description": "Notifiable id"
                                 },
-                                "assigned_to_id": {
-                                    "type": "string",
-                                    "description": "Assigned to"
-                                },
                                 "notification_belongsto_assigned_to_relationship": {
                                     "type": "integer",
                                     "description": "Assigned to"
                                 },
-                                "parent_id": {
+                                "assigned_to_id": {
                                     "type": "string",
-                                    "description": "Parent"
+                                    "description": "Assigned to"
                                 },
                                 "notification_belongsto_parent_relationship": {
                                     "type": "integer",
+                                    "description": "Parent"
+                                },
+                                "parent_id": {
+                                    "type": "string",
                                     "description": "Parent"
                                 }
                             }
