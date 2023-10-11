@@ -53,7 +53,7 @@
         "kitloong/laravel-migrations-generator": "^6.6",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^5.11|^6.0",
+        "nunomaduro/collision": "7.10.0",
         "phpunit/phpunit": "^9.5.10",
         "reliese/laravel": "^1.1"
     },
