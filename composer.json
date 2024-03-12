@@ -34,7 +34,7 @@
         "joy/voyager-relations-table": "^1.0",
         "joy/voyager-user-settings": "^1.2",
         "joy/voyager-widgets": "^1.0",
-        "laravel/framework": "~6.0|~7.0|~8.0|^9.0",
+        "laravel/framework": "10.48.0",
         "laravel/pint": "^1.1",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
