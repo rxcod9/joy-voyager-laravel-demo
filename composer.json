@@ -41,7 +41,7 @@
         "psr/simple-cache": "^2.0",
         "spatie/laravel-ignition": "^1.4",
         "spatie/laravel-responsecache": "^7.4",
-        "symfony/filesystem": "^5.4|^6.0",
+        "symfony/filesystem": "7.1.5",
         "tcg/voyager": "^1.5",
         "tecnickcom/tcpdf": "^6.4"
     },
