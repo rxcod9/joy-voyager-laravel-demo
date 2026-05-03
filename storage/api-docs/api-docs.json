@@ -1,7 +1,7 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Joy Voyager Api Laravel Demo",
+        "title": "Joy Voyager Api Crm Demo",
         "description": "Api documentation",
         "version": "1.0.0"
     },

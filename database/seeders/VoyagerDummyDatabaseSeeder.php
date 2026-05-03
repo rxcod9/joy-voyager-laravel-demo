@@ -24,6 +24,7 @@ class VoyagerDummyDatabaseSeeder extends Seeder
             \Joy\VoyagerBreadNotification\Database\Seeders\VoyagerDummyDatabaseSeeder::class,
             \Joy\VoyagerDataSettings\Database\Seeders\VoyagerDummyDatabaseSeeder::class,
             \Joy\VoyagerDataTypeSettings\Database\Seeders\VoyagerDummyDatabaseSeeder::class,
+            DummyNotificationsTableSeeder::class,
         ]);
     }
 }

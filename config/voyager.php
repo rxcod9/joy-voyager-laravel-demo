@@ -243,4 +243,7 @@ return [
            ],
        ]*/
     ],
+
+    // Truncate voyager on seed
+    'truncate' => env('VOAYGER_TRUNCATE', false),
 ];

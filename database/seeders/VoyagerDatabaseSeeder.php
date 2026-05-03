@@ -15,6 +15,7 @@ class VoyagerDatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
+            VoyagerDatabaseTruncateSeeder::class,
             DataTypesTableSeeder::class,
             DataRowsTableSeeder::class,
             MenusTableSeeder::class,
