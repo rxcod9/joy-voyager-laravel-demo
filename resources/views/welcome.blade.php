@@ -107,7 +107,8 @@
                 </a>
 			</div>
             @endenv
-            <p class="notfound-footer">Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})</p>
+            @php $version = Voyager::getVersion(); @endphp
+            <p class="notfound-footer">@if (!empty($version))[Voyager {{ $version }}]@endif [Laravel v{{ Illuminate\Foundation\Application::VERSION }}] (PHP v{{ PHP_VERSION }})</p>
 		</div>
 	</div>
 

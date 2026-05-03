@@ -1,5 +1,6 @@
 <footer class="app-footer">
     <div class="site-footer-right">
+        <a target="_blank" href="https://github.com/rxcod9/joy-voyager-crm-demo"><i class="voyager-github"></i></a> |
         @if (rand(1,100) == 100)
             <i class="voyager-rum-1"></i> {{ __('voyager::theme.footer_copyright2') }}
         @else

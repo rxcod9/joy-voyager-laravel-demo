@@ -8518,3 +8518,8 @@ div.cropper-container img {
 input[type="color"] {
   min-width: 70px !important;
 }
+
+.modal-body {
+  max-height: 80vh;
+  overflow-y: auto;
+}
