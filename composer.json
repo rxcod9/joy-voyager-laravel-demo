@@ -19,7 +19,7 @@
         "joy/core": "^1.2",
         "joy/voyager-api": "^1.0",
         "joy/voyager-bread-notification": "^1.2",
-        "joy/voyager-bread-sample": "^1.2",
+        "joy/voyager-bread-sample": "^3.0",
         "joy/voyager-bulk-update": "^1.0",
         "joy/voyager-core": "^1.2",
         "joy/voyager-dashboard": "^1.0",
