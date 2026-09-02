@@ -15,7 +15,7 @@
         "dompdf/dompdf": "^2.0",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^3.0",
-        "guzzlehttp/guzzle": "^7.2",
+        "guzzlehttp/guzzle": "^8.0",
         "joy/core": "^1.2",
         "joy/voyager-api": "^1.0",
         "joy/voyager-bread-notification": "^1.2",
