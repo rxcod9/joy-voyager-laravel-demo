@@ -30,7 +30,7 @@
     "datatables-bootstrap3-plugin": "^0.6.0",
     "datatables.net": "^1.12.1",
     "datetimepicker": "^0.1.39",
-    "dropzone": "^5.9.3",
+    "dropzone": "^6.0.0",
     "easymde": "^2.18.0",
     "eonasdan-bootstrap-datetimepicker": "^4.17.49",
     "icheck": "^1.0.2",
